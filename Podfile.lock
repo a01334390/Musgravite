@@ -1,0 +1,77 @@
+PODS:
+  - AWSCognito (2.6.33):
+    - AWSCore (= 2.6.33)
+  - AWSCognitoIdentityProvider (2.6.33):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.33)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.33)
+  - AWSDynamoDB (2.6.33):
+    - AWSCore (= 2.6.33)
+  - AWSEC2 (2.6.33):
+    - AWSCore (= 2.6.33)
+  - BulletinBoard (3.0.0)
+  - Hero (1.4.0)
+  - OnboardKit (1.2.0)
+  - SkeletonView (1.4.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - AWSCognito
+  - AWSCognitoIdentityProvider
+  - AWSDynamoDB
+  - AWSEC2
+  - BulletinBoard (from `https://github.com/alexaubry/BulletinBoard`, branch `master`)
+  - Hero
+  - OnboardKit (from `https://github.com/NikolaKirev/OnboardKit.git`, branch `master`)
+  - SkeletonView
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSCognito
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSDynamoDB
+    - AWSEC2
+    - Hero
+    - SkeletonView
+    - SVProgressHUD
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  BulletinBoard:
+    :branch: master
+    :git: https://github.com/alexaubry/BulletinBoard
+  OnboardKit:
+    :branch: master
+    :git: https://github.com/NikolaKirev/OnboardKit.git
+
+CHECKOUT OPTIONS:
+  BulletinBoard:
+    :commit: 05b4f0e70c8b5564d9c00980318b11bfb38d0ec3
+    :git: https://github.com/alexaubry/BulletinBoard
+  OnboardKit:
+    :commit: 94cc0aa75b30bba5e5d0a318dd76fd6aa3a54767
+    :git: https://github.com/NikolaKirev/OnboardKit.git
+
+SPEC CHECKSUMS:
+  AWSCognito: 0d7106509da503589ea14ee468fa85cb7fab65ad
+  AWSCognitoIdentityProvider: 97c10594444863772447c9a056b17aff487552f3
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: ed83f7e36fb6c0211b04a439d8e564aa23bfe37d
+  AWSDynamoDB: 0d80a73da558d1f231f35b525e3cfcbed4260028
+  AWSEC2: cf8fdf640c4ce1c1be793dd86f649a74440bf758
+  BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  OnboardKit: 36fbceba0d6a773516a2e7c43098fc710b9fa8e9
+  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: a4f69cfa531e3ea7721bc664aa6e69fb04a689ae
+
+COCOAPODS: 1.6.0.beta.1

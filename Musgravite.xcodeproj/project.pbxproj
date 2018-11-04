@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
+		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
+		BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC96D218E86F900AB4C37 /* Main.storyboard */; };
+		BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */; };
+		BD7AC974218E86FB00AB4C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC973218E86FB00AB4C37 /* Assets.xcassets */; };
+		BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */; };
+		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
+		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
+		BDC58725218EB02900E8B95B /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC58724218EB02900E8B95B /* PermissionsManager.swift */; };
+		F7B8C0B0B79D346A25FCBD2A /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD7AC97E218E86FB00AB4C37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7AC95E218E86F900AB4C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7AC965218E86F900AB4C37;
+			remoteInfo = Musgravite;
+		};
+		BD7AC989218E86FB00AB4C37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7AC95E218E86F900AB4C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7AC965218E86F900AB4C37;
+			remoteInfo = Musgravite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD7AC96B218E86F900AB4C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD7AC96E218E86F900AB4C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD7AC971218E86F900AB4C37 /* Musgravite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Musgravite.xcdatamodel; sourceTree = "<group>"; };
+		BD7AC973218E86FB00AB4C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD7AC976218E86FB00AB4C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD7AC978218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7AC97D218E86FB00AB4C37 /* MusgraviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteTests.swift; sourceTree = "<group>"; };
+		BD7AC983218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteUITests.swift; sourceTree = "<group>"; };
+		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC58724218EB02900E8B95B /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD7AC963218E86F900AB4C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B8C0B0B79D346A25FCBD2A /* Pods_Musgravite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC97A218E86FB00AB4C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC985218E86FB00AB4C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BB84FE3309D6F2DAED0B0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */,
+				A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		687F2DB3BFAB60B3E9D256A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD7AC95D218E86F900AB4C37 = {
+			isa = PBXGroup;
+			children = (
+				BD7AC968218E86F900AB4C37 /* Musgravite */,
+				BD7AC980218E86FB00AB4C37 /* MusgraviteTests */,
+				BD7AC98B218E86FB00AB4C37 /* MusgraviteUITests */,
+				BD7AC967218E86F900AB4C37 /* Products */,
+				5BB84FE3309D6F2DAED0B0CD /* Pods */,
+				687F2DB3BFAB60B3E9D256A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD7AC967218E86F900AB4C37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AC966218E86F900AB4C37 /* Musgravite.app */,
+				BD7AC97D218E86FB00AB4C37 /* MusgraviteTests.xctest */,
+				BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7AC968218E86F900AB4C37 /* Musgravite */ = {
+			isa = PBXGroup;
+			children = (
+				BDC58722218E9A1E00E8B95B /* Controller */,
+				BDC58721218E9A1800E8B95B /* View */,
+				BDC58720218E9A1100E8B95B /* Model */,
+				BD7AC973218E86FB00AB4C37 /* Assets.xcassets */,
+				BD7AC978218E86FB00AB4C37 /* Info.plist */,
+			);
+			path = Musgravite;
+			sourceTree = "<group>";
+		};
+		BD7AC980218E86FB00AB4C37 /* MusgraviteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */,
+				BD7AC983218E86FB00AB4C37 /* Info.plist */,
+			);
+			path = MusgraviteTests;
+			sourceTree = "<group>";
+		};
+		BD7AC98B218E86FB00AB4C37 /* MusgraviteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */,
+				BD7AC98E218E86FB00AB4C37 /* Info.plist */,
+			);
+			path = MusgraviteUITests;
+			sourceTree = "<group>";
+		};
+		BDC58720218E9A1100E8B95B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDC58721218E9A1800E8B95B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AC96D218E86F900AB4C37 /* Main.storyboard */,
+				BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDC58722218E9A1E00E8B95B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC58723218EB01300E8B95B /* Support Files */,
+				BD7AC969218E86F900AB4C37 /* AppDelegate.swift */,
+				BD7AC96B218E86F900AB4C37 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC58723218EB01300E8B95B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDC58724218EB02900E8B95B /* PermissionsManager.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD7AC965218E86F900AB4C37 /* Musgravite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7AC991218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "Musgravite" */;
+			buildPhases = (
+				C3675F7A38506693A7AC8C5D /* [CP] Check Pods Manifest.lock */,
+				BD7AC962218E86F900AB4C37 /* Sources */,
+				BD7AC963218E86F900AB4C37 /* Frameworks */,
+				BD7AC964218E86F900AB4C37 /* Resources */,
+				59B126F6A0BB651F442FB3FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musgravite;
+			productName = Musgravite;
+			productReference = BD7AC966218E86F900AB4C37 /* Musgravite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD7AC97C218E86FB00AB4C37 /* MusgraviteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7AC994218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "MusgraviteTests" */;
+			buildPhases = (
+				BD7AC979218E86FB00AB4C37 /* Sources */,
+				BD7AC97A218E86FB00AB4C37 /* Frameworks */,
+				BD7AC97B218E86FB00AB4C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7AC97F218E86FB00AB4C37 /* PBXTargetDependency */,
+			);
+			name = MusgraviteTests;
+			productName = MusgraviteTests;
+			productReference = BD7AC97D218E86FB00AB4C37 /* MusgraviteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD7AC987218E86FB00AB4C37 /* MusgraviteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7AC997218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "MusgraviteUITests" */;
+			buildPhases = (
+				BD7AC984218E86FB00AB4C37 /* Sources */,
+				BD7AC985218E86FB00AB4C37 /* Frameworks */,
+				BD7AC986218E86FB00AB4C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7AC98A218E86FB00AB4C37 /* PBXTargetDependency */,
+			);
+			name = MusgraviteUITests;
+			productName = MusgraviteUITests;
+			productReference = BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD7AC95E218E86F900AB4C37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Aabo Technologies";
+				TargetAttributes = {
+					BD7AC965218E86F900AB4C37 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					BD7AC97C218E86FB00AB4C37 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD7AC965218E86F900AB4C37;
+					};
+					BD7AC987218E86FB00AB4C37 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD7AC965218E86F900AB4C37;
+					};
+				};
+			};
+			buildConfigurationList = BD7AC961218E86F900AB4C37 /* Build configuration list for PBXProject "Musgravite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD7AC95D218E86F900AB4C37;
+			productRefGroup = BD7AC967218E86F900AB4C37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD7AC965218E86F900AB4C37 /* Musgravite */,
+				BD7AC97C218E86FB00AB4C37 /* MusgraviteTests */,
+				BD7AC987218E86FB00AB4C37 /* MusgraviteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7AC964218E86F900AB4C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */,
+				BD7AC974218E86FB00AB4C37 /* Assets.xcassets in Resources */,
+				BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC97B218E86FB00AB4C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC986218E86FB00AB4C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59B126F6A0BB651F442FB3FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnboardKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3675F7A38506693A7AC8C5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Musgravite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD7AC962218E86F900AB4C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
+				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
+				BDC58725218EB02900E8B95B /* PermissionsManager.swift in Sources */,
+				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC979218E86FB00AB4C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC984218E86FB00AB4C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD7AC97F218E86FB00AB4C37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7AC965218E86F900AB4C37 /* Musgravite */;
+			targetProxy = BD7AC97E218E86FB00AB4C37 /* PBXContainerItemProxy */;
+		};
+		BD7AC98A218E86FB00AB4C37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7AC965218E86F900AB4C37 /* Musgravite */;
+			targetProxy = BD7AC989218E86FB00AB4C37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD7AC96D218E86F900AB4C37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7AC96E218E86F900AB4C37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7AC976218E86FB00AB4C37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD7AC98F218E86FB00AB4C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD7AC990218E86FB00AB4C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD7AC992218E86FB00AB4C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = Musgravite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD7AC993218E86FB00AB4C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = Musgravite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BD7AC995218E86FB00AB4C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = MusgraviteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musgravite.app/Musgravite";
+			};
+			name = Debug;
+		};
+		BD7AC996218E86FB00AB4C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = MusgraviteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musgravite.app/Musgravite";
+			};
+			name = Release;
+		};
+		BD7AC998218E86FB00AB4C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = MusgraviteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Musgravite;
+			};
+			name = Debug;
+		};
+		BD7AC999218E86FB00AB4C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = MusgraviteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Musgravite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD7AC961218E86F900AB4C37 /* Build configuration list for PBXProject "Musgravite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7AC98F218E86FB00AB4C37 /* Debug */,
+				BD7AC990218E86FB00AB4C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7AC991218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "Musgravite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7AC992218E86FB00AB4C37 /* Debug */,
+				BD7AC993218E86FB00AB4C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7AC994218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "MusgraviteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7AC995218E86FB00AB4C37 /* Debug */,
+				BD7AC996218E86FB00AB4C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7AC997218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "MusgraviteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7AC998218E86FB00AB4C37 /* Debug */,
+				BD7AC999218E86FB00AB4C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD7AC971218E86F900AB4C37 /* Musgravite.xcdatamodel */,
+			);
+			currentVersion = BD7AC971218E86F900AB4C37 /* Musgravite.xcdatamodel */;
+			path = Musgravite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD7AC95E218E86F900AB4C37 /* Project object */;
+}
