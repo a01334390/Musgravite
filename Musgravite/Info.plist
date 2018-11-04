@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea usar tu cámara para mostrar mundos virtuales.</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea usar NFC para leer tarjetas e información de otros sistemas.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea saber tu localización</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

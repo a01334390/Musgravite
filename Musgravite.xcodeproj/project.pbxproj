@@ -15,7 +15,6 @@
 		BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */; };
 		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
-		BDC58725218EB02900E8B95B /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC58724218EB02900E8B95B /* PermissionsManager.swift */; };
 		F7B8C0B0B79D346A25FCBD2A /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteUITests.swift; sourceTree = "<group>"; };
 		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDC58724218EB02900E8B95B /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
 		CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,7 +180,6 @@
 		BDC58723218EB01300E8B95B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BDC58724218EB02900E8B95B /* PermissionsManager.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -396,7 +393,6 @@
 			files = (
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
-				BDC58725218EB02900E8B95B /* PermissionsManager.swift in Sources */,
 				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
