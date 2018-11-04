@@ -10,6 +10,24 @@ import UIKit
 import BLTNBoard
 import CoreLocation
 
+extension UIImageView {
+    func setRounded() {
+        self.layer.cornerRadius = (self.frame.width / 2)
+        self.layer.masksToBounds = true
+    }
+}
+
+extension ViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath)
+        return cell
+    }
+}
+
 class ViewController: UIViewController, CLLocationManagerDelegate{
     /* Bulletin board */
     lazy var bulletinManager: BLTNItemManager = {
@@ -22,9 +40,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     public let impact = UIImpactFeedbackGenerator()
     public let notification = UINotificationFeedbackGenerator()
     public let selection = UISelectionFeedbackGenerator()
+    /* UIImage for the user */
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var userAvatarImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userAvatarImage.setRounded()
     }
     
     /**
@@ -87,8 +110,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         firstPage.appearance.shouldUseCompactDescriptionText = true
         firstPage.next = createNotificationServicesBLTNPage()
         firstPage.actionHandler = { item in
-            self.selection.selectionChanged()
             self.getLocation()
+            self.selection.selectionChanged()
             item.manager?.displayNextItem()
         }
         firstPage.alternativeHandler = { item in
@@ -173,17 +196,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             locationManager.requestWhenInUseAuthorization()
             return
         }
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if (appHasBeenLaunchedBefore()){
+//        if (appHasBeenLaunchedBefore()){
             /* Launch Onboarding */
             self.notification.notificationOccurred(.warning)
             bulletinManager.backgroundViewStyle = .blurredLight
             bulletinManager.showBulletin(above: self)
-        }
+//        }
     }
     
 }

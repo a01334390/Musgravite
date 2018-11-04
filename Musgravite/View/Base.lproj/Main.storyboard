@@ -17,13 +17,103 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEDETEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-HC-85Q">
+                                <rect key="frame" x="20" y="85" width="144" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domingo 4 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-Op-nbp">
+                                <rect key="frame" x="20" y="63" width="173" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Ab-Ajf">
+                                <rect key="frame" x="0.0" y="142" width="414" height="754"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="3bY-bI-JKJ">
+                                    <size key="itemSize" width="293" height="301"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="StD-yi-RUP">
+                                        <rect key="frame" x="60.5" y="0.0" width="293" height="301"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="293" height="301"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="250x300" translatesAutoresizingMaskIntoConstraints="NO" id="vDC-3m-AQy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="293" height="301"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vDC-3m-AQy" secondAttribute="trailing" id="2JZ-Cw-Jxg"/>
+                                            <constraint firstItem="vDC-3m-AQy" firstAttribute="top" secondItem="StD-yi-RUP" secondAttribute="top" id="MmK-OP-b1e"/>
+                                            <constraint firstItem="vDC-3m-AQy" firstAttribute="leading" secondItem="StD-yi-RUP" secondAttribute="leading" id="aDY-Qo-3Ci"/>
+                                            <constraint firstAttribute="bottom" secondItem="vDC-3m-AQy" secondAttribute="bottom" id="yPt-C5-I6r"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zF6-eS-kyI"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="64x64" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-O5-pVD">
+                                <rect key="frame" x="330" y="57" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="UwL-xL-Y6g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s4j-Ab-Ajf" secondAttribute="bottom" id="3G3-0Q-WUT"/>
+                            <constraint firstItem="bbf-O5-pVD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3no-aQ-tQz"/>
+                            <constraint firstItem="s4j-Ab-Ajf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F24-1f-qTr"/>
+                            <constraint firstItem="bbf-O5-pVD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="HdP-SA-Ewy"/>
+                            <constraint firstItem="R5u-Op-nbp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Ih1-j9-OMu"/>
+                            <constraint firstAttribute="trailing" secondItem="s4j-Ab-Ajf" secondAttribute="trailing" id="PpD-Ty-OfV"/>
+                            <constraint firstItem="vlv-HC-85Q" firstAttribute="bottom" secondItem="bbf-O5-pVD" secondAttribute="bottom" id="Y4J-6e-NFM"/>
+                            <constraint firstItem="s4j-Ab-Ajf" firstAttribute="top" secondItem="vlv-HC-85Q" secondAttribute="bottom" constant="21" id="bsn-Fs-D4W"/>
+                            <constraint firstItem="vlv-HC-85Q" firstAttribute="top" secondItem="R5u-Op-nbp" secondAttribute="bottom" constant="4" id="fcX-Ql-Mbv"/>
+                            <constraint firstItem="R5u-Op-nbp" firstAttribute="leading" secondItem="vlv-HC-85Q" secondAttribute="leading" id="ogh-Z7-90X"/>
+                            <constraint firstItem="R5u-Op-nbp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wkm-7b-Wgg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="s4j-Ab-Ajf" id="gXd-V7-56P"/>
+                        <outlet property="userAvatarImage" destination="bbf-O5-pVD" id="2M7-eg-lUs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.521739130434788" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="250x300" width="187.5" height="225"/>
+        <image name="64x64" width="48" height="48"/>
+    </resources>
 </document>
