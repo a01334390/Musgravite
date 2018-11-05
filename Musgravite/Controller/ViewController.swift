@@ -52,11 +52,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     /* UIImage for the user */
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var userAvatarImage: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         userAvatarImage.setRounded()
+        setLabelsDate()
+    }
+    
+    func setLabelsDate(){
+        let currentDate = Date()
+        let dateFormat = DateFormatter()
+        dateFormat.dateStyle = .full
+        let dateString = dateFormat.string(from: currentDate)
+        dateLabel.text = dateString
     }
     
     /**
