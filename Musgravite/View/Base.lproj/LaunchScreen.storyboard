@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-3t-aP3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-3t-aP3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1O4-3t-aP3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="16F-SG-6vt"/>
-                            <constraint firstItem="1O4-3t-aP3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="a1X-C0-UNp"/>
-                            <constraint firstItem="1O4-3t-aP3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ab2-h8-d8R"/>
-                            <constraint firstItem="1O4-3t-aP3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qWK-Ev-R6J"/>
+                            <constraint firstAttribute="bottom" secondItem="1O4-3t-aP3" secondAttribute="bottom" id="2wX-oP-ma7"/>
+                            <constraint firstItem="1O4-3t-aP3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9MR-41-Cfu"/>
+                            <constraint firstAttribute="trailing" secondItem="1O4-3t-aP3" secondAttribute="trailing" id="kZS-4k-bIV"/>
+                            <constraint firstItem="1O4-3t-aP3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lDj-tq-lRO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

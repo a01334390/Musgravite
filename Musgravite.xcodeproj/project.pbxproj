@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
 		BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC96D218E86F900AB4C37 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7AC96B218E86F900AB4C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 				29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1ABEA4218FC078007DAFFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BD7AC95D218E86F900AB4C37 = {
@@ -170,6 +180,7 @@
 		BDC58722218E9A1E00E8B95B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD1ABEA4218FC078007DAFFB /* Cells */,
 				BDC58723218EB01300E8B95B /* Support Files */,
 				BD7AC969218E86F900AB4C37 /* AppDelegate.swift */,
 				BD7AC96B218E86F900AB4C37 /* ViewController.swift */,
@@ -391,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
 				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,

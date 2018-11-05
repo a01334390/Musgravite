@@ -19,11 +19,17 @@ extension UIImageView {
 
 extension ViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
+        let image = images[indexPath.item]
+        let title = titles[indexPath.item]
+        let subtitle = subtitles[indexPath.item]
+        cell.imageView.image = UIImage(named: image)
+        cell.titleLabel.text = title
+        cell.subtitleLabel.text = subtitle
         return cell
     }
 }
@@ -36,6 +42,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }()
     /* Support */
     let locationManager = CLLocationManager()
+    let images = ["img1","img2","img3","img4"]
+    let titles = ["Crea tu propio avatar","Busca laboratorios","Hablanos de tu experiencia","Modifica tus preferencias"]
+    let subtitles = ["Personaliza tu experiencia virtual","¡Crea tu siguiente inovacion ahora!","Queremos saber tus opiniones","Ajustes, Localizacion, Siri y demás"]
     /* Haptic Feeback */
     public let impact = UIImpactFeedbackGenerator()
     public let notification = UINotificationFeedbackGenerator()
@@ -205,7 +214,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
 //        if (appHasBeenLaunchedBefore()){
             /* Launch Onboarding */
             self.notification.notificationOccurred(.warning)
-            bulletinManager.backgroundViewStyle = .blurredLight
+            bulletinManager.backgroundViewStyle = .blurredExtraLight
             bulletinManager.showBulletin(above: self)
 //        }
     }
