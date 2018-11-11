@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B73a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Floor" representedClassName="Floor" syncable="YES" codeGenerationType="class">
-        <attribute name="fdescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="fimage" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="fnumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="lab" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Lab" spotlightIndexingEnabled="YES" syncable="YES"/>
-    </entity>
-    <entity name="Image" representedClassName="Image" syncable="YES" codeGenerationType="class">
-        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="Lab" representedClassName="Lab" syncable="YES" codeGenerationType="class">
-        <attribute name="incharge" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="ldescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="trajectory" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Image" spotlightIndexingEnabled="YES" syncable="YES"/>
-        <relationship name="models" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Model" spotlightIndexingEnabled="YES" syncable="YES"/>
-        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Video" spotlightIndexingEnabled="YES" syncable="YES"/>
-    </entity>
-    <entity name="Model" representedClassName="Model" syncable="YES" codeGenerationType="class">
-        <attribute name="mdescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="model" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="Video" representedClassName="Video" syncable="YES" codeGenerationType="class">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="vdescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="video" optional="YES" attributeType="Binary" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Floor" positionX="-27.609375" positionY="31.66796875" width="128" height="103"/>
-        <element name="Lab" positionX="288.421875" positionY="44.44921875" width="128" height="163"/>
-        <element name="Image" positionX="99.1015625" positionY="248.22265625" width="128" height="75"/>
-        <element name="Video" positionX="273.58984375" positionY="253.1171875" width="128" height="90"/>
-        <element name="Model" positionX="423.16015625" positionY="253.17578125" width="128" height="90"/>
+        <element name="User" positionX="-18" positionY="27" width="128" height="75"/>
     </elements>
 </model>

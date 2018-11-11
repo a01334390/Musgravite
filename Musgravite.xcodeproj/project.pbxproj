@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
+		BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */; };
+		BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649D2197738B00A1779A /* AboutPageViewController.swift */; };
+		BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649F2197739700A1779A /* PreferencesViewController.swift */; };
+		BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A1219773AB00A1779A /* MainMenuCards.swift */; };
+		BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A3219777C500A1779A /* NetworkSupport.swift */; };
+		BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
 		BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC96D218E86F900AB4C37 /* Main.storyboard */; };
@@ -40,6 +46,12 @@
 		29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
 		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorySearchViewController.swift; sourceTree = "<group>"; };
+		BD25649D2197738B00A1779A /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		BD25649F2197739700A1779A /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		BD2564A1219773AB00A1779A /* MainMenuCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCards.swift; sourceTree = "<group>"; };
+		BD2564A3219777C500A1779A /* NetworkSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSupport.swift; sourceTree = "<group>"; };
+		BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7AC96B218E86F900AB4C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */,
+				BD2564A1219773AB00A1779A /* MainMenuCards.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +197,10 @@
 				BDC58723218EB01300E8B95B /* Support Files */,
 				BD7AC969218E86F900AB4C37 /* AppDelegate.swift */,
 				BD7AC96B218E86F900AB4C37 /* ViewController.swift */,
+				BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */,
+				BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */,
+				BD25649D2197738B00A1779A /* AboutPageViewController.swift */,
+				BD25649F2197739700A1779A /* PreferencesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +208,7 @@
 		BDC58723218EB01300E8B95B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD2564A3219777C500A1779A /* NetworkSupport.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -402,8 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */,
 				BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */,
+				BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */,
+				BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */,
+				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
+				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
+				BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
 				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,
 			);
