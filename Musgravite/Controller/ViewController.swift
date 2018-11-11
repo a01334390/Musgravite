@@ -40,6 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var userAvatarImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -48,6 +49,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         userAvatarImage.setRounded()
         setLabelsDate()
         self.navigationController?.isNavigationBarHidden = true
+        
+        #if DEBUG
+        let cdResult = UtilityFunctions().getUsersData()
+        nameLabel.text = "Hola \(cdResult)"
+        let cdIResult = UtilityFunctions().getUsersAvatar()
+        userAvatarImage.image = cdIResult
+        #else
+        if appHasBeenLaunchedBefore() {
+            let cdResult = UtilityFunctions().getUsersData()
+            nameLabel.text = cdResult
+        } else {
+            nameLabel.text = "CEDETEC"
+        }
+        #endif
     }
     /**
      It returns the current date in the desired language
@@ -90,7 +105,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
             bulletinManager.showBulletin(above: self)
         }
         #endif
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

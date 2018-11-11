@@ -45,8 +45,8 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
     
     /* Dont allow the ViewController to appear */
     override func viewWillDisappear(_ animated: Bool) {
-        if isMovingToParent {
-            self.navigationController?.isNavigationBarHidden = true
+        if isMovingFromParent {
+             self.navigationController?.isNavigationBarHidden = true
         }
     }
     

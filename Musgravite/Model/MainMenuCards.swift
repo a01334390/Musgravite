@@ -37,7 +37,7 @@ class MainMenuCards {
         firstPage.alternativeButtonTitle = "Ahora no"
         firstPage.requiresCloseButton = false
         firstPage.isDismissable = false
-        firstPage.next = createLocationServicesBLTNPage()
+        firstPage.next = createOnboardingUsername()
         firstPage.actionHandler = { item in
             self.selection.selectionChanged()
             item.manager?.displayNextItem()
@@ -47,6 +47,25 @@ class MainMenuCards {
             item.manager?.dismissBulletin(animated: true)
         }
         return firstPage
+    }
+    
+    /* Create a textfield onboarding that asks for this person's name
+     - Returns: OnboardingBLTNPageItem
+     - Remark: This returns a text
+     */
+    
+    func createOnboardingUsername() -> BLTNPageItem {
+        let page = TextFieldBulletinPage(title: "Permite que nos conozcamos mejor")
+        page.isDismissable = false
+        page.descriptionText = "Para crear tu perfil, requerimos tu nombre. Lo usaremos para personalizar tu experiencia."
+        page.actionButtonTitle = "Crear perfil"
+        page.textInputHandler = {(item,text) in
+            //We need to store it in CoreData
+            UtilityFunctions().storeUserName(text!)
+            let next = self.createLocationServicesBLTNPage()
+            item.manager?.push(item: next)
+        }
+        return page
     }
     
     /**
@@ -103,6 +122,11 @@ class MainMenuCards {
         return firstPage
     }
     
+    
+    /* Shows that the JSON's were succesfully downloaded
+     - Returns : OnboardingBLTNPageItem
+     - Remartk: This should subsequently call the next file
+     */
     func createJSONDownloadBLTNPage() -> BLTNPageItem {
         let firstPage = BLTNPageItem(title: "Datos descargados")
         firstPage.image = UIImage(named: "buletin-5")

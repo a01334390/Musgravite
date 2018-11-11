@@ -29,6 +29,7 @@
 		BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */; };
 		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
+		BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteUITests.swift; sourceTree = "<group>"; };
 		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBulletinPage.swift; sourceTree = "<group>"; };
 		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,9 +188,18 @@
 			path = MusgraviteUITests;
 			sourceTree = "<group>";
 		};
+		BD812D372198946D00D723E2 /* BulletinPages */ = {
+			isa = PBXGroup;
+			children = (
+				BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */,
+			);
+			path = BulletinPages;
+			sourceTree = "<group>";
+		};
 		BDC58720218E9A1100E8B95B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD812D372198946D00D723E2 /* BulletinPages */,
 				BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */,
 				BD2564A1219773AB00A1779A /* MainMenuCards.swift */,
 				BD2564AB2197C40600A1779A /* LabCards.swift */,
@@ -438,6 +449,7 @@
 				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
+				BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */,
 				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,

@@ -146,6 +146,7 @@
                     <connections>
                         <outlet property="collectionView" destination="s4j-Ab-Ajf" id="gXd-V7-56P"/>
                         <outlet property="dateLabel" destination="R5u-Op-nbp" id="xXq-a8-sKx"/>
+                        <outlet property="nameLabel" destination="vlv-HC-85Q" id="sI8-PC-9Ri"/>
                         <outlet property="userAvatarImage" destination="bbf-O5-pVD" id="2M7-eg-lUs"/>
                     </connections>
                 </viewController>
