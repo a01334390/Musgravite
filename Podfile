@@ -8,13 +8,9 @@ target 'Musgravite' do
   pod 'SVProgressHUD'
   pod 'Hero'
   pod 'SkeletonView'
-  pod 'OnboardKit', :git => 'https://github.com/NikolaKirev/OnboardKit.git', :branch => 'master'
   pod 'BulletinBoard', :git => 'https://github.com/alexaubry/BulletinBoard', :branch => 'master'
+  pod 'UICircularProgressRing'
+  pod 'CTPanoramaView'
   #UTILITIES
   pod 'SwiftyJSON'
-  #AWS 
-  pod 'AWSCognito'
-  pod 'AWSCognitoIdentityProvider'
-  pod 'AWSDynamoDB'
-  pod 'AWSEC2'
 end

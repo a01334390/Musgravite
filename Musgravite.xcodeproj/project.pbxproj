@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C089834FC2EB6641ADC0DD6 /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */; };
 		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
 		BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */; };
 		BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649D2197738B00A1779A /* AboutPageViewController.swift */; };
@@ -28,7 +29,6 @@
 		BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */; };
 		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
-		F7B8C0B0B79D346A25FCBD2A /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
+		A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
 		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorySearchViewController.swift; sourceTree = "<group>"; };
 		BD25649D2197738B00A1779A /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteUITests.swift; sourceTree = "<group>"; };
 		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
+		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B8C0B0B79D346A25FCBD2A /* Pods_Musgravite.framework in Frameworks */,
+				2C089834FC2EB6641ADC0DD6 /* Pods_Musgravite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,21 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033604CBE9FB60D5F6DEB15D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BB84FE3309D6F2DAED0B0CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */,
-				A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */,
+				857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */,
+				A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		687F2DB3BFAB60B3E9D256A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				29BF3D4AE3BDDE3C9AD4E0C8 /* Pods_Musgravite.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD1ABEA4218FC078007DAFFB /* Cells */ = {
@@ -142,7 +142,7 @@
 				BD7AC98B218E86FB00AB4C37 /* MusgraviteUITests */,
 				BD7AC967218E86F900AB4C37 /* Products */,
 				5BB84FE3309D6F2DAED0B0CD /* Pods */,
-				687F2DB3BFAB60B3E9D256A7 /* Frameworks */,
+				033604CBE9FB60D5F6DEB15D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,11 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7AC991218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "Musgravite" */;
 			buildPhases = (
-				C3675F7A38506693A7AC8C5D /* [CP] Check Pods Manifest.lock */,
+				0145BA2F7941C27D1FA81ADF /* [CP] Check Pods Manifest.lock */,
 				BD7AC962218E86F900AB4C37 /* Sources */,
 				BD7AC963218E86F900AB4C37 /* Frameworks */,
 				BD7AC964218E86F900AB4C37 /* Resources */,
-				59B126F6A0BB651F442FB3FE /* [CP] Embed Pods Frameworks */,
+				A00DE5EE114933EB0DC4BFC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,51 +365,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		59B126F6A0BB651F442FB3FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
-				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
-				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnboardKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3675F7A38506693A7AC8C5D /* [CP] Check Pods Manifest.lock */ = {
+		0145BA2F7941C27D1FA81ADF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,6 +385,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00DE5EE114933EB0DC4BFC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
+				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -626,7 +616,7 @@
 		};
 		BD7AC992218E86FB00AB4C37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1FB1E216C7FADA90C4C787 /* Pods-Musgravite.debug.xcconfig */;
+			baseConfigurationReference = 857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,7 +635,7 @@
 		};
 		BD7AC993218E86FB00AB4C37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A591FE814CE785E9472FFB3E /* Pods-Musgravite.release.xcconfig */;
+			baseConfigurationReference = A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
