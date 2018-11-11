@@ -2,6 +2,9 @@ PODS:
   - BulletinBoard (3.0.0)
   - CTPanoramaView (1.2)
   - Hero (1.4.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - SkeletonView (1.4.1)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - BulletinBoard (from `https://github.com/alexaubry/BulletinBoard`, branch `master`)
   - CTPanoramaView
   - Hero
+  - SDWebImage
   - SkeletonView
   - SVProgressHUD
   - SwiftyJSON
@@ -20,6 +24,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CTPanoramaView
     - Hero
+    - SDWebImage
     - SkeletonView
     - SVProgressHUD
     - SwiftyJSON
@@ -39,11 +44,12 @@ SPEC CHECKSUMS:
   BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
   CTPanoramaView: cc2a4e3bc324ccac4520375b131755747da27a7c
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   UICircularProgressRing: 5a32c01f54474571b1e66e8fa050c0f83d6d981b
 
-PODFILE CHECKSUM: 4eed855423bc3076dcdefe983aabd6797df0959d
+PODFILE CHECKSUM: d194343d231bf53e82b565db4281be3325ca2abc
 
 COCOAPODS: 1.6.0.beta.1

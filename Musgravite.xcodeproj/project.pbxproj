@@ -30,6 +30,9 @@
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
 		BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */; };
 		BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */; };
+		BD812D3D2198D62500D723E2 /* DataImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */; };
+		BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */; };
+		BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBulletinPage.swift; sourceTree = "<group>"; };
 		BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
+		BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
 		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +138,9 @@
 				BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */,
 				BD2564A92197C1B800A1779A /* LabCell.swift */,
 				BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */,
+				BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */,
+				BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */,
+				BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -410,6 +419,7 @@
 				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
 				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -422,6 +432,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -449,10 +460,13 @@
 				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
+				BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */,
 				BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */,
+				BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */,
 				BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,
+				BD812D3D2198D62500D723E2 /* DataImageCollectionViewCell.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
 				BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */,
 				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,

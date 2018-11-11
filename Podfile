@@ -11,6 +11,7 @@ target 'Musgravite' do
   pod 'BulletinBoard', :git => 'https://github.com/alexaubry/BulletinBoard', :branch => 'master'
   pod 'UICircularProgressRing'
   pod 'CTPanoramaView'
+  pod 'SDWebImage'
   #UTILITIES
   pod 'SwiftyJSON'
 end
