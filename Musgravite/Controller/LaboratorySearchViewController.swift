@@ -24,7 +24,7 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
     var superFiltered:[JSON]?
     
     /* Selected floor variable - To show information in the table view */
-    var selectedFloor = 1
+    var selectedFloor = -1
     /* Haptic Feeback */
     public let impact = UIImpactFeedbackGenerator()
     public let notification = UINotificationFeedbackGenerator()
@@ -84,8 +84,9 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath)
-        cell.textLabel?.text = labByFloorData![indexPath.item]["nombre"].stringValue
+        let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath) as! LabTableViewCell
+        cell.title.text = labByFloorData![indexPath.item]["nombre"].stringValue
+        cell.location.text = labByFloorData![indexPath.item]["ubicacion"].stringValue
         return cell
     }
 }

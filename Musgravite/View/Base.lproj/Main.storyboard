@@ -265,13 +265,41 @@
                                 <rect key="frame" x="0.0" y="423" width="375" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labCells" id="qlL-1m-L7j">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labCells" rowHeight="70" id="qlL-1m-L7j" customClass="LabTableViewCell" customModule="Musgravite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qlL-1m-L7j" id="nhL-DF-D4P">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qlL-1m-L7j" id="nhL-DF-D4P">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDT-2j-ThU">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8I-XU-rY9">
+                                                    <rect key="frame" x="15.000000000000004" y="34" width="37.333333333333343" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eDT-2j-ThU" firstAttribute="leading" secondItem="nhL-DF-D4P" secondAttribute="leadingMargin" id="0J4-O5-Ei2"/>
+                                                <constraint firstItem="J8I-XU-rY9" firstAttribute="leading" secondItem="nhL-DF-D4P" secondAttribute="leadingMargin" id="Ddi-dR-oN9"/>
+                                                <constraint firstItem="J8I-XU-rY9" firstAttribute="top" secondItem="eDT-2j-ThU" secondAttribute="bottom" constant="2" id="Otm-Jr-d4s"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="J8I-XU-rY9" secondAttribute="bottom" constant="7" id="ShR-H7-VJC"/>
+                                                <constraint firstItem="eDT-2j-ThU" firstAttribute="top" secondItem="nhL-DF-D4P" secondAttribute="topMargin" id="xEh-FZ-Zq6"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="location" destination="J8I-XU-rY9" id="kyE-kg-Dtz"/>
+                                            <outlet property="title" destination="eDT-2j-ThU" id="2xj-Md-Olh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
