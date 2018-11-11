@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import SVProgressHUD
 
 class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate {
     /* Elements on the interface */
@@ -32,6 +33,7 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SVProgressHUD.show()
         retrieveData()
     }
     /*

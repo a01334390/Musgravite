@@ -71,9 +71,9 @@ class UtilityFunctions {
         }
     }
     
-    /* Retrieve the user's data from CoreData
+    /* Retrieve the user's name from CoreData
     Parameters: None
-    Returns: String and Image
+    Returns: String
     Remarks: If more tables are added to Core Data, this should move to its own class
     */
     
@@ -93,6 +93,11 @@ class UtilityFunctions {
         return ""
     }
     
+    /* Retrieve the user's avatar from CoreData
+     Parameters: None
+     Returns: Image
+     Remarks: If more tables are added to Core Data, this should move to its own class
+     */
     func getUsersAvatar() -> UIImage {
         //Create an userFetch to read information on our user
         let userFetch = NSFetchRequest<User>(entityName: "User")
@@ -105,12 +110,12 @@ class UtilityFunctions {
                 if imageData == nil {
                     return UIImage(named: "64x64")!
                 }else {
-                    return UIImage(data: imageData!) ?? UIImage(named: "64x64")!
+                    return UIImage(data: imageData!)!
                 }
             }
         }catch let error as Error {
             print(error.localizedDescription)
         }
-        return UIImage()
+        return UIImage(named: "64x64")!
     }
 }

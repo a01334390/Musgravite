@@ -20,7 +20,6 @@
 		BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */; };
 		BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */; };
 		BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564B12197F07F00A1779A /* DetailViewController.swift */; };
-		BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
 		BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC96D218E86F900AB4C37 /* Main.storyboard */; };
@@ -30,6 +29,7 @@
 		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
 		BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */; };
+		BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTableViewCell.swift; sourceTree = "<group>"; };
 		BD2564B12197F07F00A1779A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7AC96B218E86F900AB4C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusgraviteUITests.swift; sourceTree = "<group>"; };
 		BD7AC98E218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD812D382198948600D723E2 /* TextFieldBulletinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBulletinPage.swift; sourceTree = "<group>"; };
+		BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
 		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,11 +224,11 @@
 				BDC58723218EB01300E8B95B /* Support Files */,
 				BD7AC969218E86F900AB4C37 /* AppDelegate.swift */,
 				BD7AC96B218E86F900AB4C37 /* ViewController.swift */,
-				BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */,
 				BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */,
 				BD25649D2197738B00A1779A /* AboutPageViewController.swift */,
 				BD25649F2197739700A1779A /* PreferencesViewController.swift */,
 				BD2564B12197F07F00A1779A /* DetailViewController.swift */,
+				BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,9 +449,9 @@
 				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
+				BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */,
 				BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
-				BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */,
 				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
 				BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */,

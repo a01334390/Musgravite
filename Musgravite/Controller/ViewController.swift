@@ -10,6 +10,7 @@ import UIKit
 import BLTNBoard
 import CoreLocation
 import Hero
+import SVProgressHUD
 
 /**
  This is an extension to create round images for avatar and what not
@@ -46,23 +47,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
-        userAvatarImage.setRounded()
         setLabelsDate()
         self.navigationController?.isNavigationBarHidden = true
-        
-        #if DEBUG
-        let cdResult = UtilityFunctions().getUsersData()
-        nameLabel.text = "Hola \(cdResult)"
-        let cdIResult = UtilityFunctions().getUsersAvatar()
-        userAvatarImage.image = cdIResult
-        #else
-        if appHasBeenLaunchedBefore() {
-            let cdResult = UtilityFunctions().getUsersData()
-            nameLabel.text = cdResult
-        } else {
-            nameLabel.text = "CEDETEC"
-        }
-        #endif
     }
     /**
      It returns the current date in the desired language
@@ -94,17 +80,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        #if DEBUG
-        self.notification.notificationOccurred(.warning)
-        bulletinManager.backgroundViewStyle = .blurredExtraLight
-        bulletinManager.showBulletin(above: self)
-        #else
         if (appHasBeenLaunchedBefore()){
             self.notification.notificationOccurred(.warning)
-            bulletinManager.backgroundViewStyle = .blurredExtraLight
+            bulletinManager.backgroundViewStyle = .dimmed
             bulletinManager.showBulletin(above: self)
+        } else {
+            let cdResult = UtilityFunctions().getUsersData()
+            if cdResult == "" {
+                nameLabel.text = "CEDETEC"
+            }else{
+                nameLabel.text = "Hola \(cdResult)"
+            }
+            let cdIResult = UtilityFunctions().getUsersAvatar()
+            userAvatarImage.image = cdIResult
+            userAvatarImage.setRounded()
         }
-        #endif
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

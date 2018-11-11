@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SVProgressHUD
 
 class LabCards {
     
@@ -18,6 +19,7 @@ class LabCards {
     func retrieveFloorData() -> JSON {
         let data = try? Data(contentsOf: NetworkSupport().getFloorUrl())
         if let json = try? JSON(data: data!) {
+            SVProgressHUD.dismiss()
             return json
         } else {
             return JSON()
@@ -31,6 +33,7 @@ class LabCards {
     func retrieveLabData() -> JSON {
         let data = try? Data(contentsOf: NetworkSupport().getLabURL())
         if let json = try? JSON(data: data!) {
+            SVProgressHUD.dismiss()
             return json
         } else {
             return JSON()
