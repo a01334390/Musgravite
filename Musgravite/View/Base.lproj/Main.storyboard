@@ -299,6 +299,7 @@
                                         <connections>
                                             <outlet property="location" destination="J8I-XU-rY9" id="kyE-kg-Dtz"/>
                                             <outlet property="title" destination="eDT-2j-ThU" id="2xj-Md-Olh"/>
+                                            <segue destination="uOn-dU-ibC" kind="show" id="b4B-vz-DmA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -310,17 +311,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91395015734706431" green="0.91395015734706431" blue="0.91395015734706431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="p7k-Q2-By0" firstAttribute="top" secondItem="CNG-Zo-ve4" secondAttribute="bottom" constant="8" id="2LB-bz-MEA"/>
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="42A-j7-pQf"/>
                             <constraint firstItem="PJx-0w-UaT" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="C28-Jo-Pcb"/>
+                            <constraint firstItem="CNG-Zo-ve4" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="FPQ-RZ-5cl"/>
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="top" secondItem="tLZ-jw-RNc" secondAttribute="top" id="Kb3-Ee-YUd"/>
+                            <constraint firstAttribute="bottom" secondItem="PJx-0w-UaT" secondAttribute="bottom" id="LjJ-Uw-cYu"/>
+                            <constraint firstItem="PJx-0w-UaT" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="QXN-Kz-dMJ"/>
                             <constraint firstItem="p7k-Q2-By0" firstAttribute="top" secondItem="CNG-Zo-ve4" secondAttribute="bottom" constant="8" id="Utd-dC-AM4"/>
                             <constraint firstItem="p7k-Q2-By0" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="X4W-u5-fjB"/>
                             <constraint firstItem="g5b-1u-ThL" firstAttribute="bottom" secondItem="CNG-Zo-ve4" secondAttribute="bottom" constant="499" id="XsC-uc-sgw"/>
                             <constraint firstAttribute="bottom" secondItem="PJx-0w-UaT" secondAttribute="bottom" id="b6K-KU-Fuz"/>
+                            <constraint firstItem="CNG-Zo-ve4" firstAttribute="top" secondItem="tLZ-jw-RNc" secondAttribute="top" id="d0n-hp-s0g"/>
+                            <constraint firstItem="PJx-0w-UaT" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="fFd-R3-w6r"/>
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="jWL-4b-BDK"/>
                             <constraint firstItem="PJx-0w-UaT" firstAttribute="top" secondItem="p7k-Q2-By0" secondAttribute="bottom" constant="8" id="oLb-5f-2RH"/>
                             <constraint firstItem="p7k-Q2-By0" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="ppV-y0-QdA"/>
                             <constraint firstItem="PJx-0w-UaT" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="vNo-2q-qC0"/>
+                            <constraint firstItem="CNG-Zo-ve4" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="xAo-Z5-NHJ"/>
                             <constraint firstItem="g5b-1u-ThL" firstAttribute="bottom" secondItem="p7k-Q2-By0" secondAttribute="bottom" constant="363" id="z5x-9h-CHJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g5b-1u-ThL"/>
@@ -337,6 +345,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4z-1K-QQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2724" y="573.39901477832518"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="LqA-tC-acw">
+            <objects>
+                <viewController id="uOn-dU-ibC" customClass="DetailViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oy9-uG-ylQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWE-X0-i3a">
+                                <rect key="frame" x="50" y="324" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kfW-sX-LZN"/>
+                    </view>
+                    <connections>
+                        <outlet property="testLabel" destination="RWE-X0-i3a" id="SVn-d4-zGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyE-tM-3lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3533.5999999999999" y="571.92118226600985"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="qER-Nb-BYh">

@@ -89,4 +89,10 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
         cell.location.text = labByFloorData![indexPath.item]["ubicacion"].stringValue
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DetailViewController
+        let selectedLab = labByFloorData![(labsTableView.indexPathForSelectedRow?.row)!]
+        vc.labInformation = selectedLab
+    }
 }

@@ -18,6 +18,7 @@
 		BD2564AC2197C40600A1779A /* LabCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AB2197C40600A1779A /* LabCards.swift */; };
 		BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */; };
 		BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */; };
+		BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564B12197F07F00A1779A /* DetailViewController.swift */; };
 		BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		BD2564AB2197C40600A1779A /* LabCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCards.swift; sourceTree = "<group>"; };
 		BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTableViewCell.swift; sourceTree = "<group>"; };
+		BD2564B12197F07F00A1779A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */,
 				BD25649D2197738B00A1779A /* AboutPageViewController.swift */,
 				BD25649F2197739700A1779A /* PreferencesViewController.swift */,
+				BD2564B12197F07F00A1779A /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */,
 				BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */,
 				BD2564AC2197C40600A1779A /* LabCards.swift in Sources */,
+				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
