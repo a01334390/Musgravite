@@ -13,6 +13,10 @@
 		BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649F2197739700A1779A /* PreferencesViewController.swift */; };
 		BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A1219773AB00A1779A /* MainMenuCards.swift */; };
 		BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A3219777C500A1779A /* NetworkSupport.swift */; };
+		BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A72197BC5700A1779A /* CustomNavViewController.swift */; };
+		BD2564AA2197C1B800A1779A /* LabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A92197C1B800A1779A /* LabCell.swift */; };
+		BD2564AC2197C40600A1779A /* LabCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AB2197C40600A1779A /* LabCards.swift */; };
+		BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */; };
 		BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		BD25649F2197739700A1779A /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		BD2564A1219773AB00A1779A /* MainMenuCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCards.swift; sourceTree = "<group>"; };
 		BD2564A3219777C500A1779A /* NetworkSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSupport.swift; sourceTree = "<group>"; };
+		BD2564A72197BC5700A1779A /* CustomNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavViewController.swift; sourceTree = "<group>"; };
+		BD2564A92197C1B800A1779A /* LabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCell.swift; sourceTree = "<group>"; };
+		BD2564AB2197C40600A1779A /* LabCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCards.swift; sourceTree = "<group>"; };
+		BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD4D7BA82190A22300AE203B /* CharacterCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorViewController.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */,
+				BD2564A92197C1B800A1779A /* LabCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -177,6 +186,7 @@
 			children = (
 				BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */,
 				BD2564A1219773AB00A1779A /* MainMenuCards.swift */,
+				BD2564AB2197C40600A1779A /* LabCards.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +196,7 @@
 			children = (
 				BD7AC96D218E86F900AB4C37 /* Main.storyboard */,
 				BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */,
+				BD2564A72197BC5700A1779A /* CustomNavViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2564A3219777C500A1779A /* NetworkSupport.swift */,
+				BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -423,12 +435,16 @@
 				BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */,
 				BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */,
 				BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */,
+				BD2564AA2197C1B800A1779A /* LabCell.swift in Sources */,
 				BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */,
+				BD2564AC2197C40600A1779A /* LabCards.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD4D7BA92190A22300AE203B /* CharacterCreatorViewController.swift in Sources */,
+				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
+				BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */,
 				BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,6 +47,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         collectionView.delegate = self
         userAvatarImage.setRounded()
         setLabelsDate()
+        self.navigationController?.isNavigationBarHidden = true
     }
     /**
      It returns the current date in the desired language
@@ -108,7 +109,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = storyboard.instantiateViewController(withIdentifier: mainMenu.targets[indexPath.item])
         self.navigationController?.pushViewController(destinationVC, animated: true)
+        self.selection.selectionChanged()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Show the navigation bar on other view controllers
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }
 
