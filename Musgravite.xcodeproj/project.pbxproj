@@ -11,7 +11,7 @@
 		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
 		BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */; };
 		BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649D2197738B00A1779A /* AboutPageViewController.swift */; };
-		BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649F2197739700A1779A /* PreferencesViewController.swift */; };
+		BD2564A02197739700A1779A /* UserSavedLaboratoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649F2197739700A1779A /* UserSavedLaboratoriesViewController.swift */; };
 		BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A1219773AB00A1779A /* MainMenuCards.swift */; };
 		BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A3219777C500A1779A /* NetworkSupport.swift */; };
 		BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564A72197BC5700A1779A /* CustomNavViewController.swift */; };
@@ -33,6 +33,7 @@
 		BD812D3D2198D62500D723E2 /* DataImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */; };
 		BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */; };
 		BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */; };
+		BDD75E8421993638009DA3AC /* AboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,7 @@
 		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorySearchViewController.swift; sourceTree = "<group>"; };
 		BD25649D2197738B00A1779A /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
-		BD25649F2197739700A1779A /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		BD25649F2197739700A1779A /* UserSavedLaboratoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSavedLaboratoriesViewController.swift; sourceTree = "<group>"; };
 		BD2564A1219773AB00A1779A /* MainMenuCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCards.swift; sourceTree = "<group>"; };
 		BD2564A3219777C500A1779A /* NetworkSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSupport.swift; sourceTree = "<group>"; };
 		BD2564A72197BC5700A1779A /* CustomNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCollectionViewCell.swift; sourceTree = "<group>"; };
 		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				BD812D3C2198D62500D723E2 /* DataImageCollectionViewCell.swift */,
 				BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */,
 				BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */,
+				BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -235,7 +238,7 @@
 				BD7AC96B218E86F900AB4C37 /* ViewController.swift */,
 				BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */,
 				BD25649D2197738B00A1779A /* AboutPageViewController.swift */,
-				BD25649F2197739700A1779A /* PreferencesViewController.swift */,
+				BD25649F2197739700A1779A /* UserSavedLaboratoriesViewController.swift */,
 				BD2564B12197F07F00A1779A /* DetailViewController.swift */,
 				BD812D3A2198A72800D723E2 /* CharacterCreatorViewController.swift */,
 			);
@@ -459,10 +462,11 @@
 				BD2564AC2197C40600A1779A /* LabCards.swift in Sources */,
 				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
-				BD2564A02197739700A1779A /* PreferencesViewController.swift in Sources */,
+				BD2564A02197739700A1779A /* UserSavedLaboratoriesViewController.swift in Sources */,
 				BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */,
 				BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */,
 				BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */,
+				BDD75E8421993638009DA3AC /* AboutCollectionViewCell.swift in Sources */,
 				BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
 				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,

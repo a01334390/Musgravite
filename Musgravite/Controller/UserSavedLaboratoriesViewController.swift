@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreferencesViewController: UIViewController {
+class UserSavedLaboratoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

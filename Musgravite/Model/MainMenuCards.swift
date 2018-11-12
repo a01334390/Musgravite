@@ -16,9 +16,9 @@ class MainMenuCards {
     public let selection = UISelectionFeedbackGenerator()
     /* Data to be used in cards */
     let images = ["img1","img2","img3","img4"]
-    let titles = ["Crea tu propio avatar","Busca laboratorios","Acerca de la aplicacion","Modifica tus preferencias"]
-    let subtitles = ["Personaliza tu experiencia virtual","¡Crea tu siguiente inovacion ahora!","Autores detras de este proyecto","Ajustes, Localizacion, Siri y demás"]
-    let targets = ["CharacterCreatorViewController","LaboratorySearchViewController","AboutPageViewController","PreferencesViewController"]
+    let titles = ["Crea tu propio avatar","Busca laboratorios","Acerca de la aplicacion","Laboratorios guardados"]
+    let subtitles = ["Personaliza tu experiencia virtual","¡Crea tu siguiente inovacion ahora!","Autores detras de este proyecto","Ve la lista de laboratorios guardados"]
+    let targets = ["CharacterCreatorViewController","LaboratorySearchViewController","AboutPageViewController","UserSavedLaboratoriesViewController"]
     
     
     /**
