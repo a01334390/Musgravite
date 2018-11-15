@@ -51,14 +51,19 @@ Pending image
 Para lograr todo esto, hacemos uso de las siguientes librerías externas:
 * Hero
 * BLTNBoard
-* Jelly
+* SVProgressHUD
+* CTPanoramaView
+* SDWebImage
+* UICircularProgressRing
 * SwiftyJSON
 
 y las siguientes librerias internas:
+
 * ARKit 2
-* MLKit 2
-* AuthKit 2
+* MLKit
 * CoreData
 * XCTAssert
 * WatchKit
 * SiriKit
+* Haptic
+* Compatible con iPad
