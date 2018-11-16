@@ -16,6 +16,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     //Laboratory information
     var labInformation:JSON?
+    var selectedElementURL:URL?
     
     //Static Elements
     @IBOutlet weak var locationOutlet: UILabel!
@@ -23,7 +24,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var bigTitleOutlet: UITextView!
     @IBOutlet weak var bigImageOutlet: UIImageView!
     @IBOutlet weak var gradientCategory: UIImageView!
-    
+    //CollectionViews
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     @IBOutlet weak var videoCollectionView: UICollectionView!
     @IBOutlet weak var modelCollectionView: UICollectionView!
@@ -50,11 +51,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     /* Downloads the required data from an URL */
-    func getData(_ dataURL: String, _ fileType:String, _ viewControllerIdentifier:String) {
+    func getData(_ dataURL: String, _ fileType:String, _ segueIdentifier:String) {
         SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
         Alamofire.download(dataURL).responseData { response in
-            print("Temporary URL: \(response.temporaryURL)")
             SVProgressHUD.dismiss()
+            self.selectedElementURL = response.destinationURL
+            self.performSegue(withIdentifier: segueIdentifier, sender: self)
         }
     }
     
@@ -94,9 +96,23 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         if collectionView.tag == 1 {
             return
         } else if collectionView.tag == 2 {
-            getData(labInformation!["video"].arrayValue[indexPath.item].stringValue, "video", "videoViewController")
+            getData(labInformation!["video"].arrayValue[indexPath.item].stringValue, "video", "VideoViewController")
         } else if collectionView.tag == 3 {
-            getData(labInformation!["material"].arrayValue[indexPath.item].stringValue, "modelo", "modelViewController")
+            getData(labInformation!["material"].arrayValue[indexPath.item].stringValue, "modelo", "ModelViewController")
+        } else {
+            return
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VideoViewController" {
+            if let destination = segue.destination as? VideoViewController {
+                destination.videoURL = selectedElementURL
+            }
+        } else if segue.identifier == "ModelViewController" {
+            if let destination = segue.destination as? ModelViewController {
+                destination.modelURL = selectedElementURL
+            }
         } else {
             return
         }

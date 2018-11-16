@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YE6-Q4-dRo">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEDETEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-HC-85Q">
-                                <rect key="frame" x="20" y="129" width="302" height="36"/>
+                                <rect key="frame" x="16" y="129" width="271" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Ab-Ajf">
-                                <rect key="frame" x="0.0" y="186" width="414" height="710"/>
+                                <rect key="frame" x="0.0" y="186" width="375" height="626"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3bY-bI-JKJ">
@@ -40,7 +40,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="StD-yi-RUP" customClass="CardCollectionViewCell" customModule="Musgravite" customModuleProvider="target">
-                                        <rect key="frame" x="60.666666666666664" y="10" width="293" height="301"/>
+                                        <rect key="frame" x="41" y="10" width="293" height="301"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="293" height="301"/>
@@ -125,13 +125,13 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, November 4, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-Op-nbp">
-                                <rect key="frame" x="20" y="107" width="185" height="18"/>
+                                <rect key="frame" x="16" y="107" width="185" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="64x64" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-O5-pVD">
-                                <rect key="frame" x="330" y="101" width="64" height="64"/>
+                                <rect key="frame" x="295" y="101" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="Vqe-5z-16f"/>
                                     <constraint firstAttribute="height" constant="64" id="eqc-B5-Fu1"/>
@@ -174,7 +174,7 @@
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController" id="Gjd-07-gHV" customClass="AboutPageViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yer-G2-GL7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grad17" translatesAutoresizingMaskIntoConstraints="NO" id="XA6-jG-KmN">
@@ -210,7 +210,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jIm-Zk-Ozb">
-                                <rect key="frame" x="336" y="44" width="62" height="62"/>
+                                <rect key="frame" x="297" y="44" width="62" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="FaB-Kt-51i"/>
                                     <constraint firstAttribute="width" secondItem="jIm-Zk-Ozb" secondAttribute="height" multiplier="1:1" id="WkJ-aS-nfb"/>
@@ -298,7 +298,7 @@
             <objects>
                 <viewController id="OmB-ue-mZq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5f-XB-qnl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="egg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDV-Oy-Qs6">
@@ -322,11 +322,11 @@
             <objects>
                 <viewController storyboardIdentifier="LaboratorySearchViewController" id="Azx-5G-eG2" customClass="LaboratorySearchViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLZ-jw-RNc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lab-default" translatesAutoresizingMaskIntoConstraints="NO" id="CNG-Zo-ve4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="363"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -350,7 +350,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p7k-Q2-By0">
-                                <rect key="frame" x="0.0" y="371" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="287" width="375" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="qTL-S0-9KP">
@@ -402,14 +402,14 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PJx-0w-UaT">
-                                <rect key="frame" x="0.0" y="507" width="414" height="389"/>
+                                <rect key="frame" x="0.0" y="423" width="375" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labCells" rowHeight="70" id="qlL-1m-L7j" customClass="LabTableViewCell" customModule="Musgravite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qlL-1m-L7j" id="nhL-DF-D4P">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDT-2j-ThU">
@@ -419,7 +419,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8I-XU-rY9">
-                                                    <rect key="frame" x="19.999999999999996" y="34" width="37.666666666666657" height="18"/>
+                                                    <rect key="frame" x="14.999999999999996" y="34" width="37.666666666666657" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -864,18 +864,93 @@
                         <outlet property="locationOutlet" destination="3F9-Ql-c7I" id="Ddc-UW-Sep"/>
                         <outlet property="modelCollectionView" destination="q00-yE-fR5" id="rSd-Sx-udA"/>
                         <outlet property="videoCollectionView" destination="Ijw-yQ-9WS" id="YAD-K9-24U"/>
+                        <segue destination="SON-WU-SIL" kind="show" identifier="VideoViewController" id="hYp-ZW-713"/>
+                        <segue destination="LvW-hC-men" kind="show" identifier="ModelViewController" id="uV5-Eq-h3m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyE-tM-3lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3542" y="571"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="J92-Rm-HV9">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SON-WU-SIL" customClass="VideoViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0Y-Vk-sJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="att-i5-Tmd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="att-i5-Tmd" firstAttribute="top" secondItem="kU1-4a-oRj" secondAttribute="top" id="7no-zV-OQd"/>
+                            <constraint firstItem="kU1-4a-oRj" firstAttribute="trailing" secondItem="att-i5-Tmd" secondAttribute="trailing" id="HGK-FI-gHq"/>
+                            <constraint firstItem="kU1-4a-oRj" firstAttribute="bottom" secondItem="att-i5-Tmd" secondAttribute="bottom" id="cgp-fJ-lrC"/>
+                            <constraint firstItem="att-i5-Tmd" firstAttribute="leading" secondItem="kU1-4a-oRj" secondAttribute="leading" id="zB8-tF-9Qb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kU1-4a-oRj"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="att-i5-Tmd" id="sLx-cE-srS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-c6-lk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4212" y="554"/>
+        </scene>
+        <!--Model View Controller-->
+        <scene sceneID="f0b-2a-4SJ">
+            <objects>
+                <viewController storyboardIdentifier="ModelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LvW-hC-men" customClass="ModelViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RzP-2u-xr2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZd-L4-lOp">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eHQ-6i-LT1" appends="YES" id="UOa-Gf-cL3"/>
+                                    <outletCollection property="gestureRecognizers" destination="Js5-vA-cB2" appends="YES" id="riU-w1-fOQ"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EZd-L4-lOp" firstAttribute="top" secondItem="WVe-ik-dgU" secondAttribute="top" id="Bfj-Pl-RmO"/>
+                            <constraint firstItem="WVe-ik-dgU" firstAttribute="trailing" secondItem="EZd-L4-lOp" secondAttribute="trailing" id="DUF-U3-TyQ"/>
+                            <constraint firstItem="EZd-L4-lOp" firstAttribute="leading" secondItem="WVe-ik-dgU" secondAttribute="leading" id="R1v-xo-gfS"/>
+                            <constraint firstItem="WVe-ik-dgU" firstAttribute="bottom" secondItem="EZd-L4-lOp" secondAttribute="bottom" id="iPv-Ex-geq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WVe-ik-dgU"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="EZd-L4-lOp" id="CxV-pI-oLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GV-ew-zuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="eHQ-6i-LT1">
+                    <connections>
+                        <action selector="deleteModel2:" destination="LvW-hC-men" id="JQu-hb-3G2"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Js5-vA-cB2">
+                    <connections>
+                        <action selector="rotateModel:" destination="LvW-hC-men" id="btg-1x-ixO"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4906" y="554"/>
+        </scene>
         <!--User Saved Laboratories View Controller-->
         <scene sceneID="qER-Nb-BYh">
             <objects>
                 <viewController storyboardIdentifier="UserSavedLaboratoriesViewController" id="SKa-CV-k0M" customClass="UserSavedLaboratoriesViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7zf-ec-iOH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="laboratory list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-Yh-pka">
@@ -900,7 +975,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YE6-Q4-dRo" customClass="CustomNavViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y0i-3e-epg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
