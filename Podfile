@@ -7,8 +7,10 @@ target 'Musgravite' do
   #UI
   pod 'SVProgressHUD'
   pod 'Hero'
-  pod 'SkeletonView'
   pod 'BulletinBoard', :git => 'https://github.com/alexaubry/BulletinBoard', :branch => 'master'
+  pod 'SwiftTheme'
+  pod 'Alamofire'
+  pod 'TBEmptyDataSet'
   pod 'UICircularProgressRing'
   pod 'CTPanoramaView'
   pod 'SDWebImage'

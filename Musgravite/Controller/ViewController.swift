@@ -9,8 +9,8 @@
 import UIKit
 import BLTNBoard
 import CoreLocation
-import Hero
 import SVProgressHUD
+import Hero
 
 /**
  This is an extension to create round images for avatar and what not
@@ -48,7 +48,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         super.viewDidLoad()
         collectionView.delegate = self
         setLabelsDate()
+        /* Hero Animations */
+        self.view.hero.isEnabled = true
+        self.view.hero.id = "ironman"
         self.navigationController?.isNavigationBarHidden = true
+        
     }
     /**
      It returns the current date in the desired language

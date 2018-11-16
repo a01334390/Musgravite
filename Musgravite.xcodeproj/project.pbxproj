@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C089834FC2EB6641ADC0DD6 /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */; };
+		A744F29D3343770827A072C9 /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */; };
 		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
 		BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */; };
 		BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649D2197738B00A1779A /* AboutPageViewController.swift */; };
@@ -20,11 +20,17 @@
 		BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */; };
 		BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */; };
 		BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564B12197F07F00A1779A /* DetailViewController.swift */; };
+		BD3AE4B6219E5B850005FB16 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */; };
+		BD3AE4B9219E5C4B0005FB16 /* ARDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */; };
+		BD6E2244219E733B00592AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6E2243219E733800592AF3 /* Assets.xcassets */; };
+		BD6E2246219E929800592AF3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E2245219E929800592AF3 /* VideoViewController.swift */; };
+		BD6E2248219E92A000592AF3 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E2247219E92A000592AF3 /* ModelViewController.swift */; };
+		BD6E224A219E92B200592AF3 /* ARLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E2249219E92B200592AF3 /* ARLabelViewController.swift */; };
+		BD6E224C219E92C600592AF3 /* P360ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E224B219E92C600592AF3 /* P360ViewController.swift */; };
 		BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC969218E86F900AB4C37 /* AppDelegate.swift */; };
 		BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC96B218E86F900AB4C37 /* ViewController.swift */; };
 		BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC96D218E86F900AB4C37 /* Main.storyboard */; };
 		BD7AC972218E86F900AB4C37 /* Musgravite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */; };
-		BD7AC974218E86FB00AB4C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC973218E86FB00AB4C37 /* Assets.xcassets */; };
 		BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7AC975218E86FB00AB4C37 /* LaunchScreen.storyboard */; };
 		BD7AC982218E86FB00AB4C37 /* MusgraviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC981218E86FB00AB4C37 /* MusgraviteTests.swift */; };
 		BD7AC98D218E86FB00AB4C37 /* MusgraviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7AC98C218E86FB00AB4C37 /* MusgraviteUITests.swift */; };
@@ -54,8 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
-		A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
+		8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorySearchViewController.swift; sourceTree = "<group>"; };
 		BD25649D2197738B00A1779A /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
@@ -68,12 +75,18 @@
 		BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTableViewCell.swift; sourceTree = "<group>"; };
 		BD2564B12197F07F00A1779A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDomeViewController.swift; sourceTree = "<group>"; };
+		BD6E2243219E733800592AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD6E2245219E929800592AF3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BD6E2247219E92A000592AF3 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		BD6E2249219E92B200592AF3 /* ARLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARLabelViewController.swift; sourceTree = "<group>"; };
+		BD6E224B219E92C600592AF3 /* P360ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P360ViewController.swift; sourceTree = "<group>"; };
 		BD7AC966218E86F900AB4C37 /* Musgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7AC969218E86F900AB4C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7AC96B218E86F900AB4C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD7AC96E218E86F900AB4C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD7AC971218E86F900AB4C37 /* Musgravite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Musgravite.xcdatamodel; sourceTree = "<group>"; };
-		BD7AC973218E86FB00AB4C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7AC976218E86FB00AB4C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7AC978218E86FB00AB4C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7AC97D218E86FB00AB4C37 /* MusgraviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusgraviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +101,6 @@
 		BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCollectionViewCell.swift; sourceTree = "<group>"; };
-		F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C089834FC2EB6641ADC0DD6 /* Pods_Musgravite.framework in Frameworks */,
+				A744F29D3343770827A072C9 /* Pods_Musgravite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,19 +129,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		033604CBE9FB60D5F6DEB15D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F0B5F9D0FD5B8DBDB952AE4B /* Pods_Musgravite.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5BB84FE3309D6F2DAED0B0CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */,
-				A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */,
+				46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */,
+				0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,6 +152,18 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		BD3AE4B7219E5C260005FB16 /* ARControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */,
+				BD6E2245219E929800592AF3 /* VideoViewController.swift */,
+				BD6E2247219E92A000592AF3 /* ModelViewController.swift */,
+				BD6E2249219E92B200592AF3 /* ARLabelViewController.swift */,
+				BD6E224B219E92C600592AF3 /* P360ViewController.swift */,
+			);
+			path = ARControllers;
+			sourceTree = "<group>";
+		};
 		BD7AC95D218E86F900AB4C37 = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +172,7 @@
 				BD7AC98B218E86FB00AB4C37 /* MusgraviteUITests */,
 				BD7AC967218E86F900AB4C37 /* Products */,
 				5BB84FE3309D6F2DAED0B0CD /* Pods */,
-				033604CBE9FB60D5F6DEB15D /* Frameworks */,
+				D51ABFD5FD0FCCE239BA492E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,10 +189,10 @@
 		BD7AC968218E86F900AB4C37 /* Musgravite */ = {
 			isa = PBXGroup;
 			children = (
+				BD6E2243219E733800592AF3 /* Assets.xcassets */,
 				BDC58722218E9A1E00E8B95B /* Controller */,
 				BDC58721218E9A1800E8B95B /* View */,
 				BDC58720218E9A1100E8B95B /* Model */,
-				BD7AC973218E86FB00AB4C37 /* Assets.xcassets */,
 				BD7AC978218E86FB00AB4C37 /* Info.plist */,
 			);
 			path = Musgravite;
@@ -211,6 +227,7 @@
 		BDC58720218E9A1100E8B95B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */,
 				BD812D372198946D00D723E2 /* BulletinPages */,
 				BD7AC970218E86F900AB4C37 /* Musgravite.xcdatamodeld */,
 				BD2564A1219773AB00A1779A /* MainMenuCards.swift */,
@@ -232,6 +249,7 @@
 		BDC58722218E9A1E00E8B95B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD3AE4B7219E5C260005FB16 /* ARControllers */,
 				BD1ABEA4218FC078007DAFFB /* Cells */,
 				BDC58723218EB01300E8B95B /* Support Files */,
 				BD7AC969218E86F900AB4C37 /* AppDelegate.swift */,
@@ -254,6 +272,14 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
+		D51ABFD5FD0FCCE239BA492E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,11 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7AC991218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "Musgravite" */;
 			buildPhases = (
-				0145BA2F7941C27D1FA81ADF /* [CP] Check Pods Manifest.lock */,
+				0CA5B5CD6E3653FB5DE4B50C /* [CP] Check Pods Manifest.lock */,
 				BD7AC962218E86F900AB4C37 /* Sources */,
 				BD7AC963218E86F900AB4C37 /* Frameworks */,
 				BD7AC964218E86F900AB4C37 /* Resources */,
-				A00DE5EE114933EB0DC4BFC8 /* [CP] Embed Pods Frameworks */,
+				978B6A434411B2028DE793E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,7 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */,
-				BD7AC974218E86FB00AB4C37 /* Assets.xcassets in Resources */,
+				BD6E2244219E733B00592AF3 /* Assets.xcassets in Resources */,
 				BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +414,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0145BA2F7941C27D1FA81ADF /* [CP] Check Pods Manifest.lock */ = {
+		0CA5B5CD6E3653FB5DE4B50C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,7 +436,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A00DE5EE114933EB0DC4BFC8 /* [CP] Embed Pods Frameworks */ = {
+		978B6A434411B2028DE793E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,26 +445,30 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Musgravite/Pods-Musgravite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
 				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TBEmptyDataSet/TBEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,21 +485,27 @@
 			files = (
 				BD2564A4219777C500A1779A /* NetworkSupport.swift in Sources */,
 				BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */,
+				BD6E2246219E929800592AF3 /* VideoViewController.swift in Sources */,
 				BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */,
 				BD2564AA2197C1B800A1779A /* LabCell.swift in Sources */,
 				BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */,
+				BD6E224A219E92B200592AF3 /* ARLabelViewController.swift in Sources */,
 				BD2564A2219773AB00A1779A /* MainMenuCards.swift in Sources */,
+				BD6E224C219E92C600592AF3 /* P360ViewController.swift in Sources */,
 				BD2564AC2197C40600A1779A /* LabCards.swift in Sources */,
 				BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */,
 				BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */,
 				BD2564A02197739700A1779A /* UserSavedLaboratoriesViewController.swift in Sources */,
 				BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */,
 				BD812D3B2198A72800D723E2 /* CharacterCreatorViewController.swift in Sources */,
+				BD3AE4B6219E5B850005FB16 /* Resnet50.mlmodel in Sources */,
 				BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */,
 				BDD75E8421993638009DA3AC /* AboutCollectionViewCell.swift in Sources */,
 				BD812D392198948600D723E2 /* TextFieldBulletinPage.swift in Sources */,
 				BD7AC96C218E86F900AB4C37 /* ViewController.swift in Sources */,
+				BD6E2248219E92A000592AF3 /* ModelViewController.swift in Sources */,
 				BD2564A82197BC5700A1779A /* CustomNavViewController.swift in Sources */,
+				BD3AE4B9219E5C4B0005FB16 /* ARDomeViewController.swift in Sources */,
 				BD812D3D2198D62500D723E2 /* DataImageCollectionViewCell.swift in Sources */,
 				BD7AC96A218E86F900AB4C37 /* AppDelegate.swift in Sources */,
 				BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */,
@@ -646,7 +682,7 @@
 		};
 		BD7AC992218E86FB00AB4C37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 857F226F71940373349317A1 /* Pods-Musgravite.debug.xcconfig */;
+			baseConfigurationReference = 46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -665,7 +701,7 @@
 		};
 		BD7AC993218E86FB00AB4C37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9771D89CEDED0E778648B6D /* Pods-Musgravite.release.xcconfig */;
+			baseConfigurationReference = 0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,33 +1,39 @@
 PODS:
+  - Alamofire (4.7.3)
   - BulletinBoard (3.0.0)
   - CTPanoramaView (1.2)
   - Hero (1.4.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - SkeletonView (1.4.1)
   - SVProgressHUD (2.2.5)
+  - SwiftTheme (0.4.3)
   - SwiftyJSON (4.2.0)
+  - TBEmptyDataSet (2.8)
   - UICircularProgressRing (4.1.0)
 
 DEPENDENCIES:
+  - Alamofire
   - BulletinBoard (from `https://github.com/alexaubry/BulletinBoard`, branch `master`)
   - CTPanoramaView
   - Hero
   - SDWebImage
-  - SkeletonView
   - SVProgressHUD
+  - SwiftTheme
   - SwiftyJSON
+  - TBEmptyDataSet
   - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - CTPanoramaView
     - Hero
     - SDWebImage
-    - SkeletonView
     - SVProgressHUD
+    - SwiftTheme
     - SwiftyJSON
+    - TBEmptyDataSet
     - UICircularProgressRing
 
 EXTERNAL SOURCES:
@@ -37,19 +43,21 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BulletinBoard:
-    :commit: 05b4f0e70c8b5564d9c00980318b11bfb38d0ec3
+    :commit: 13f40bc30f2566b867904c31a429093ec4de5861
     :git: https://github.com/alexaubry/BulletinBoard
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
   CTPanoramaView: cc2a4e3bc324ccac4520375b131755747da27a7c
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TBEmptyDataSet: eabe80f13fe620156068d4c3e2ce56227042c96a
   UICircularProgressRing: 5a32c01f54474571b1e66e8fa050c0f83d6d981b
 
-PODFILE CHECKSUM: d194343d231bf53e82b565db4281be3325ca2abc
+PODFILE CHECKSUM: 2eaf9839915e2795327570a6d9c2b66af36681a5
 
 COCOAPODS: 1.6.0.beta.1

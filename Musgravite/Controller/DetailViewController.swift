@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import SDWebImage
+import SVProgressHUD
+import Alamofire
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
@@ -28,6 +30,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
     }
     /*
@@ -44,6 +47,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         /* To be changed once this information is available */
         bigImageOutlet.image = UIImage(named: "grad17")
         gradientCategory.image = UIImage(named: "grad13")
+    }
+    
+    /* Downloads the required data from an URL */
+    func getData(_ dataURL: String, _ fileType:String, _ viewControllerIdentifier:String) {
+        SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
+        Alamofire.download(dataURL).responseData { response in
+            print("Temporary URL: \(response.temporaryURL)")
+            SVProgressHUD.dismiss()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,7 +78,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }else if collectionView.tag == 2{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoDetailCollectionViewCell", for: indexPath) as! VideoDetailCollectionViewCell
             cell.title.text = labInformation!["video"].arrayValue[indexPath.item].stringValue
-            cell.image.image = UIImage(named: "grad11")
+            cell.image.image = UIImage(named: "grad12")
             return cell
         } else if collectionView.tag == 3 {
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModelCellView", for: indexPath) as! ModelCollectionViewCell
@@ -75,6 +87,18 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             return cell
         } else {
             return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 1 {
+            return
+        } else if collectionView.tag == 2 {
+            getData(labInformation!["video"].arrayValue[indexPath.item].stringValue, "video", "videoViewController")
+        } else if collectionView.tag == 3 {
+            getData(labInformation!["material"].arrayValue[indexPath.item].stringValue, "modelo", "modelViewController")
+        } else {
+            return
         }
     }
 }
