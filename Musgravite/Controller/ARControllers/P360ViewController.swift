@@ -7,24 +7,60 @@
 //
 
 import UIKit
+import CTPanoramaView
+
 
 class P360ViewController: UIViewController {
-
+    var panonoImageURL:URL?
+    @IBOutlet weak var compassView: CTPieSliceView!
+    @IBOutlet weak var pv: CTPanoramaView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        loadSphericalImage()
+        pv.compass = compassView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func panoramaTypeTapped() {
+        if pv.panoramaType == .spherical {
+            loadCylindricalImage()
+        }
+        else {
+            loadSphericalImage()
+        }
     }
-    */
+    
+    @IBAction func motionTypeTapped() {
+        if pv.controlMethod == .touch {
+            pv.controlMethod = .motion
+        }
+        else {
+            pv.controlMethod = .touch
+        }
+    }
+    
+    private func load(fileURL: URL) -> UIImage? {
+        do {
+            let imageData = try Data(contentsOf: fileURL)
+            return UIImage(data: imageData)
+        } catch {
+            print("Error loading image : \(error)")
+        }
+        return nil
+    }
+    
+    func loadSphericalImage() {
+        pv.image = load(fileURL: panonoImageURL!)
+    }
+    
+    func loadCylindricalImage() {
+        pv.image = load(fileURL: panonoImageURL!)
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .all
+    }
+
 
 }
