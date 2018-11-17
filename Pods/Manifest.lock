@@ -7,10 +7,10 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
-  - SwiftTheme (0.4.3)
+  - SwiftMessages (6.0.0):
+    - SwiftMessages/App (= 6.0.0)
+  - SwiftMessages/App (6.0.0)
   - SwiftyJSON (4.2.0)
-  - TBEmptyDataSet (2.8)
-  - UICircularProgressRing (4.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -19,10 +19,8 @@ DEPENDENCIES:
   - Hero
   - SDWebImage
   - SVProgressHUD
-  - SwiftTheme
+  - SwiftMessages
   - SwiftyJSON
-  - TBEmptyDataSet
-  - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -31,10 +29,8 @@ SPEC REPOS:
     - Hero
     - SDWebImage
     - SVProgressHUD
-    - SwiftTheme
+    - SwiftMessages
     - SwiftyJSON
-    - TBEmptyDataSet
-    - UICircularProgressRing
 
 EXTERNAL SOURCES:
   BulletinBoard:
@@ -53,11 +49,9 @@ SPEC CHECKSUMS:
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
+  SwiftMessages: da7c981256a65b3e58022d9027a36584cf4eccf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
-  TBEmptyDataSet: eabe80f13fe620156068d4c3e2ce56227042c96a
-  UICircularProgressRing: 5a32c01f54474571b1e66e8fa050c0f83d6d981b
 
-PODFILE CHECKSUM: 2eaf9839915e2795327570a6d9c2b66af36681a5
+PODFILE CHECKSUM: 01bc1a34efd32900407559ab85d20f04a6f743da
 
 COCOAPODS: 1.6.0.beta.1

@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import SwiftMessages
 
 class VideoViewController: UIViewController, ARSCNViewDelegate {
     var videoURL:URL?
@@ -16,6 +17,35 @@ class VideoViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
+        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+        // files in the main bundle first, so you can easily copy them into your project and make changes.
+        let view = MessageView.viewFromNib(layout: .cardView)
+        
+        // Theme message elements with the warning style.
+        view.configureTheme(.info)
+        
+        // Add a drop shadow.
+        view.configureDropShadow()
+        
+        // Set message title, body, and icon. Here, we're overriding the default warning
+        // image with an emoji character.
+        let iconText = ["🔍"].sm_random()!
+        view.configureContent(title: "Busca un QR", body: "Par ver un video, busca el QR del laboratorio", iconText: iconText)
+        
+        // Increase the external margin around the card. In general, the effect of this setting
+        // depends on how the given layout is constrained to the layout margins.
+        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+        // Reduce the corner radius (applicable to layouts featuring rounded corners).
+        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+        
+        var config = SwiftMessages.Config()
+        config.presentationContext = .window(windowLevel: .statusBar)
+        config.duration = .forever
+
+        
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +61,7 @@ class VideoViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         sceneView.session.pause()
+        SwiftMessages.hide()
     }
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {

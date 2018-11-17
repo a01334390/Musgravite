@@ -17,6 +17,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     //Laboratory information
     var labInformation:JSON?
     var selectedElementURL:URL?
+    var panonoImage:UIImage?
     
     //Static Elements
     @IBOutlet weak var locationOutlet: UILabel!
@@ -52,12 +53,34 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     /* Downloads the required data from an URL */
     func getData(_ dataURL: String, _ fileType:String, _ segueIdentifier:String) {
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+            var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            documentsURL.appendPathComponent((URL(string: dataURL)?.lastPathComponent)!)
+            return (documentsURL, [.removePreviousFile])
+        }
         SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
-        Alamofire.download(dataURL).responseData { response in
+        Alamofire.download(dataURL, to: destination).responseData { response in
             SVProgressHUD.dismiss()
             self.selectedElementURL = response.destinationURL
             self.performSegue(withIdentifier: segueIdentifier, sender: self)
         }
+    }
+    
+    func getImage(_ dataURL: String, _ fileType: String, _ segueIdentifier:String) {
+        SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
+        Alamofire.request(dataURL).responseData { (response) in
+            if response.error == nil {
+                if let data = response.data {
+                    SVProgressHUD.dismiss()
+                    self.panonoImage = UIImage(data: data)
+                    self.performSegue(withIdentifier: segueIdentifier, sender: self)
+                }
+            }}
+    }
+    
+    /* Handles what happens to the 3DDome Segue */
+    @IBAction func present3DDome(_ sender: Any) {
+        getImage(labInformation!["panono"].stringValue, "imagen 3D", "ARDomeViewController")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -112,6 +135,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else if segue.identifier == "ModelViewController" {
             if let destination = segue.destination as? ModelViewController {
                 destination.modelURL = selectedElementURL
+            }
+        } else if segue.identifier == "ARDomeViewController" {
+            if let destination = segue.destination as? ARDomeViewController {
+                destination.panonoImage = panonoImage
             }
         } else {
             return

@@ -8,10 +8,8 @@ target 'Musgravite' do
   pod 'SVProgressHUD'
   pod 'Hero'
   pod 'BulletinBoard', :git => 'https://github.com/alexaubry/BulletinBoard', :branch => 'master'
-  pod 'SwiftTheme'
   pod 'Alamofire'
-  pod 'TBEmptyDataSet'
-  pod 'UICircularProgressRing'
+  pod 'SwiftMessages'	  
   pod 'CTPanoramaView'
   pod 'SDWebImage'
   #UTILITIES

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A744F29D3343770827A072C9 /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */; };
+		6DB48BAB7953741B3E7F2B59 /* Pods_Musgravite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F16DEE90140A2158AF08EE /* Pods_Musgravite.framework */; };
 		BD1ABEA6218FC08E007DAFFB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */; };
 		BD25649C2197736C00A1779A /* LaboratorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */; };
 		BD25649E2197738B00A1779A /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25649D2197738B00A1779A /* AboutPageViewController.swift */; };
@@ -40,6 +40,16 @@
 		BD812D3F2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */; };
 		BD812D412198F08A00D723E2 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */; };
 		BDD75E8421993638009DA3AC /* AboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */; };
+		BDF94E57219FD80A004A7666 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF94E56219FD80A004A7666 /* art.scnassets */; };
+		BDF94E5E219FE412004A7666 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF94E5C219FE412004A7666 /* Interface.storyboard */; };
+		BDF94E60219FE414004A7666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF94E5F219FE414004A7666 /* Assets.xcassets */; };
+		BDF94E67219FE414004A7666 /* WMusgravite Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BDF94E66219FE414004A7666 /* WMusgravite Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BDF94E6C219FE414004A7666 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF94E6B219FE414004A7666 /* InterfaceController.swift */; };
+		BDF94E6E219FE414004A7666 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF94E6D219FE414004A7666 /* ExtensionDelegate.swift */; };
+		BDF94E70219FE414004A7666 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF94E6F219FE414004A7666 /* NotificationController.swift */; };
+		BDF94E72219FE414004A7666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF94E71219FE414004A7666 /* ComplicationController.swift */; };
+		BDF94E74219FE415004A7666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF94E73219FE415004A7666 /* Assets.xcassets */; };
+		BDF94E79219FE415004A7666 /* WMusgravite.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BDF94E5A219FE412004A7666 /* WMusgravite.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +67,51 @@
 			remoteGlobalIDString = BD7AC965218E86F900AB4C37;
 			remoteInfo = Musgravite;
 		};
+		BDF94E68219FE414004A7666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7AC95E218E86F900AB4C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF94E65219FE414004A7666;
+			remoteInfo = "WMusgravite Extension";
+		};
+		BDF94E77219FE415004A7666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7AC95E218E86F900AB4C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF94E59219FE412004A7666;
+			remoteInfo = WMusgravite;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BDF94E7F219FE415004A7666 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BDF94E67219FE414004A7666 /* WMusgravite Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF94E81219FE415004A7666 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BDF94E79219FE415004A7666 /* WMusgravite.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
-		46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
-		8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB694A80AE7F223D33694A4 /* Pods-Musgravite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.debug.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.debug.xcconfig"; sourceTree = "<group>"; };
+		128195B5E103C02E6E9DD24D /* Pods-Musgravite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musgravite.release.xcconfig"; path = "Target Support Files/Pods-Musgravite/Pods-Musgravite.release.xcconfig"; sourceTree = "<group>"; };
+		46F16DEE90140A2158AF08EE /* Pods_Musgravite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musgravite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1ABEA5218FC08E007DAFFB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD25649B2197736C00A1779A /* LaboratorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorySearchViewController.swift; sourceTree = "<group>"; };
 		BD25649D2197738B00A1779A /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +150,19 @@
 		BD812D3E2198E7A300D723E2 /* VideoDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD812D402198F08A00D723E2 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDD75E8321993638009DA3AC /* AboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDF94E56219FD80A004A7666 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BDF94E5A219FE412004A7666 /* WMusgravite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMusgravite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF94E5D219FE412004A7666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BDF94E5F219FE414004A7666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF94E61219FE414004A7666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF94E66219FE414004A7666 /* WMusgravite Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WMusgravite Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF94E6B219FE414004A7666 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BDF94E6D219FE414004A7666 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BDF94E6F219FE414004A7666 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BDF94E71219FE414004A7666 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BDF94E73219FE415004A7666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF94E75219FE415004A7666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF94E76219FE415004A7666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A744F29D3343770827A072C9 /* Pods_Musgravite.framework in Frameworks */,
+				6DB48BAB7953741B3E7F2B59 /* Pods_Musgravite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,14 +188,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDF94E63219FE414004A7666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1BC0524B5026B1AAB4B00B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F16DEE90140A2158AF08EE /* Pods_Musgravite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BB84FE3309D6F2DAED0B0CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */,
-				0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */,
+				0EB694A80AE7F223D33694A4 /* Pods-Musgravite.debug.xcconfig */,
+				128195B5E103C02E6E9DD24D /* Pods-Musgravite.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -170,9 +247,11 @@
 				BD7AC968218E86F900AB4C37 /* Musgravite */,
 				BD7AC980218E86FB00AB4C37 /* MusgraviteTests */,
 				BD7AC98B218E86FB00AB4C37 /* MusgraviteUITests */,
+				BDF94E5B219FE412004A7666 /* WMusgravite */,
+				BDF94E6A219FE414004A7666 /* WMusgravite Extension */,
 				BD7AC967218E86F900AB4C37 /* Products */,
 				5BB84FE3309D6F2DAED0B0CD /* Pods */,
-				D51ABFD5FD0FCCE239BA492E /* Frameworks */,
+				3D1BC0524B5026B1AAB4B00B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +261,8 @@
 				BD7AC966218E86F900AB4C37 /* Musgravite.app */,
 				BD7AC97D218E86FB00AB4C37 /* MusgraviteTests.xctest */,
 				BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */,
+				BDF94E5A219FE412004A7666 /* WMusgravite.app */,
+				BDF94E66219FE414004A7666 /* WMusgravite Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +275,7 @@
 				BDC58721218E9A1800E8B95B /* View */,
 				BDC58720218E9A1100E8B95B /* Model */,
 				BD7AC978218E86FB00AB4C37 /* Info.plist */,
+				BDF94E56219FD80A004A7666 /* art.scnassets */,
 			);
 			path = Musgravite;
 			sourceTree = "<group>";
@@ -272,12 +354,28 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		D51ABFD5FD0FCCE239BA492E /* Frameworks */ = {
+		BDF94E5B219FE412004A7666 /* WMusgravite */ = {
 			isa = PBXGroup;
 			children = (
-				8795EAB769D73458BD9DB667 /* Pods_Musgravite.framework */,
+				BDF94E5C219FE412004A7666 /* Interface.storyboard */,
+				BDF94E5F219FE414004A7666 /* Assets.xcassets */,
+				BDF94E61219FE414004A7666 /* Info.plist */,
 			);
-			name = Frameworks;
+			path = WMusgravite;
+			sourceTree = "<group>";
+		};
+		BDF94E6A219FE414004A7666 /* WMusgravite Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BDF94E6B219FE414004A7666 /* InterfaceController.swift */,
+				BDF94E6D219FE414004A7666 /* ExtensionDelegate.swift */,
+				BDF94E6F219FE414004A7666 /* NotificationController.swift */,
+				BDF94E71219FE414004A7666 /* ComplicationController.swift */,
+				BDF94E73219FE415004A7666 /* Assets.xcassets */,
+				BDF94E75219FE415004A7666 /* Info.plist */,
+				BDF94E76219FE415004A7666 /* PushNotificationPayload.apns */,
+			);
+			path = "WMusgravite Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,15 +385,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7AC991218E86FB00AB4C37 /* Build configuration list for PBXNativeTarget "Musgravite" */;
 			buildPhases = (
-				0CA5B5CD6E3653FB5DE4B50C /* [CP] Check Pods Manifest.lock */,
+				2B38445BC343966D84838722 /* [CP] Check Pods Manifest.lock */,
 				BD7AC962218E86F900AB4C37 /* Sources */,
 				BD7AC963218E86F900AB4C37 /* Frameworks */,
 				BD7AC964218E86F900AB4C37 /* Resources */,
-				978B6A434411B2028DE793E6 /* [CP] Embed Pods Frameworks */,
+				A3449158149398CEE980E49F /* [CP] Embed Pods Frameworks */,
+				BDF94E81219FE415004A7666 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BDF94E78219FE415004A7666 /* PBXTargetDependency */,
 			);
 			name = Musgravite;
 			productName = Musgravite;
@@ -338,6 +438,40 @@
 			productReference = BD7AC988218E86FB00AB4C37 /* MusgraviteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BDF94E59219FE412004A7666 /* WMusgravite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF94E80219FE415004A7666 /* Build configuration list for PBXNativeTarget "WMusgravite" */;
+			buildPhases = (
+				BDF94E58219FE412004A7666 /* Resources */,
+				BDF94E7F219FE415004A7666 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF94E69219FE414004A7666 /* PBXTargetDependency */,
+			);
+			name = WMusgravite;
+			productName = WMusgravite;
+			productReference = BDF94E5A219FE412004A7666 /* WMusgravite.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BDF94E65219FE414004A7666 /* WMusgravite Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF94E7E219FE415004A7666 /* Build configuration list for PBXNativeTarget "WMusgravite Extension" */;
+			buildPhases = (
+				BDF94E62219FE414004A7666 /* Sources */,
+				BDF94E63219FE414004A7666 /* Frameworks */,
+				BDF94E64219FE414004A7666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WMusgravite Extension";
+			productName = "WMusgravite Extension";
+			productReference = BDF94E66219FE414004A7666 /* WMusgravite Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,6 +498,12 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = BD7AC965218E86F900AB4C37;
 					};
+					BDF94E59219FE412004A7666 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BDF94E65219FE414004A7666 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = BD7AC961218E86F900AB4C37 /* Build configuration list for PBXProject "Musgravite" */;
@@ -382,6 +522,8 @@
 				BD7AC965218E86F900AB4C37 /* Musgravite */,
 				BD7AC97C218E86FB00AB4C37 /* MusgraviteTests */,
 				BD7AC987218E86FB00AB4C37 /* MusgraviteUITests */,
+				BDF94E59219FE412004A7666 /* WMusgravite */,
+				BDF94E65219FE414004A7666 /* WMusgravite Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7AC977218E86FB00AB4C37 /* LaunchScreen.storyboard in Resources */,
+				BDF94E57219FD80A004A7666 /* art.scnassets in Resources */,
 				BD6E2244219E733B00592AF3 /* Assets.xcassets in Resources */,
 				BD7AC96F218E86F900AB4C37 /* Main.storyboard in Resources */,
 			);
@@ -411,10 +554,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDF94E58219FE412004A7666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF94E60219FE414004A7666 /* Assets.xcassets in Resources */,
+				BDF94E5E219FE412004A7666 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF94E64219FE414004A7666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF94E74219FE415004A7666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CA5B5CD6E3653FB5DE4B50C /* [CP] Check Pods Manifest.lock */ = {
+		2B38445BC343966D84838722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,7 +596,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		978B6A434411B2028DE793E6 /* [CP] Embed Pods Frameworks */ = {
+		A3449158149398CEE980E49F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,10 +611,8 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TBEmptyDataSet/TBEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -466,10 +624,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,6 +685,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDF94E62219FE414004A7666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF94E70219FE414004A7666 /* NotificationController.swift in Sources */,
+				BDF94E72219FE414004A7666 /* ComplicationController.swift in Sources */,
+				BDF94E6E219FE414004A7666 /* ExtensionDelegate.swift in Sources */,
+				BDF94E6C219FE414004A7666 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -541,6 +708,16 @@
 			isa = PBXTargetDependency;
 			target = BD7AC965218E86F900AB4C37 /* Musgravite */;
 			targetProxy = BD7AC989218E86FB00AB4C37 /* PBXContainerItemProxy */;
+		};
+		BDF94E69219FE414004A7666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF94E65219FE414004A7666 /* WMusgravite Extension */;
+			targetProxy = BDF94E68219FE414004A7666 /* PBXContainerItemProxy */;
+		};
+		BDF94E78219FE415004A7666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF94E59219FE412004A7666 /* WMusgravite */;
+			targetProxy = BDF94E77219FE415004A7666 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,6 +736,14 @@
 				BD7AC976218E86FB00AB4C37 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BDF94E5C219FE412004A7666 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF94E5D219FE412004A7666 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -682,7 +867,7 @@
 		};
 		BD7AC992218E86FB00AB4C37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46FD9E6BC10B38D9783F4DA8 /* Pods-Musgravite.debug.xcconfig */;
+			baseConfigurationReference = 0EB694A80AE7F223D33694A4 /* Pods-Musgravite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -701,7 +886,7 @@
 		};
 		BD7AC993218E86FB00AB4C37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0680175DE1C94E9EB68592D5 /* Pods-Musgravite.release.xcconfig */;
+			baseConfigurationReference = 128195B5E103C02E6E9DD24D /* Pods-Musgravite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -800,6 +985,88 @@
 			};
 			name = Release;
 		};
+		BDF94E7A219FE415004A7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				IBSC_MODULE = WMusgravite_Extension;
+				INFOPLIST_FILE = WMusgravite/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		BDF94E7B219FE415004A7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				IBSC_MODULE = WMusgravite_Extension;
+				INFOPLIST_FILE = WMusgravite/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		BDF94E7C219FE415004A7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = "WMusgravite Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		BDF94E7D219FE415004A7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R935X42Z66;
+				INFOPLIST_FILE = "WMusgravite Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -835,6 +1102,24 @@
 			buildConfigurations = (
 				BD7AC998218E86FB00AB4C37 /* Debug */,
 				BD7AC999218E86FB00AB4C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF94E7E219FE415004A7666 /* Build configuration list for PBXNativeTarget "WMusgravite Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF94E7C219FE415004A7666 /* Debug */,
+				BDF94E7D219FE415004A7666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF94E80219FE415004A7666 /* Build configuration list for PBXNativeTarget "WMusgravite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF94E7A219FE415004A7666 /* Debug */,
+				BDF94E7B219FE415004A7666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
