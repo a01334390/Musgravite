@@ -12,13 +12,29 @@ import SDWebImage
 import SVProgressHUD
 import Alamofire
 import SwiftMessages
+import WatchConnectivity
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
     
     //Laboratory information
     var labInformation:JSON?
     var selectedElementURL:URL?
     var panonoImage:UIImage?
+    
+    /* WatchKit */
+    var wcSession:WCSession!
     
     /* Haptic Feeback */
     public let impact = UIImpactFeedbackGenerator()
@@ -40,7 +56,52 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
+        /* WatchKit connectivity */
+        wcSession = WCSession.default
+        wcSession.delegate = self
+        wcSession.activate()
     }
+    @IBAction func sendToWatch(_ sender: Any) {
+        sendLabInformation(labInformation!)
+    }
+    
+    func sendLabInformation(_ json:JSON){
+        do {
+            let data = try json.rawData()
+            wcSession.sendMessageData(data, replyHandler: nil, errorHandler: {error in print(error.localizedDescription)})
+            SwiftMessages.hide()
+            // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+            // files in the main bundle first, so you can easily copy them into your project and make changes.
+            let view = MessageView.viewFromNib(layout: .cardView)
+            
+            // Theme message elements with the warning style.
+            view.configureTheme(.info)
+            
+            // Add a drop shadow.
+            view.configureDropShadow()
+            
+            // Set message title, body, and icon. Here, we're overriding the default warning
+            // image with an emoji character.
+            let iconText = ["⌚"].sm_random()!
+            view.configureContent(title: "Enviado", body: "El laboratorio ha sido enviado al reloj", iconText: iconText)
+            
+            // Increase the external margin around the card. In general, the effect of this setting
+            // depends on how the given layout is constrained to the layout margins.
+            view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+            
+            // Reduce the corner radius (applicable to layouts featuring rounded corners).
+            (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+            var config = SwiftMessages.Config()
+            config.presentationContext = .window(windowLevel: .statusBar)
+            
+            
+            // Show the message.
+            SwiftMessages.show(config: config, view: view)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     /*
      This method presents all data that is static and available w/o parsing
     */
@@ -154,35 +215,4 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             return
         }
     }
-    @IBAction func sendToWMusgravite(_ sender: Any) {
-        notification.notificationOccurred(.success)
-        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
-        // files in the main bundle first, so you can easily copy them into your project and make changes.
-        let view = MessageView.viewFromNib(layout: .cardView)
-        
-        // Theme message elements with the warning style.
-        view.configureTheme(.success)
-        
-        // Add a drop shadow.
-        view.configureDropShadow()
-        
-        // Set message title, body, and icon. Here, we're overriding the default warning
-        // image with an emoji character.
-        let iconText = ["⌚"].sm_random()!
-        view.configureContent(title: "Enviado!", body: "El laboratorio ha sido guardado en el Apple Watch", iconText: iconText)
-        
-        // Increase the external margin around the card. In general, the effect of this setting
-        // depends on how the given layout is constrained to the layout margins.
-        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-        
-        // Reduce the corner radius (applicable to layouts featuring rounded corners).
-        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
-        
-        var config = SwiftMessages.Config()
-        config.presentationContext = .window(windowLevel: .statusBar)
-        
-        // Show the message.
-        SwiftMessages.show(config: config, view: view)
-    }
-    
 }

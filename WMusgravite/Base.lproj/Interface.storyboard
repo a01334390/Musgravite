@@ -14,8 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WMusgravite" customModuleProvider="target">
                     <items>
-                        <label width="89" alignment="left" text="Hola" id="Vpf-sD-Rek"/>
-                        <label width="136" alignment="left" text="Luna" id="919-Er-7qO">
+                        <group width="1" alignment="left" id="IS3-58-JUk">
+                            <items>
+                                <label alignment="left" verticalAlignment="bottom" text="Hola" id="0lv-PA-mLS"/>
+                                <imageView width="59" height="59" alignment="right" contentMode="scaleAspectFill" animationDuration="1" id="2lE-CY-q95"/>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Usuario" id="919-Er-7qO">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
                         <group width="1" alignment="left" id="UCO-8Z-gGf">
@@ -25,16 +30,35 @@
                                         <segue destination="ghP-i2-CQY" kind="push" id="PsO-un-crU"/>
                                     </connections>
                                 </button>
-                                <button width="82" height="100" alignment="left" title="Ver guardado" id="gtg-hc-Ygw"/>
+                                <button width="82" height="100" alignment="left" title="Recibir" id="gtg-hc-Ygw">
+                                    <connections>
+                                        <segue destination="pvv-aD-lBj" kind="push" id="aJb-BC-kBx"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="avatarImageOutlet" destination="2lE-CY-q95" id="DL4-iS-A71"/>
                         <outlet property="nameOutlet" destination="919-Er-7qO" id="hn4-Bq-V5g"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="467.60493827160496" y="82.411167512690355"/>
+            <point key="canvasLocation" x="467.60493827160496" y="100.53299492385786"/>
+        </scene>
+        <!--Wait Interface Controller-->
+        <scene sceneID="L9w-w6-1Gm">
+            <objects>
+                <controller id="pvv-aD-lBj" customClass="WaitInterfaceController" customModule="WMusgravite_Extension">
+                    <items>
+                        <label alignment="left" text="Envía un laboratorio" numberOfLines="3" id="En6-uW-Pz4">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <label alignment="left" text="Envía un laboratorio para ver aquí" numberOfLines="2" id="2WF-Wz-I1j"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="709" y="-187"/>
         </scene>
         <!--InterfaceController-->
         <scene sceneID="OXp-B6-76m">
@@ -79,7 +103,7 @@
                                 <tableRow identifier="LabRow" id="L18-uh-TMT" customClass="LabRow" customModule="WMusgravite_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" radius="7" id="Ipl-e5-Zd3">
                                         <items>
-                                            <label width="1" alignment="left" text="Laboratorio de captura de movimiento" numberOfLines="3" id="gUc-nR-dyX"/>
+                                            <label alignment="left" text="Laboratorio de captura de movimiento" numberOfLines="3" id="gUc-nR-dyX"/>
                                         </items>
                                     </group>
                                     <connections>

@@ -45,7 +45,7 @@ class DetailInterfaceController: WKInterfaceController {
     func setupStaticElements(_ lab:LabData){
         bigtitleOutlet.setText(lab.nombre)
         labLocationOutlet.setText(lab.ubicacion)
-        floorLocationOutlet.setText(lab.piso)
+        floorLocationOutlet.setText("Piso \(lab.piso)")
         bigImageOutlet.setImageWithUrl(url: lab.posterImage)
     }
     

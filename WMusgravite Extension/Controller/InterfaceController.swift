@@ -11,10 +11,15 @@ import Foundation
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
     
     /* UI Elements */
+    @IBOutlet weak var avatarImageOutlet: WKInterfaceImage!
     @IBOutlet weak var nameOutlet: WKInterfaceLabel!
-    
+    var wcSession: WCSession!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -25,11 +30,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
+            wcSession = WCSession.default
+            wcSession.delegate = self
+            wcSession.activate()
+        
     }
     
     override func didDeactivate() {
@@ -37,16 +41,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.didDeactivate()
     }
     
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        nameOutlet.setText(message["message"] as? String)
     }
     
     func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
-        WKInterfaceDevice().play(.notification)
-        var json:JSON?
-        do{
-            json = try! JSON(data: messageData)
-        }
-        print(json!)
+        avatarImageOutlet.setImage(UIImage(data: messageData))
     }
 
 }
