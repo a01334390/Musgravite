@@ -533,6 +533,9 @@
                                                 <state key="normal" title="3D">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="present3DDome:" destination="uOn-dU-ibC" eventType="touchUpInside" id="8fb-iG-WxB"/>
+                                                </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Laboratorio de captura de movimiento" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWc-yO-EJY">
                                                 <rect key="frame" x="7" y="227" width="305" height="44"/>
@@ -551,6 +554,9 @@
                                                 <state key="normal">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sendToWatch:" destination="uOn-dU-ibC" eventType="touchUpInside" id="djf-NV-sZa"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-hS-PJt">
                                                 <rect key="frame" x="8" y="313" width="359" height="83"/>
@@ -866,6 +872,7 @@
                         <outlet property="videoCollectionView" destination="Ijw-yQ-9WS" id="YAD-K9-24U"/>
                         <segue destination="SON-WU-SIL" kind="show" identifier="VideoViewController" id="hYp-ZW-713"/>
                         <segue destination="LvW-hC-men" kind="show" identifier="ModelViewController" id="uV5-Eq-h3m"/>
+                        <segue destination="s8X-83-4W3" kind="show" identifier="ARDomeViewController" id="gbv-DA-A8p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyE-tM-3lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -880,16 +887,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="att-i5-Tmd">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="att-i5-Tmd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="att-i5-Tmd" firstAttribute="top" secondItem="kU1-4a-oRj" secondAttribute="top" id="7no-zV-OQd"/>
-                            <constraint firstItem="kU1-4a-oRj" firstAttribute="trailing" secondItem="att-i5-Tmd" secondAttribute="trailing" id="HGK-FI-gHq"/>
-                            <constraint firstItem="kU1-4a-oRj" firstAttribute="bottom" secondItem="att-i5-Tmd" secondAttribute="bottom" id="cgp-fJ-lrC"/>
-                            <constraint firstItem="att-i5-Tmd" firstAttribute="leading" secondItem="kU1-4a-oRj" secondAttribute="leading" id="zB8-tF-9Qb"/>
+                            <constraint firstItem="att-i5-Tmd" firstAttribute="width" secondItem="d0Y-Vk-sJ8" secondAttribute="width" id="EKb-sj-Qai"/>
+                            <constraint firstItem="att-i5-Tmd" firstAttribute="height" secondItem="d0Y-Vk-sJ8" secondAttribute="height" id="JjC-Gr-MPj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kU1-4a-oRj"/>
                     </view>
@@ -899,7 +904,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-c6-lk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4212" y="554"/>
+            <point key="canvasLocation" x="4212" y="553.44827586206895"/>
         </scene>
         <!--Model View Controller-->
         <scene sceneID="f0b-2a-4SJ">
@@ -909,8 +914,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZd-L4-lOp">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZd-L4-lOp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="eHQ-6i-LT1" appends="YES" id="UOa-Gf-cL3"/>
@@ -920,10 +925,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EZd-L4-lOp" firstAttribute="top" secondItem="WVe-ik-dgU" secondAttribute="top" id="Bfj-Pl-RmO"/>
-                            <constraint firstItem="WVe-ik-dgU" firstAttribute="trailing" secondItem="EZd-L4-lOp" secondAttribute="trailing" id="DUF-U3-TyQ"/>
-                            <constraint firstItem="EZd-L4-lOp" firstAttribute="leading" secondItem="WVe-ik-dgU" secondAttribute="leading" id="R1v-xo-gfS"/>
-                            <constraint firstItem="WVe-ik-dgU" firstAttribute="bottom" secondItem="EZd-L4-lOp" secondAttribute="bottom" id="iPv-Ex-geq"/>
+                            <constraint firstItem="EZd-L4-lOp" firstAttribute="height" secondItem="RzP-2u-xr2" secondAttribute="height" id="IYy-Xc-LCA"/>
+                            <constraint firstItem="EZd-L4-lOp" firstAttribute="width" secondItem="RzP-2u-xr2" secondAttribute="width" id="RcS-yS-5sY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WVe-ik-dgU"/>
                     </view>
@@ -943,7 +946,34 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4906" y="554"/>
+            <point key="canvasLocation" x="4904.8000000000002" y="553.44827586206895"/>
+        </scene>
+        <!--Dome View Controller-->
+        <scene sceneID="6Y5-6y-btE">
+            <objects>
+                <viewController id="s8X-83-4W3" customClass="ARDomeViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbe-lg-0po">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKF-Um-4vy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WKF-Um-4vy" firstAttribute="height" secondItem="kbe-lg-0po" secondAttribute="height" id="PVZ-Za-7e3"/>
+                            <constraint firstItem="WKF-Um-4vy" firstAttribute="width" secondItem="kbe-lg-0po" secondAttribute="width" id="V0r-fb-Wz6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0B3-W7-Vap"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="WKF-Um-4vy" id="Myo-hZ-S07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmC-B0-oux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5560.8000000000002" y="551.97044334975374"/>
         </scene>
         <!--User Saved Laboratories View Controller-->
         <scene sceneID="qER-Nb-BYh">

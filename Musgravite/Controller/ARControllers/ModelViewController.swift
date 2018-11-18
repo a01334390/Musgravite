@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import SwiftMessages
 
 class ModelViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
@@ -21,6 +22,34 @@ class ModelViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
+        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+        // files in the main bundle first, so you can easily copy them into your project and make changes.
+        let view = MessageView.viewFromNib(layout: .cardView)
+        
+        // Theme message elements with the warning style.
+        view.configureTheme(.info)
+        
+        // Add a drop shadow.
+        view.configureDropShadow()
+        
+        // Set message title, body, and icon. Here, we're overriding the default warning
+        // image with an emoji character.
+        let iconText = ["🔍"].sm_random()!
+        view.configureContent(title: "Busca un plano", body: "Par ver un modelo, busca un plano", iconText: iconText)
+        
+        // Increase the external margin around the card. In general, the effect of this setting
+        // depends on how the given layout is constrained to the layout margins.
+        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+        // Reduce the corner radius (applicable to layouts featuring rounded corners).
+        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+        var config = SwiftMessages.Config()
+        config.presentationContext = .window(windowLevel: .statusBar)
+        config.duration = .forever
+        
+        
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
     }
     
     /* Scale a model by pinching */
@@ -82,11 +111,40 @@ class ModelViewController: UIViewController, ARSCNViewDelegate {
     /* Render the plane */
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if anchor is ARPlaneAnchor {
-            print("plane detected")
+            SwiftMessages.hide()
+            // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+            // files in the main bundle first, so you can easily copy them into your project and make changes.
+            let view = MessageView.viewFromNib(layout: .cardView)
+            
+            // Theme message elements with the warning style.
+            view.configureTheme(.info)
+            
+            // Add a drop shadow.
+            view.configureDropShadow()
+            
+            // Set message title, body, and icon. Here, we're overriding the default warning
+            // image with an emoji character.
+            let iconText = ["🙌"].sm_random()!
+            view.configureContent(title: "Plano encontrado", body: "Dale un tap a la pantalla para ver el modelo", iconText: iconText)
+            
+            // Increase the external margin around the card. In general, the effect of this setting
+            // depends on how the given layout is constrained to the layout margins.
+            view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+            
+            // Reduce the corner radius (applicable to layouts featuring rounded corners).
+            (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+            var config = SwiftMessages.Config()
+            config.presentationContext = .window(windowLevel: .statusBar)
+            
+            
+            // Show the message.
+            SwiftMessages.show(config: config, view: view)
+            
+            /* Stop showing? */
             let planeAnchor = anchor as! ARPlaneAnchor
             let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
             let gridMaterial = SCNMaterial()
-            gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
+            gridMaterial.diffuse.contents = UIImage(named: "Assets.xcassets/grid.png")
             plane.materials = [gridMaterial]
             let planeNode = SCNNode()
             planeNode.geometry = plane
@@ -103,5 +161,6 @@ class ModelViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
         sceneView.session.pause()
+        SwiftMessages.hide()
     }
 }

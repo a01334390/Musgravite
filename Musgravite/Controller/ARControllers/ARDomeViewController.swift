@@ -9,12 +9,13 @@
 import UIKit
 import SceneKit
 import ARKit
+import SwiftMessages
 
 class ARDomeViewController: UIViewController, ARSCNViewDelegate {
-    var panonoImageURL:URL?
+    var panonoImage:UIImage?
+    
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
-    @IBOutlet weak var planeDetected: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,35 @@ class ARDomeViewController: UIViewController, ARSCNViewDelegate {
         //administrador de gestos para identificar el tap sobre el plano horizontal
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandler))
         self.sceneView.addGestureRecognizer(tap)
-        planeDetected.isHidden = true
+        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+        // files in the main bundle first, so you can easily copy them into your project and make changes.
+        let view = MessageView.viewFromNib(layout: .cardView)
+        
+        // Theme message elements with the warning style.
+        view.configureTheme(.info)
+        
+        // Add a drop shadow.
+        view.configureDropShadow()
+        
+        // Set message title, body, and icon. Here, we're overriding the default warning
+        // image with an emoji character.
+        let iconText = ["🔍"].sm_random()!
+        view.configureContent(title: "Busca un plano", body: "Para ver el laboratorio, busca un terreno plano", iconText: iconText)
+        
+        // Increase the external margin around the card. In general, the effect of this setting
+        // depends on how the given layout is constrained to the layout margins.
+        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+        // Reduce the corner radius (applicable to layouts featuring rounded corners).
+        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+        
+        var config = SwiftMessages.Config()
+        config.presentationContext = .window(windowLevel: .statusBar)
+        config.duration = .forever
+        
+        
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
     }
     
     @objc func tapHandler(sender: UITapGestureRecognizer){
@@ -36,7 +65,6 @@ class ARDomeViewController: UIViewController, ARSCNViewDelegate {
         //obtener los resultados del tap sobre el plano horizontal
         let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
         if !hitTestResult.isEmpty{
-            //cargar la escena
             self.addPortal(hitTestResult: hitTestResult.first!)
         }
         else{
@@ -44,25 +72,14 @@ class ARDomeViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    private func load(fileURL: URL) -> UIImage? {
-        do {
-            let imageData = try Data(contentsOf: fileURL)
-            return UIImage(data: imageData)
-        } catch {
-            print("Error loading image : \(error)")
-        }
-        return nil
-    }
-    
     //cargar el portal
-    func addPortal(hitTestResult:ARHitTestResult)
-    {
+    func addPortal(hitTestResult:ARHitTestResult){
         let portalScene = SCNScene(named:"art.scnassets/Portal.scn")
         let portalNode = portalScene?.rootNode.childNode(withName: "Portal", recursively: false)
         portalNode?.geometry?.firstMaterial?.diffuse.contents = UIColor.white
         portalNode?.geometry?.firstMaterial?.transparency = 0.00001
         let sphericalNode = portalNode?.childNode(withName: "sphere", recursively: false)
-        sphericalNode?.geometry?.firstMaterial?.diffuse.contents = load(fileURL: panonoImageURL!)
+        sphericalNode?.geometry?.firstMaterial?.diffuse.contents = panonoImage
         //convertir las coordenadas del rayo del tap a coordenadas del mundo real
         let transform = hitTestResult.worldTransform
         let planeXposition = transform.columns.3.x
@@ -75,12 +92,34 @@ class ARDomeViewController: UIViewController, ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard anchor is ARPlaneAnchor else {return} //se agrego un plano
-        //ejecución asincrona en donde se modifica la etiqueta de plano detectado
-        DispatchQueue.main.async {
-            self.planeDetected.isHidden = false
-            print("Plano detectado")
-        }
-        //espera 3 segundos antes de desaparecer
-        DispatchQueue.main.asyncAfter(deadline: .now()+3){self.planeDetected.isHidden = true}
+        SwiftMessages.hide()
+        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+        // files in the main bundle first, so you can easily copy them into your project and make changes.
+        let view = MessageView.viewFromNib(layout: .cardView)
+        
+        // Theme message elements with the warning style.
+        view.configureTheme(.info)
+        
+        // Add a drop shadow.
+        view.configureDropShadow()
+        
+        // Set message title, body, and icon. Here, we're overriding the default warning
+        // image with an emoji character.
+        let iconText = ["🙌"].sm_random()!
+        view.configureContent(title: "Plano encontrado", body: "Dale un tap a la pantalla para ver el laboratorio", iconText: iconText)
+        
+        // Increase the external margin around the card. In general, the effect of this setting
+        // depends on how the given layout is constrained to the layout margins.
+        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+        // Reduce the corner radius (applicable to layouts featuring rounded corners).
+        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+        var config = SwiftMessages.Config()
+        config.presentationContext = .window(windowLevel: .statusBar)
+        
+        
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
+        
     }
 }

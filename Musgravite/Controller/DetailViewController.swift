@@ -11,12 +11,35 @@ import SwiftyJSON
 import SDWebImage
 import SVProgressHUD
 import Alamofire
+import SwiftMessages
+import WatchConnectivity
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
     
     //Laboratory information
     var labInformation:JSON?
     var selectedElementURL:URL?
+    var panonoImage:UIImage?
+    
+    /* WatchKit */
+    var wcSession:WCSession!
+    
+    /* Haptic Feeback */
+    public let impact = UIImpactFeedbackGenerator()
+    public let notification = UINotificationFeedbackGenerator()
+    public let selection = UISelectionFeedbackGenerator()
     
     //Static Elements
     @IBOutlet weak var locationOutlet: UILabel!
@@ -33,7 +56,52 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
+        /* WatchKit connectivity */
+        wcSession = WCSession.default
+        wcSession.delegate = self
+        wcSession.activate()
     }
+    @IBAction func sendToWatch(_ sender: Any) {
+        sendLabInformation(labInformation!)
+    }
+    
+    func sendLabInformation(_ json:JSON){
+        do {
+            let data = try json.rawData()
+            wcSession.sendMessageData(data, replyHandler: nil, errorHandler: {error in print(error.localizedDescription)})
+            SwiftMessages.hide()
+            // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+            // files in the main bundle first, so you can easily copy them into your project and make changes.
+            let view = MessageView.viewFromNib(layout: .cardView)
+            
+            // Theme message elements with the warning style.
+            view.configureTheme(.info)
+            
+            // Add a drop shadow.
+            view.configureDropShadow()
+            
+            // Set message title, body, and icon. Here, we're overriding the default warning
+            // image with an emoji character.
+            let iconText = ["⌚"].sm_random()!
+            view.configureContent(title: "Enviado", body: "El laboratorio ha sido enviado al reloj", iconText: iconText)
+            
+            // Increase the external margin around the card. In general, the effect of this setting
+            // depends on how the given layout is constrained to the layout margins.
+            view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+            
+            // Reduce the corner radius (applicable to layouts featuring rounded corners).
+            (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+            var config = SwiftMessages.Config()
+            config.presentationContext = .window(windowLevel: .statusBar)
+            
+            
+            // Show the message.
+            SwiftMessages.show(config: config, view: view)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     /*
      This method presents all data that is static and available w/o parsing
     */
@@ -52,12 +120,37 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     /* Downloads the required data from an URL */
     func getData(_ dataURL: String, _ fileType:String, _ segueIdentifier:String) {
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+            var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            documentsURL.appendPathComponent((URL(string: dataURL)?.lastPathComponent)!)
+            return (documentsURL, [.removePreviousFile])
+        }
         SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
-        Alamofire.download(dataURL).responseData { response in
+        Alamofire.download(dataURL, to: destination).responseData { response in
             SVProgressHUD.dismiss()
             self.selectedElementURL = response.destinationURL
+            self.selection.selectionChanged()
             self.performSegue(withIdentifier: segueIdentifier, sender: self)
         }
+    }
+    
+    func getImage(_ dataURL: String, _ fileType: String, _ segueIdentifier:String) {
+        SVProgressHUD.show(withStatus: "Descargando \(fileType)...")
+        Alamofire.request(dataURL).responseData { (response) in
+            if response.error == nil {
+                if let data = response.data {
+                    SVProgressHUD.dismiss()
+                    self.panonoImage = UIImage(data: data)
+                    self.selection.selectionChanged()
+                    self.performSegue(withIdentifier: segueIdentifier, sender: self)
+                }
+            }}
+        
+    }
+    
+    /* Handles what happens to the 3DDome Segue */
+    @IBAction func present3DDome(_ sender: Any) {
+        getImage(labInformation!["panono"].stringValue, "imagen 3D", "ARDomeViewController")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -102,6 +195,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else {
             return
         }
+        selection.selectionChanged()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -112,6 +206,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else if segue.identifier == "ModelViewController" {
             if let destination = segue.destination as? ModelViewController {
                 destination.modelURL = selectedElementURL
+            }
+        } else if segue.identifier == "ARDomeViewController" {
+            if let destination = segue.destination as? ARDomeViewController {
+                destination.panonoImage = panonoImage
             }
         } else {
             return

@@ -11,6 +11,7 @@ import BLTNBoard
 import CoreLocation
 import SVProgressHUD
 import Hero
+import WatchConnectivity
 
 /**
  This is an extension to create round images for avatar and what not
@@ -23,7 +24,19 @@ extension UIImageView {
     }
 }
 
-class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource{
+class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
     /* Main Menu Cards */
     let mainMenu = MainMenuCards()
     /* Bulletin board */
@@ -42,7 +55,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     @IBOutlet weak var userAvatarImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    
+    /* Watch Connectivity */
+    var wcSession:WCSession!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +66,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         self.view.hero.isEnabled = true
         self.view.hero.id = "ironman"
         self.navigationController?.isNavigationBarHidden = true
-        
+        /* WatchKit connectivity */
+        wcSession = WCSession.default
+        wcSession.delegate = self
+        wcSession.activate()
+    }
+    
+    func sendMessageToWatch(_ text:String){
+        var message = ["message":text]
+        wcSession.sendMessage(message, replyHandler: nil, errorHandler: {error in print(error.localizedDescription)})
+    }
+    
+    func sendAvatarImageToWatch(_ image:UIImage){
+        let data:Data = image.pngData()!
+        wcSession.sendMessageData(data, replyHandler: nil, errorHandler: {error in print(error.localizedDescription)})
     }
     /**
      It returns the current date in the desired language
@@ -98,7 +125,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
             let cdIResult = UtilityFunctions().getUsersAvatar()
             userAvatarImage.image = cdIResult
             userAvatarImage.setRounded()
+            sendMessageToWatch(cdResult)
+            sendAvatarImageToWatch(cdIResult)
         }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
