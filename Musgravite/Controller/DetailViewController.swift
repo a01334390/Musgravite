@@ -11,10 +11,9 @@ import SwiftyJSON
 import SDWebImage
 import SVProgressHUD
 import Alamofire
-import WatchConnectivity
 import SwiftMessages
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     //Laboratory information
     var labInformation:JSON?
@@ -41,11 +40,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
-        if(WCSession.isSupported()){
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
     }
     /*
      This method presents all data that is static and available w/o parsing
@@ -161,7 +155,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     @IBAction func sendToWMusgravite(_ sender: Any) {
-        sendWatchMessage(labInformation!)
         notification.notificationOccurred(.success)
         // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
         // files in the main bundle first, so you can easily copy them into your project and make changes.
@@ -190,40 +183,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         // Show the message.
         SwiftMessages.show(config: config, view: view)
-    }
-    
-    /* Watch Connectivity */
-    var lastMessage: CFAbsoluteTime = 0
-    
-    func sendWatchMessage(_ lab:JSON) {
-        let currentTime = CFAbsoluteTimeGetCurrent()
-        if lastMessage + 0.5 > currentTime {
-            return
-        }
-        if(WCSession.default.isReachable && WCSession.default.isPaired){
-            var data:Data?
-            do {
-                data = try JSONSerialization.data(withJSONObject: labInformation!, options: JSONSerialization.WritingOptions.prettyPrinted)
-            } catch let myJSONError {
-                print(myJSONError)
-            }
-            
-            WCSession.default.sendMessageData(data!, replyHandler: nil)
-        }
-        
-        lastMessage = CFAbsoluteTimeGetCurrent()
-    }
-    
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
     }
     
 }
