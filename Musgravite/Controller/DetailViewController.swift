@@ -11,13 +11,20 @@ import SwiftyJSON
 import SDWebImage
 import SVProgressHUD
 import Alamofire
+import WatchConnectivity
+import SwiftMessages
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
     
     //Laboratory information
     var labInformation:JSON?
     var selectedElementURL:URL?
     var panonoImage:UIImage?
+    
+    /* Haptic Feeback */
+    public let impact = UIImpactFeedbackGenerator()
+    public let notification = UINotificationFeedbackGenerator()
+    public let selection = UISelectionFeedbackGenerator()
     
     //Static Elements
     @IBOutlet weak var locationOutlet: UILabel!
@@ -34,6 +41,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
+        if(WCSession.isSupported()){
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
     }
     /*
      This method presents all data that is static and available w/o parsing
@@ -62,6 +74,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         Alamofire.download(dataURL, to: destination).responseData { response in
             SVProgressHUD.dismiss()
             self.selectedElementURL = response.destinationURL
+            self.selection.selectionChanged()
             self.performSegue(withIdentifier: segueIdentifier, sender: self)
         }
     }
@@ -73,9 +86,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 if let data = response.data {
                     SVProgressHUD.dismiss()
                     self.panonoImage = UIImage(data: data)
+                    self.selection.selectionChanged()
                     self.performSegue(withIdentifier: segueIdentifier, sender: self)
                 }
             }}
+        
     }
     
     /* Handles what happens to the 3DDome Segue */
@@ -125,6 +140,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else {
             return
         }
+        selection.selectionChanged()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -144,4 +160,70 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             return
         }
     }
+    @IBAction func sendToWMusgravite(_ sender: Any) {
+        sendWatchMessage(labInformation!)
+        notification.notificationOccurred(.success)
+        // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
+        // files in the main bundle first, so you can easily copy them into your project and make changes.
+        let view = MessageView.viewFromNib(layout: .cardView)
+        
+        // Theme message elements with the warning style.
+        view.configureTheme(.success)
+        
+        // Add a drop shadow.
+        view.configureDropShadow()
+        
+        // Set message title, body, and icon. Here, we're overriding the default warning
+        // image with an emoji character.
+        let iconText = ["⌚"].sm_random()!
+        view.configureContent(title: "Enviado!", body: "El laboratorio ha sido guardado en el Apple Watch", iconText: iconText)
+        
+        // Increase the external margin around the card. In general, the effect of this setting
+        // depends on how the given layout is constrained to the layout margins.
+        view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+        // Reduce the corner radius (applicable to layouts featuring rounded corners).
+        (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
+        
+        var config = SwiftMessages.Config()
+        config.presentationContext = .window(windowLevel: .statusBar)
+        
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
+    }
+    
+    /* Watch Connectivity */
+    var lastMessage: CFAbsoluteTime = 0
+    
+    func sendWatchMessage(_ lab:JSON) {
+        let currentTime = CFAbsoluteTimeGetCurrent()
+        if lastMessage + 0.5 > currentTime {
+            return
+        }
+        if(WCSession.default.isReachable && WCSession.default.isPaired){
+            var data:Data?
+            do {
+                data = try JSONSerialization.data(withJSONObject: labInformation!, options: JSONSerialization.WritingOptions.prettyPrinted)
+            } catch let myJSONError {
+                print(myJSONError)
+            }
+            
+            WCSession.default.sendMessageData(data!, replyHandler: nil)
+        }
+        
+        lastMessage = CFAbsoluteTimeGetCurrent()
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
 }

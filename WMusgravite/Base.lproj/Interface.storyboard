@@ -1,16 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WMusgravite" customModuleProvider="target">
+                    <items>
+                        <label width="89" alignment="left" text="Hola" id="Vpf-sD-Rek"/>
+                        <label width="136" alignment="left" text="Luna" id="919-Er-7qO">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <group width="1" alignment="left" id="UCO-8Z-gGf">
+                            <items>
+                                <button width="77" height="100" alignment="left" title="Ver todos" id="KcM-t6-H3e">
+                                    <connections>
+                                        <segue destination="ghP-i2-CQY" kind="push" id="PsO-un-crU"/>
+                                    </connections>
+                                </button>
+                                <button width="82" height="100" alignment="left" title="Ver guardado" id="gtg-hc-Ygw"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="nameOutlet" destination="919-Er-7qO" id="hn4-Bq-V5g"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="467.60493827160496" y="82.411167512690355"/>
+        </scene>
+        <!--InterfaceController-->
+        <scene sceneID="OXp-B6-76m">
+            <objects>
+                <controller identifier="InterfaceController" id="ghP-i2-CQY" customClass="FloorInterfaceController" customModule="WMusgravite_Extension">
+                    <items>
+                        <label alignment="left" text="Pisos" id="O1B-iP-4kV">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <table alignment="left" id="A2L-vh-hvZ">
+                            <items>
+                                <tableRow identifier="FloorRow" id="inR-BX-Mw6" customClass="FloorRow" customModule="WMusgravite_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="5Uq-Jr-QLF" customClass="Floor">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="uYY-4k-rGA"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="floorName" destination="uYY-4k-rGA" id="4PF-El-IR7"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="A2L-vh-hvZ" id="sbD-O5-97P"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="705.18518518518522" y="81.548223350253807"/>
+        </scene>
+        <!--LabInterfaceController-->
+        <scene sceneID="zH5-KL-a6k">
+            <objects>
+                <controller identifier="LabInterfaceController" id="UGf-IK-v6e" customClass="LabInterfaceController" customModule="WMusgravite_Extension">
+                    <items>
+                        <label alignment="left" text="Laboratorios" id="pdx-09-yr6">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <table alignment="left" id="QFF-Nt-8fQ">
+                            <items>
+                                <tableRow identifier="LabRow" id="L18-uh-TMT" customClass="LabRow" customModule="WMusgravite_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" radius="7" id="Ipl-e5-Zd3">
+                                        <items>
+                                            <label width="1" alignment="left" text="Laboratorio de captura de movimiento" numberOfLines="3" id="gUc-nR-dyX"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labName" destination="gUc-nR-dyX" id="Frx-s3-Ukb"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="QFF-Nt-8fQ" id="lHl-jl-zHj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="943.60493827160496" y="81.548223350253807"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="APB-Is-lH6">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="jQp-NM-l3N" customClass="DetailInterfaceController" customModule="WMusgravite_Extension">
+                    <items>
+                        <group width="1" alignment="left" animationDuration="1" radius="7" id="Z4C-Hs-wTe">
+                            <items>
+                                <label width="1" alignment="left" text="Laboratorio de captura de movimiento" numberOfLines="4" id="esy-fm-pgN">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="CDTC - 1029" id="qct-tH-dKB">
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label alignment="left" text="Piso 2" id="Kob-N1-tGk">
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="EFA-xY-6qP"/>
+                        <imageView height="150" alignment="left" image="img3" contentMode="scaleAspectFill" animationDuration="1" id="dBt-do-VSI"/>
+                    </items>
+                    <menu key="menu" id="coy-y2-mNJ">
+                        <items>
+                            <menuItem title="Regresar" icon="maybe" id="k8l-Tp-ELG">
+                                <connections>
+                                    <action selector="onMenuBackTap" destination="jQp-NM-l3N" id="yOE-AQ-zEU"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="bigImageOutlet" destination="dBt-do-VSI" id="wbR-GC-OSs"/>
+                        <outlet property="bigtitleOutlet" destination="esy-fm-pgN" id="i6A-Ep-8Cq"/>
+                        <outlet property="floorLocationOutlet" destination="Kob-N1-tGk" id="KoY-ey-zxb"/>
+                        <outlet property="labLocationOutlet" destination="qct-tH-dKB" id="NiO-du-74r"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1178.6666666666667" y="111.75126903553299"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,14 +156,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WMusgravite" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WMusgravite" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>

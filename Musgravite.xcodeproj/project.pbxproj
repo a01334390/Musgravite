@@ -22,6 +22,16 @@
 		BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564B12197F07F00A1779A /* DetailViewController.swift */; };
 		BD3AE4B6219E5B850005FB16 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */; };
 		BD3AE4B9219E5C4B0005FB16 /* ARDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */; };
+		BD58704121A1DED8004FCB1C /* LabInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704021A1DED8004FCB1C /* LabInterfaceController.swift */; };
+		BD58704321A1DEE8004FCB1C /* FloorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704221A1DEE8004FCB1C /* FloorInterfaceController.swift */; };
+		BD58704521A1DEF8004FCB1C /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704421A1DEF8004FCB1C /* DetailInterfaceController.swift */; };
+		BD58704721A1E4E8004FCB1C /* FloorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704621A1E4E8004FCB1C /* FloorRow.swift */; };
+		BD58704921A1E591004FCB1C /* LabRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704821A1E591004FCB1C /* LabRow.swift */; };
+		BD58704B21A1EA5B004FCB1C /* FloorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704A21A1EA5B004FCB1C /* FloorData.swift */; };
+		BD58704F21A1EB59004FCB1C /* lab.json in Resources */ = {isa = PBXBuildFile; fileRef = BD58704E21A1EB59004FCB1C /* lab.json */; };
+		BD58705121A1EB6A004FCB1C /* floor.json in Resources */ = {isa = PBXBuildFile; fileRef = BD58705021A1EB6A004FCB1C /* floor.json */; };
+		BD58705321A1EC9D004FCB1C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58705221A1EC9D004FCB1C /* SwiftyJSON.swift */; };
+		BD58705521A1F00B004FCB1C /* LabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58705421A1F00B004FCB1C /* LabData.swift */; };
 		BD6E2244219E733B00592AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6E2243219E733800592AF3 /* Assets.xcassets */; };
 		BD6E2246219E929800592AF3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E2245219E929800592AF3 /* VideoViewController.swift */; };
 		BD6E2248219E92A000592AF3 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E2247219E92A000592AF3 /* ModelViewController.swift */; };
@@ -126,6 +136,17 @@
 		BD2564B12197F07F00A1779A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDomeViewController.swift; sourceTree = "<group>"; };
+		BD58703F21A1D1F1004FCB1C /* WMusgravite Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WMusgravite Extension.entitlements"; sourceTree = "<group>"; };
+		BD58704021A1DED8004FCB1C /* LabInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabInterfaceController.swift; sourceTree = "<group>"; };
+		BD58704221A1DEE8004FCB1C /* FloorInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorInterfaceController.swift; sourceTree = "<group>"; };
+		BD58704421A1DEF8004FCB1C /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		BD58704621A1E4E8004FCB1C /* FloorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorRow.swift; sourceTree = "<group>"; };
+		BD58704821A1E591004FCB1C /* LabRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabRow.swift; sourceTree = "<group>"; };
+		BD58704A21A1EA5B004FCB1C /* FloorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorData.swift; sourceTree = "<group>"; };
+		BD58704E21A1EB59004FCB1C /* lab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lab.json; sourceTree = "<group>"; };
+		BD58705021A1EB6A004FCB1C /* floor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = floor.json; sourceTree = "<group>"; };
+		BD58705221A1EC9D004FCB1C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BD58705421A1F00B004FCB1C /* LabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabData.swift; sourceTree = "<group>"; };
 		BD6E2243219E733800592AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6E2245219E929800592AF3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		BD6E2247219E92A000592AF3 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
@@ -367,6 +388,8 @@
 		BDF94E6A219FE414004A7666 /* WMusgravite Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BD58705221A1EC9D004FCB1C /* SwiftyJSON.swift */,
+				BD58703F21A1D1F1004FCB1C /* WMusgravite Extension.entitlements */,
 				BDF94E6B219FE414004A7666 /* InterfaceController.swift */,
 				BDF94E6D219FE414004A7666 /* ExtensionDelegate.swift */,
 				BDF94E6F219FE414004A7666 /* NotificationController.swift */,
@@ -374,6 +397,15 @@
 				BDF94E73219FE415004A7666 /* Assets.xcassets */,
 				BDF94E75219FE415004A7666 /* Info.plist */,
 				BDF94E76219FE415004A7666 /* PushNotificationPayload.apns */,
+				BD58704021A1DED8004FCB1C /* LabInterfaceController.swift */,
+				BD58704221A1DEE8004FCB1C /* FloorInterfaceController.swift */,
+				BD58704421A1DEF8004FCB1C /* DetailInterfaceController.swift */,
+				BD58704621A1E4E8004FCB1C /* FloorRow.swift */,
+				BD58704821A1E591004FCB1C /* LabRow.swift */,
+				BD58704A21A1EA5B004FCB1C /* FloorData.swift */,
+				BD58704E21A1EB59004FCB1C /* lab.json */,
+				BD58705021A1EB6A004FCB1C /* floor.json */,
+				BD58705421A1F00B004FCB1C /* LabData.swift */,
 			);
 			path = "WMusgravite Extension";
 			sourceTree = "<group>";
@@ -503,6 +535,11 @@
 					};
 					BDF94E65219FE414004A7666 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -567,7 +604,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD58705121A1EB6A004FCB1C /* floor.json in Resources */,
 				BDF94E74219FE415004A7666 /* Assets.xcassets in Resources */,
+				BD58704F21A1EB59004FCB1C /* lab.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,10 +728,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD58704B21A1EA5B004FCB1C /* FloorData.swift in Sources */,
+				BD58704321A1DEE8004FCB1C /* FloorInterfaceController.swift in Sources */,
+				BD58704121A1DED8004FCB1C /* LabInterfaceController.swift in Sources */,
+				BD58705321A1EC9D004FCB1C /* SwiftyJSON.swift in Sources */,
 				BDF94E70219FE414004A7666 /* NotificationController.swift in Sources */,
+				BD58705521A1F00B004FCB1C /* LabData.swift in Sources */,
+				BD58704921A1E591004FCB1C /* LabRow.swift in Sources */,
+				BD58704721A1E4E8004FCB1C /* FloorRow.swift in Sources */,
 				BDF94E72219FE414004A7666 /* ComplicationController.swift in Sources */,
 				BDF94E6E219FE414004A7666 /* ExtensionDelegate.swift in Sources */,
 				BDF94E6C219FE414004A7666 /* InterfaceController.swift in Sources */,
+				BD58704521A1DEF8004FCB1C /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,6 +1074,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WMusgravite Extension/WMusgravite Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R935X42Z66;
 				INFOPLIST_FILE = "WMusgravite Extension/Info.plist";
@@ -1049,6 +1097,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WMusgravite Extension/WMusgravite Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R935X42Z66;
 				INFOPLIST_FILE = "WMusgravite Extension/Info.plist";

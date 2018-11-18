@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Primer piso",
+        "description": "Talleres, alimentos y mas",
+        "cod": 1
+    },
+    {
+        "name": "Segundo piso",
+        "description": "Salones de computo",
+        "cod": 2
+    },
+    {
+        "name": "Tercer piso",
+        "description": "Tramites escolares y laboratorios",
+        "cod": 3
+    },
+    {
+        "name": "Cuarto piso",
+        "description": "Talleres de diseÃ±o y arquitectura",
+        "cod": 4
+    }
+]
