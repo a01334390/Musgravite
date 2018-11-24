@@ -24,12 +24,12 @@ class AboutPageViewController: UIViewController, UICollectionViewDelegate, UICol
     public let selection = UISelectionFeedbackGenerator()
     
     /* Data generator */
-    let names = ["Fernando Martin Garcia Del Angel","Armando Hernandez Vargas"]
-    let identifier = ["A01334390","A01334390"]
-    let githandler = ["@A01334390","@A01334390"]
-    let portfolio = ["martntn.com","armandomando.com"]
-    let personImages = ["grad15","grad16"]
-    let avatarImages = ["grad17","grad18"]
+    let names = ["Fernando Martin Garcia Del Angel","Armando Hernandez Vargas","Jorge Espinosa Lara","Luis Daniel Medina Cazarez"]
+    let identifier = ["A01334390","A01334836","A01337002","A01651070"]
+    let githandler = ["@A01334390","@mand027","joespla","LDanielMedinaC"]
+    let portfolio = ["martntn.com","armandomando.com","jorgelara.com","luismedina.com"]
+    let personImages = ["grad15","grad16","grad15","grad16"]
+    let avatarImages = ["grad17","grad18","grad15","grad16"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
