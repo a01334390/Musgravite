@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import SVProgressHUD
+import SDWebImage
 
 extension UITableView {
     /* Allows the user to set a title, message and image to an empty table view*/
@@ -146,7 +147,7 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
         selectedFloor = (floorData?.arrayValue[indexPath.item]["cod"].intValue)!
         labByFloorData = filterLabArray()
         labsTableView.reloadData()
-        bigImageOutlet.image = UIImage(named: "grad1\(indexPath.item)")
+        bigImageOutlet.sd_setImage(with: URL(string: floorData!.arrayValue[indexPath.item]["PosterImage"].stringValue),placeholderImage: UIImage(named: "grad5"))
         self.selection.selectionChanged()
     }
     
@@ -163,6 +164,7 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath) as! LabTableViewCell
         cell.title.text = labByFloorData![indexPath.item]["nombre"].stringValue
         cell.location.text = labByFloorData![indexPath.item]["ubicacion"].stringValue
+        
         return cell
     }
     

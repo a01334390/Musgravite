@@ -128,7 +128,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         bigTitleOutlet.text = labInformation!["nombre"].stringValue
         /* To be changed once this information is available */
-        bigImageOutlet.image = UIImage(named: "grad17")
+        bigImageOutlet.sd_setImage(with: URL(string: labInformation!["PosterImage"].stringValue),placeholderImage: UIImage(named: "grad0"))
         gradientCategory.image = UIImage(named: "grad13")
     }
     
