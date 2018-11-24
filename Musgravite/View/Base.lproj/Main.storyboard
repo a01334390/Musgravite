@@ -797,6 +797,28 @@
                                                     <outlet property="delegate" destination="uOn-dU-ibC" id="myc-da-Ru3"/>
                                                 </connections>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-87-h0c">
+                                                <rect key="frame" x="311" y="264" width="56" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="Swap mode">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SwapMode:" destination="uOn-dU-ibC" eventType="touchUpInside" id="oyb-wX-ruq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taJ-1z-wPi">
+                                                <rect key="frame" x="319" y="237" width="47" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="360°">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="present360Dome:" destination="uOn-dU-ibC" eventType="touchUpInside" id="XVz-jW-ffq"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97521414974619292" green="0.97521414974619292" blue="0.97521414974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -864,6 +886,8 @@
                     <connections>
                         <outlet property="bigImageOutlet" destination="ghk-5p-d4h" id="EUX-3g-cLV"/>
                         <outlet property="bigTitleOutlet" destination="oWc-yO-EJY" id="RPv-76-RpI"/>
+                        <outlet property="button360" destination="taJ-1z-wPi" id="Cj0-Pn-2CB"/>
+                        <outlet property="button3D" destination="8aP-xc-oZn" id="bVg-jn-Y6L"/>
                         <outlet property="descriptionOutlet" destination="HF7-KG-ouB" id="Wp2-Oe-Vsl"/>
                         <outlet property="gradientCategory" destination="OcG-Qb-MRv" id="3wl-w9-XSY"/>
                         <outlet property="imagesCollectionView" destination="8TW-Zf-lF7" id="oFn-b6-etJ"/>
@@ -873,11 +897,12 @@
                         <segue destination="SON-WU-SIL" kind="show" identifier="VideoViewController" id="hYp-ZW-713"/>
                         <segue destination="LvW-hC-men" kind="show" identifier="ModelViewController" id="uV5-Eq-h3m"/>
                         <segue destination="s8X-83-4W3" kind="show" identifier="ARDomeViewController" id="gbv-DA-A8p"/>
+                        <segue destination="zAa-e0-dPj" kind="show" identifier="P360ViewController" id="Blt-V3-NVY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyE-tM-3lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3542" y="571"/>
+            <point key="canvasLocation" x="3541.5999999999999" y="570.44334975369463"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="J92-Rm-HV9">
@@ -904,7 +929,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-c6-lk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4212" y="553.44827586206895"/>
+            <point key="canvasLocation" x="4238" y="553"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JGq-Yo-9Ue">
+            <objects>
+                <viewController storyboardIdentifier="P360ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zAa-e0-dPj" customClass="P360ViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6u-LL-Eha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-WO-tFY" customClass="CTPanoramaView" customModule="CTPanoramaView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs0-r3-U2H">
+                                        <rect key="frame" x="223" y="78" width="137" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.22854903339999999" green="0.63491958380000002" blue="0.71102976799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Touch/Motion">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="motionTypeTapped" destination="zAa-e0-dPj" eventType="touchUpInside" id="uoH-yt-IUT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6C-CU-e0t">
+                                        <rect key="frame" x="14" y="78" width="169" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.22854903339999999" green="0.63491958380000002" blue="0.71102976799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Spherical / Cylindrical">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="panoramaTypeTapped" destination="zAa-e0-dPj" eventType="touchUpInside" id="JGl-sz-FrF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ouw-W3-xFD" customClass="CTPieSliceView" customModule="CTPanoramaView">
+                                <rect key="frame" x="336" y="713" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ua0-ck-eiq"/>
+                    </view>
+                    <connections>
+                        <outlet property="compassView" destination="Ouw-W3-xFD" id="ZNf-Yi-1qI"/>
+                        <outlet property="pv" destination="CeW-WO-tFY" id="7c8-F5-tqP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smm-GA-3ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238" y="1253"/>
         </scene>
         <!--Model View Controller-->
         <scene sceneID="f0b-2a-4SJ">
@@ -920,6 +1011,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="eHQ-6i-LT1" appends="YES" id="UOa-Gf-cL3"/>
                                     <outletCollection property="gestureRecognizers" destination="Js5-vA-cB2" appends="YES" id="riU-w1-fOQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="GoX-ZB-AdL" appends="YES" id="ZeP-NS-YMB"/>
                                 </connections>
                             </arscnView>
                         </subviews>
@@ -945,6 +1037,11 @@
                         <action selector="rotateModel:" destination="LvW-hC-men" id="btg-1x-ixO"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="GoX-ZB-AdL">
+                    <connections>
+                        <action selector="modelScale:" destination="LvW-hC-men" id="ZSl-gG-yss"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4904.8000000000002" y="553.44827586206895"/>
         </scene>
@@ -958,6 +1055,10 @@
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKF-Um-4vy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KTJ-Id-66n" appends="YES" id="Mnd-Pg-gQV"/>
+                                </connections>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -972,6 +1073,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmC-B0-oux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KTJ-Id-66n">
+                    <connections>
+                        <action selector="tapEjecutado:" destination="s8X-83-4W3" id="Doy-sL-1lL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5560.8000000000002" y="551.97044334975374"/>
         </scene>

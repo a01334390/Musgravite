@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import SceneKit
 import CTPanoramaView
-
+import SwiftMessages
 
 class P360ViewController: UIViewController {
-    var panonoImageURL:URL?
+    var panonoImage:UIImage?
     @IBOutlet weak var compassView: CTPieSliceView!
     @IBOutlet weak var pv: CTPanoramaView!
     
@@ -40,27 +41,15 @@ class P360ViewController: UIViewController {
         }
     }
     
-    private func load(fileURL: URL) -> UIImage? {
-        do {
-            let imageData = try Data(contentsOf: fileURL)
-            return UIImage(data: imageData)
-        } catch {
-            print("Error loading image : \(error)")
-        }
-        return nil
-    }
-    
     func loadSphericalImage() {
-        pv.image = load(fileURL: panonoImageURL!)
+        pv.image = panonoImage
     }
     
     func loadCylindricalImage() {
-        pv.image = load(fileURL: panonoImageURL!)
+        pv.image = panonoImage
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .all
     }
-
-
 }

@@ -51,6 +51,19 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     @IBOutlet weak var videoCollectionView: UICollectionView!
     @IBOutlet weak var modelCollectionView: UICollectionView!
+    @IBOutlet weak var button360: UIButton!
+    @IBOutlet weak var button3D: UIButton!
+    
+    @IBAction func SwapMode(_ sender: Any) {
+        if(button3D.isHidden == true){
+            button3D.isHidden = false
+            button360.isHidden = true
+        }
+        else if(button360.isHidden == true){
+            button3D.isHidden = true
+            button360.isHidden = false
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +73,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         wcSession = WCSession.default
         wcSession.delegate = self
         wcSession.activate()
+        button3D.isHidden = true
     }
     @IBAction func sendToWatch(_ sender: Any) {
         sendLabInformation(labInformation!)
@@ -153,6 +167,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         getImage(labInformation!["panono"].stringValue, "imagen 3D", "ARDomeViewController")
     }
     
+    /* Handles what happens to the 360Dome Segue */
+    @IBAction func present360Dome(_ sender: Any) {
+        getImage(labInformation!["panono"].stringValue, "imagen 3D", "P360ViewController")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 1 {
             return (labInformation!["imagen"].arrayObject?.count)!
@@ -211,7 +230,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             if let destination = segue.destination as? ARDomeViewController {
                 destination.panonoImage = panonoImage
             }
-        } else {
+        } else if segue.identifier == "P360ViewController" {
+            if let destination = segue.destination as? P360ViewController {
+                destination.panonoImage = panonoImage
+            }
             return
         }
     }
