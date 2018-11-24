@@ -167,6 +167,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         getImage(labInformation!["panono"].stringValue, "imagen 3D", "ARDomeViewController")
     }
     
+    /* Handles what happens to the 360Dome Segue */
+    @IBAction func present360Dome(_ sender: Any) {
+        getImage(labInformation!["panono"].stringValue, "imagen 3D", "P360ViewController")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 1 {
             return (labInformation!["imagen"].arrayObject?.count)!
