@@ -154,6 +154,7 @@
                         <outlet property="bigtitleOutlet" destination="esy-fm-pgN" id="i6A-Ep-8Cq"/>
                         <outlet property="floorLocationOutlet" destination="Kob-N1-tGk" id="KoY-ey-zxb"/>
                         <outlet property="labLocationOutlet" destination="qct-tH-dKB" id="NiO-du-74r"/>
+                        <outlet property="mapOutlet" destination="KEn-Ho-QIj" id="WIZ-HM-hG0"/>
                     </connections>
                 </controller>
             </objects>

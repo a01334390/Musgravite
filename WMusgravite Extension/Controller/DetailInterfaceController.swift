@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 
+
 public extension WKInterfaceImage {
     
     public func setImageWithUrl(url:String, scale: CGFloat = 1.0) -> WKInterfaceImage? {
@@ -35,6 +36,9 @@ class DetailInterfaceController: WKInterfaceController {
     @IBOutlet weak var bigImageOutlet: WKInterfaceImage!
     @IBOutlet weak var labLocationOutlet: WKInterfaceLabel!
     @IBOutlet weak var floorLocationOutlet: WKInterfaceLabel!
+    @IBOutlet weak var mapOutlet: WKInterfaceMap!
+    let locationManager = CLLocationManager()
+
     
     override func awake(withContext context: Any?) {
         if let receivedLab = context as? LabData {
@@ -46,7 +50,11 @@ class DetailInterfaceController: WKInterfaceController {
         bigtitleOutlet.setText(lab.nombre)
         labLocationOutlet.setText(lab.ubicacion)
         floorLocationOutlet.setText("Piso \(lab.piso)")
-        bigImageOutlet.setImageWithUrl(url: lab.posterImage)
+        /* Map */
+        let tec=CLLocationCoordinate2D(latitude: 19.283996, longitude: -99.136006)
+        let region=MKCoordinateRegion(center:tec, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+        mapOutlet.setRegion(region)
+        mapOutlet.addAnnotation(tec, with: .purple)
     }
     
     @IBAction func onMenuBackTap() {
