@@ -67,8 +67,10 @@ class CharacterCreatorViewController: UIViewController, UIImagePickerControllerD
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        inBulletin.backgroundViewStyle = .dimmed
-        inBulletin.showBulletin(above: self)
+        if UserDefaults.standard.bool(forKey: "characterLaunchedBefore") {
+            inBulletin.backgroundViewStyle = .dimmed
+            inBulletin.showBulletin(above: self)
+        }
     }
     
     func universalUpdater(){
@@ -273,6 +275,7 @@ class CharacterCreatorViewController: UIViewController, UIImagePickerControllerD
         page.requiresCloseButton = false
         page.isDismissable = true
         page.actionHandler = { item in
+            UserDefaults.standard.set(true,forKey: "characterLaunchedBefore")
             item.manager?.dismissBulletin(animated: true)
             self.selection.selectionChanged()
             _ = self.navigationController?.popViewController(animated: true)

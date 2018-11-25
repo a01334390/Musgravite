@@ -163,6 +163,7 @@
                         <outlet property="dateLabel" destination="R5u-Op-nbp" id="xXq-a8-sKx"/>
                         <outlet property="nameLabel" destination="vlv-HC-85Q" id="sI8-PC-9Ri"/>
                         <outlet property="userAvatarImage" destination="bbf-O5-pVD" id="2M7-eg-lUs"/>
+                        <segue destination="Azx-5G-eG2" kind="show" identifier="LaboratorySearchViewController" id="LoZ-Pq-Cz1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -495,7 +496,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-h9-M4r">
-                                <rect key="frame" x="0.0" y="44" width="375" height="1322"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1278"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9f-eU-zWf">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
@@ -511,7 +512,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grad5" translatesAutoresizingMaskIntoConstraints="NO" id="OcG-Qb-MRv">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OcG-Qb-MRv">
                                                 <rect key="frame" x="0.0" y="296" width="375" height="5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-Ql-c7I">
@@ -889,7 +890,6 @@
                         <outlet property="button360" destination="taJ-1z-wPi" id="Cj0-Pn-2CB"/>
                         <outlet property="button3D" destination="8aP-xc-oZn" id="bVg-jn-Y6L"/>
                         <outlet property="descriptionOutlet" destination="HF7-KG-ouB" id="Wp2-Oe-Vsl"/>
-                        <outlet property="gradientCategory" destination="OcG-Qb-MRv" id="3wl-w9-XSY"/>
                         <outlet property="imagesCollectionView" destination="8TW-Zf-lF7" id="oFn-b6-etJ"/>
                         <outlet property="locationOutlet" destination="3F9-Ql-c7I" id="Ddc-UW-Sep"/>
                         <outlet property="modelCollectionView" destination="q00-yE-fR5" id="rSd-Sx-udA"/>
@@ -1080,30 +1080,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5560.8000000000002" y="551.97044334975374"/>
-        </scene>
-        <!--User Saved Laboratories View Controller-->
-        <scene sceneID="qER-Nb-BYh">
-            <objects>
-                <viewController storyboardIdentifier="UserSavedLaboratoriesViewController" id="SKa-CV-k0M" customClass="UserSavedLaboratoriesViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7zf-ec-iOH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="laboratory list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-Yh-pka">
-                                <rect key="frame" x="132" y="231" width="195" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GUk-Jo-xxQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ag0-9m-Odg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1382" y="1009"/>
         </scene>
         <!--Custom Nav View Controller-->
         <scene sceneID="R9O-qN-wfI">
@@ -1621,7 +1597,6 @@
         <image name="eyecol-6" width="117" height="40"/>
         <image name="grad17" width="600" height="500"/>
         <image name="grad19" width="600" height="500"/>
-        <image name="grad5" width="600" height="500"/>
         <image name="head-1" width="400" height="400"/>
         <image name="lab-default" width="1024" height="768"/>
         <image name="skin-1" width="80" height="80"/>

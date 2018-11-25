@@ -12,6 +12,8 @@ import CoreLocation
 import SVProgressHUD
 import Hero
 import WatchConnectivity
+import SwiftyJSON
+import Alamofire
 
 /**
  This is an extension to create round images for avatar and what not
@@ -25,17 +27,10 @@ extension UIImageView {
 }
 
 class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
+    /* Apple Watch Required Sources */
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
+    func sessionDidBecomeInactive(_ session: WCSession) {}
+    func sessionDidDeactivate(_ session: WCSession) {}
     
     /* Main Menu Cards */
     let mainMenu = MainMenuCards()
@@ -57,6 +52,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     @IBOutlet weak var nameLabel: UILabel!
     /* Watch Connectivity */
     var wcSession:WCSession!
+    /* JSON File */
+    var dFloorJSON:JSON?
+    var dLabJSON:JSON?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +71,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     }
     
     func sendMessageToWatch(_ text:String){
-        var message = ["message":text]
+        let message = ["message":text]
         wcSession.sendMessage(message, replyHandler: nil, errorHandler: {error in print(error.localizedDescription)})
     }
     
@@ -102,12 +100,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
      - Requires: The application to be launched and this method to be run from viewDidLoad
     */
     func appHasBeenLaunchedBefore() -> Bool{
-        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        if launchedBefore  {
-            return false
-        } else {
-            return true
-        }
+       return UserDefaults.standard.bool(forKey: "launchedBefore")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -144,10 +137,42 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: mainMenu.targets[indexPath.item])
-        self.navigationController?.pushViewController(destinationVC, animated: true)
+        if indexPath.item == 1 {
+            getData(mainMenu.targets[indexPath.item])
+        } else {
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: mainMenu.targets[indexPath.item])
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }
         self.selection.selectionChanged()
+    }
+    
+    /* Downloads the required data from an URL */
+    func getData(_ segueIdentifier:String) {
+        SVProgressHUD.show(withStatus: "Descargando Campus...")
+        Alamofire.request(NetworkSupport().getFloorUrl()).responseData { (response) in
+            if response.error == nil {
+                if let data = response.data {
+                    self.dFloorJSON = try! JSON(data: data)
+                    self.selection.selectionChanged()
+                    Alamofire.request(NetworkSupport().getLabURL()).responseData { (response) in
+                        if response.error == nil {
+                            if let data = response.data {
+                                self.dLabJSON = try! JSON(data: data)
+                                self.selection.selectionChanged()
+                                self.performSegue(withIdentifier: segueIdentifier, sender: self)
+                                SVProgressHUD.dismiss()
+                            }}}
+                }}}
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LaboratorySearchViewController" {
+            if let destination = segue.destination as? LaboratorySearchViewController {
+                destination.floorData = dFloorJSON
+                destination.labData = dLabJSON
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

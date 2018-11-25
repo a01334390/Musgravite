@@ -110,8 +110,6 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
      Retrieves the information for the interface as a JSON
     */
     func retrieveData(){
-        floorData = LabCards().retrieveFloorData()
-        labData = LabCards().retrieveLabData()
         labByFloorData = filterLabArray()
     }
     

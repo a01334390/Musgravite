@@ -15,17 +15,11 @@ import SwiftMessages
 import WatchConnectivity
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
+    func sessionDidBecomeInactive(_ session: WCSession) {}
     
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
+    func sessionDidDeactivate(_ session: WCSession) {}
     
     
     //Laboratory information
@@ -129,7 +123,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         bigTitleOutlet.text = labInformation!["nombre"].stringValue
         /* To be changed once this information is available */
         bigImageOutlet.sd_setImage(with: URL(string: labInformation!["PosterImage"].stringValue),placeholderImage: UIImage(named: "grad0"))
-        gradientCategory.image = UIImage(named: "grad13")
     }
     
     /* Downloads the required data from an URL */

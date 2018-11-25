@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Musgravite/Controller/DetailViewController.swift"
-            timestampString = "564722549.324002"
+            timestampString = "564818490.101434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "getData(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -32,6 +32,22 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "awake(withContext:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Musgravite/Controller/DetailViewController.swift"
+            timestampString = "564818490.102037"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "getData(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
