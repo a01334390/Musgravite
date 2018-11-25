@@ -82,7 +82,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func displayMapDirections(){
         let sourceCoordinates = locationManager.location?.coordinate
-        let destinationCoordinates = CLLocationCoordinate2D(latitude: 19.2833333, longitude: -99.1352777777779)
+        let destinationCoordinates = CLLocationCoordinate2D(latitude: (labInformation?["coordinates"].arrayValue[0].doubleValue)!, longitude: (labInformation?["coordinates"].arrayValue[1].doubleValue)!)
         let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates!)
         let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinates)
         let sourceItem = MKMapItem(placemark: sourcePlacemark)
@@ -116,7 +116,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBAction func sendToAppleMaps(_ sender: Any) {
         let sourceCoordinates = locationManager.location?.coordinate
-        let destinationCoordinates = CLLocationCoordinate2D(latitude: 19.2833333, longitude: -99.1352777777779)
+        let destinationCoordinates = CLLocationCoordinate2D(latitude: (labInformation?["coordinates"].arrayValue[0].doubleValue)!, longitude: (labInformation?["coordinates"].arrayValue[1].doubleValue)!)
         let directionsURL = "http://maps.apple.com/?saddr=\(sourceCoordinates?.latitude ?? 0),\(sourceCoordinates?.longitude ?? 0)&daddr=\(destinationCoordinates.latitude),\(destinationCoordinates.longitude)"
         guard let url = URL(string: directionsURL) else {
             return

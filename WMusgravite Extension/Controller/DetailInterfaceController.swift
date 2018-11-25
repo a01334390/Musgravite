@@ -51,7 +51,7 @@ class DetailInterfaceController: WKInterfaceController {
         labLocationOutlet.setText(lab.ubicacion)
         floorLocationOutlet.setText("Piso \(lab.piso)")
         /* Map */
-        let tec=CLLocationCoordinate2D(latitude: 19.283996, longitude: -99.136006)
+        let tec = CLLocationCoordinate2D(latitude: lab.x, longitude: lab.y)
         let region=MKCoordinateRegion(center:tec, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
         mapOutlet.setRegion(region)
         mapOutlet.addAnnotation(tec, with: .purple)

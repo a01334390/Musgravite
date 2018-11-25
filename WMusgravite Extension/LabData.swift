@@ -16,4 +16,6 @@ struct LabData {
     let piso:String
     let trayectoria:String
     let posterImage:String
+    let x:Double
+    let y:Double
 }

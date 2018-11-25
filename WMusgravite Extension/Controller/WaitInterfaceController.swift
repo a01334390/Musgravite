@@ -47,7 +47,9 @@ class WaitInterfaceController: WKInterfaceController, WCSessionDelegate{
                 ubicacion: l["ubicacion"].stringValue,
                 piso: l["piso"].stringValue,
                 trayectoria: l["trayectoria"].stringValue,
-                posterImage: l["posterImage"].stringValue
+                posterImage: l["posterImage"].stringValue,
+                x : l["coordinates"].arrayValue[0].doubleValue,
+                y : l["coordinates"].arrayValue[1].doubleValue
             )
             pushController(withName: "DetailInterfaceController", context: model)
         } catch let error {
