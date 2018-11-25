@@ -492,14 +492,14 @@
             <objects>
                 <viewController id="uOn-dU-ibC" customClass="DetailViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oy9-uG-ylQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-h9-M4r">
-                                <rect key="frame" x="0.0" y="88" width="375" height="1778"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1828"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9f-eU-zWf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1850"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lab-default" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-5p-d4h">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
@@ -798,6 +798,9 @@
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WR3-fo-K6O">
                                                 <rect key="frame" x="12" y="1375" width="354" height="386"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="uOn-dU-ibC" id="Nd0-u9-vm0"/>
+                                                </connections>
                                             </mapView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-uV-OTb">
                                                 <rect key="frame" x="10" y="1319" width="358" height="39"/>
@@ -818,10 +821,20 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-ZJ-KzG">
+                                                <rect key="frame" x="117" y="1779" width="140" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Abrir en Apple Maps">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendToAppleMaps:" destination="uOn-dU-ibC" eventType="touchUpInside" id="036-UF-3pI"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97521414974619292" green="0.97521414974619292" blue="0.97521414974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1800" id="IoP-5d-qVj"/>
+                                            <constraint firstAttribute="height" constant="1850" id="IoP-5d-qVj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -843,7 +856,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kfW-sX-LZN"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1900"/>
+                    <size key="freeformSize" width="375" height="1950"/>
                     <connections>
                         <outlet property="bigImageOutlet" destination="ghk-5p-d4h" id="EUX-3g-cLV"/>
                         <outlet property="bigTitleOutlet" destination="oWc-yO-EJY" id="RPv-76-RpI"/>
@@ -852,6 +865,7 @@
                         <outlet property="descriptionOutlet" destination="HF7-KG-ouB" id="Wp2-Oe-Vsl"/>
                         <outlet property="imagesCollectionView" destination="8TW-Zf-lF7" id="oFn-b6-etJ"/>
                         <outlet property="locationOutlet" destination="3F9-Ql-c7I" id="Ddc-UW-Sep"/>
+                        <outlet property="mapOutlet" destination="WR3-fo-K6O" id="YBa-1K-gTP"/>
                         <outlet property="modelCollectionView" destination="q00-yE-fR5" id="rSd-Sx-udA"/>
                         <outlet property="videoCollectionView" destination="Ijw-yQ-9WS" id="YAD-K9-24U"/>
                         <segue destination="SON-WU-SIL" kind="show" identifier="VideoViewController" id="hYp-ZW-713"/>

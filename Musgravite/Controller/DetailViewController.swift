@@ -13,14 +13,13 @@ import SVProgressHUD
 import Alamofire
 import SwiftMessages
 import WatchConnectivity
+import MapKit
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
+    /* WCSessionDelegate */
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
-    
     func sessionDidBecomeInactive(_ session: WCSession) {}
-    
     func sessionDidDeactivate(_ session: WCSession) {}
-    
     
     //Laboratory information
     var labInformation:JSON?
@@ -36,17 +35,22 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     public let selection = UISelectionFeedbackGenerator()
     
     //Static Elements
+    @IBOutlet weak var mapOutlet: MKMapView!
     @IBOutlet weak var locationOutlet: UILabel!
     @IBOutlet weak var descriptionOutlet: UITextView!
     @IBOutlet weak var bigTitleOutlet: UITextView!
     @IBOutlet weak var bigImageOutlet: UIImageView!
     @IBOutlet weak var gradientCategory: UIImageView!
+    
     //CollectionViews
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     @IBOutlet weak var videoCollectionView: UICollectionView!
     @IBOutlet weak var modelCollectionView: UICollectionView!
     @IBOutlet weak var button360: UIButton!
     @IBOutlet weak var button3D: UIButton!
+    
+    // CLLocationManager
+    let locationManager = CLLocationManager()
     
     @IBAction func SwapMode(_ sender: Any) {
         if(button3D.isHidden == true){
@@ -68,7 +72,73 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         wcSession.delegate = self
         wcSession.activate()
         button3D.isHidden = true
+        /* MapKit Delegate */
+        mapOutlet.delegate = self
+        mapOutlet.showsPointsOfInterest = true
+        mapOutlet.showsScale = true
+        mapOutlet.showsUserLocation = true
+        displayMapDirections()
     }
+    
+    func displayMapDirections(){
+        /* Request Location */
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
+        
+        let sourceCoordinates = locationManager.location?.coordinate
+        let destinationCoordinates = CLLocationCoordinate2D(latitude: 19.2833333, longitude: -99.1352777777779)
+        let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates!)
+        let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinates)
+        let sourceItem = MKMapItem(placemark: sourcePlacemark)
+        let destinationItem = MKMapItem(placemark: destinationPlacemark)
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = sourceItem
+        directionRequest.destination = destinationItem
+        directionRequest.transportType = .walking
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate(completionHandler: {response, error in
+            guard let response = response else {
+                if let error = error {
+                    print("omg something went wrong")
+                }
+                return
+            }
+            
+            let route = response.routes[0]
+            self.mapOutlet.addOverlay(route.polyline, level: .aboveRoads)
+            let rekt = route.polyline.boundingMapRect
+            self.mapOutlet.setRegion(MKCoordinateRegion(rekt), animated: true)
+        })
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 5.0
+        return renderer
+    }
+    
+    @IBAction func sendToAppleMaps(_ sender: Any) {
+        let sourceCoordinates = locationManager.location?.coordinate
+        let destinationCoordinates = CLLocationCoordinate2D(latitude: 19.2833333, longitude: -99.1352777777779)
+        let directionsURL = "http://maps.apple.com/?saddr=\(sourceCoordinates?.latitude ?? 0),\(sourceCoordinates?.longitude ?? 0)&daddr=\(destinationCoordinates.latitude),\(destinationCoordinates.longitude)"
+        guard let url = URL(string: directionsURL) else {
+            return
+        }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
+    
     @IBAction func sendToWatch(_ sender: Any) {
         sendLabInformation(labInformation!)
     }
@@ -123,6 +193,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         bigTitleOutlet.text = labInformation!["nombre"].stringValue
         /* To be changed once this information is available */
         bigImageOutlet.sd_setImage(with: URL(string: labInformation!["PosterImage"].stringValue),placeholderImage: UIImage(named: "grad0"))
+        /* Create map value */
+        
     }
     
     /* Downloads the required data from an URL */
