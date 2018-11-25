@@ -17,7 +17,7 @@ class MainMenuCards {
     public let notification = UINotificationFeedbackGenerator()
     public let selection = UISelectionFeedbackGenerator()
     /* Data to be used in cards */
-    let images = ["img1","img2","img3"]
+    let images = ["men-1","men-2","men-3"]
     let titles = ["Crea tu propio avatar","Busca laboratorios","Acerca de la aplicacion"]
     let subtitles = ["Personaliza tu experiencia virtual","¡Crea tu siguiente inovacion ahora!","Autores detras de este proyecto"]
     let targets = ["CharacterCreatorViewController","LaboratorySearchViewController","AboutPageViewController"]

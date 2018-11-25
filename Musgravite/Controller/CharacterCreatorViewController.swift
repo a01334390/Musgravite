@@ -219,6 +219,13 @@ class CharacterCreatorViewController: UIViewController, UIImagePickerControllerD
         present(imagePicker,animated: true,completion: nil)
     }
     
+    @IBAction func takeBackground(_ sender: Any) {
+        notification.notificationOccurred(.warning)
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .camera
+        present(imagePicker,animated: true,completion: nil)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             background.contentMode = .scaleAspectFit

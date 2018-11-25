@@ -30,7 +30,7 @@ class VideoViewController: UIViewController, ARSCNViewDelegate {
         // Set message title, body, and icon. Here, we're overriding the default warning
         // image with an emoji character.
         let iconText = ["🔍"].sm_random()!
-        view.configureContent(title: "Busca un QR", body: "Par ver un video, busca el QR del laboratorio", iconText: iconText)
+        view.configureContent(title: "Busca un QR", body: "Para ver un video, busca el QR del laboratorio", iconText: iconText)
         
         // Increase the external margin around the card. In general, the effect of this setting
         // depends on how the given layout is constrained to the layout margins.
