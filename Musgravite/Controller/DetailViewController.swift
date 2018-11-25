@@ -14,6 +14,8 @@ import Alamofire
 import SwiftMessages
 import WatchConnectivity
 import MapKit
+import CoreMedia
+import AVFoundation
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     /* WCSessionDelegate */
@@ -246,18 +248,38 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             return cell
         }else if collectionView.tag == 2{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoDetailCollectionViewCell", for: indexPath) as! VideoDetailCollectionViewCell
-            cell.title.text = labInformation!["video"].arrayValue[indexPath.item].stringValue
-            cell.image.image = UIImage(named: "grad12")
+            cell.title.text = URL(string: labInformation!["video"].arrayValue[indexPath.item].stringValue)?.lastPathComponent
+            DispatchQueue.global(qos: .background).async {
+                let dimage = self.downloadThumbnail(self.labInformation!["video"].arrayValue[indexPath.item].stringValue)
+                DispatchQueue.main.async {
+                    cell.image.image = dimage
+                }
+            }
             return cell
         } else if collectionView.tag == 3 {
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModelCellView", for: indexPath) as! ModelCollectionViewCell
-            cell.image.image = UIImage(named: "grad12")
-            cell.label.text = labInformation!["material"].arrayValue[indexPath.item].stringValue
+            cell.image.image = UtilityFunctions().getRandomBackground()
+            cell.label.text = URL(string: labInformation!["material"].arrayValue[indexPath.item].stringValue)?.lastPathComponent
             return cell
         } else {
             return UICollectionViewCell()
         }
     }
+    
+    func downloadThumbnail(_ path:String) -> UIImage {
+        do {
+            let asset = AVURLAsset(url: URL(string: path)! , options: nil)
+            let imgGenerator = AVAssetImageGenerator(asset: asset)
+            imgGenerator.appliesPreferredTrackTransform = true
+            let cgImage = try imgGenerator.copyCGImage(at: CMTimeMake(value: 0, timescale: 1), actualTime: nil)
+            let thumbnail = UIImage(cgImage: cgImage)
+            return thumbnail
+        } catch let error {
+            print("*** Error generating thumbnail: \(error.localizedDescription)")
+            return UIImage()
+        }
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 1 {

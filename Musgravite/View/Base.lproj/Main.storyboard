@@ -644,7 +644,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="219" height="101"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlJ-SS-sTg">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grad13" translatesAutoresizingMaskIntoConstraints="NO" id="hlJ-SS-sTg">
                                                                     <rect key="frame" x="0.0" y="0.0" width="219" height="101"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MR-dT-ETZ">
@@ -741,7 +741,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="219" height="168"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP0-aP-iCD">
-                                                                    <rect key="frame" x="20" y="147" width="179" height="21"/>
+                                                                    <rect key="frame" x="20" y="144" width="179" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -1569,6 +1569,7 @@
         <image name="eyecol-4" width="117" height="40"/>
         <image name="eyecol-5" width="117" height="40"/>
         <image name="eyecol-6" width="117" height="40"/>
+        <image name="grad13" width="600" height="500"/>
         <image name="grad17" width="600" height="500"/>
         <image name="grad19" width="600" height="500"/>
         <image name="head-1" width="400" height="400"/>
