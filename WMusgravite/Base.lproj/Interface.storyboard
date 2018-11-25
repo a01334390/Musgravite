@@ -139,7 +139,7 @@
                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <separator alignment="left" id="EFA-xY-6qP"/>
-                        <imageView height="150" alignment="left" image="img3" contentMode="scaleAspectFill" animationDuration="1" id="dBt-do-VSI"/>
+                        <map height="149" alignment="left" id="KEn-Ho-QIj"/>
                     </items>
                     <menu key="menu" id="coy-y2-mNJ">
                         <items>
@@ -151,14 +151,13 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="bigImageOutlet" destination="dBt-do-VSI" id="wbR-GC-OSs"/>
                         <outlet property="bigtitleOutlet" destination="esy-fm-pgN" id="i6A-Ep-8Cq"/>
                         <outlet property="floorLocationOutlet" destination="Kob-N1-tGk" id="KoY-ey-zxb"/>
                         <outlet property="labLocationOutlet" destination="qct-tH-dKB" id="NiO-du-74r"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1178.6666666666667" y="111.75126903553299"/>
+            <point key="canvasLocation" x="1178.6666666666667" y="132.46192893401013"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
