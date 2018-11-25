@@ -26,7 +26,7 @@ extension UIImageView {
     }
 }
 
-class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate{
+class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, WCSessionDelegate {
     /* Apple Watch Required Sources */
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     func sessionDidBecomeInactive(_ session: WCSession) {}
@@ -104,7 +104,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if (appHasBeenLaunchedBefore()){
+        if !appHasBeenLaunchedBefore() {
             self.notification.notificationOccurred(.warning)
             bulletinManager.backgroundViewStyle = .dimmed
             bulletinManager.showBulletin(above: self)

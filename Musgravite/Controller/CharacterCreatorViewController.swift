@@ -67,9 +67,10 @@ class CharacterCreatorViewController: UIViewController, UIImagePickerControllerD
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "characterLaunchedBefore") {
+        if !UserDefaults.standard.bool(forKey: "characterLaunchedBefore") {
             inBulletin.backgroundViewStyle = .dimmed
             inBulletin.showBulletin(above: self)
+            UserDefaults.standard.set(true, forKey: "characterLaunchedBefore")
         }
     }
     

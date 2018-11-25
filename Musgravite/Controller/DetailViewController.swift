@@ -81,16 +81,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func displayMapDirections(){
-        /* Request Location */
-        locationManager.requestAlwaysAuthorization()
-        locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
-        
         let sourceCoordinates = locationManager.location?.coordinate
         let destinationCoordinates = CLLocationCoordinate2D(latitude: 19.2833333, longitude: -99.1352777777779)
         let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates!)

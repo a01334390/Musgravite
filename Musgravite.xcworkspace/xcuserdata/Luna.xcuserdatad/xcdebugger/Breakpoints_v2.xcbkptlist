@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Musgravite/Controller/DetailViewController.swift"
-            timestampString = "564861121.219802"
+            timestampString = "564862025.403434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "getData(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Musgravite/Controller/DetailViewController.swift"
-            timestampString = "564861121.220378"
+            timestampString = "564862025.403586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "getData(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>

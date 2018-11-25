@@ -8,8 +8,10 @@
 
 import Foundation
 import BLTNBoard
+import CoreLocation
 
 class MainMenuCards {
+    
     /* Haptic Feeback */
     public let impact = UIImpactFeedbackGenerator()
     public let notification = UINotificationFeedbackGenerator()
@@ -19,7 +21,8 @@ class MainMenuCards {
     let titles = ["Crea tu propio avatar","Busca laboratorios","Acerca de la aplicacion"]
     let subtitles = ["Personaliza tu experiencia virtual","¡Crea tu siguiente inovacion ahora!","Autores detras de este proyecto"]
     let targets = ["CharacterCreatorViewController","LaboratorySearchViewController","AboutPageViewController"]
-    
+    /* Location */
+    let locationManager = CLLocationManager()
     
     /**
      This launches the onboarding experience on first launch
@@ -61,11 +64,55 @@ class MainMenuCards {
         page.actionButtonTitle = "Crear perfil"
         page.textInputHandler = {(item,text) in
             //We need to store it in CoreData
+            self.selection.selectionChanged()
             UtilityFunctions().storeUserName(text!)
-            let next = self.createLocationServicesBLTNPage()
+            let next = self.showAvatarPageBLTNPage()
             item.manager?.push(item: next)
         }
         return page
+    }
+    
+    func showAvatarPageBLTNPage() -> BLTNPageItem {
+        let page = BLTNPageItem(title:"Crea tu propio avatar!")
+        page.isDismissable = true
+        page.image = UIImage(named: "buletin-character")
+        page.descriptionText = "Selecciona en la primer opción el creador de Avatares dentro de la aplicación, este te seguirá a todos tus dispositivos"
+        page.appearance.actionButtonColor = UIColor(red:0.20, green:0.14, blue:0.14, alpha:1.0)
+        page.actionButtonTitle = "Continuar"
+        page.requiresCloseButton = false
+        page.appearance.shouldUseCompactDescriptionText = true
+        page.next = showLabSearchBLTNPage()
+        page.actionHandler = { item in
+            self.selection.selectionChanged()
+            item.manager?.displayNextItem()
+        }
+        return page
+    }
+    
+    /** This launches the Notification services BLTN Page
+     - Returns : OnboardingBLTNPageItem
+     - Remark : This should call our support file for Notification services
+     - Requires : It requires to be called by another BLTNPage and is not our first page
+     */
+    
+    func showLabSearchBLTNPage() -> BLTNPageItem {
+        let firstPage = BLTNPageItem(title: "Encuentra los laboratorios")
+        firstPage.image = UIImage(named: "buletin-lab")
+        firstPage.descriptionText = "Presiona el segundo elemento en el menu para ver los diferentes salones divididos por pisos de CDTC"
+        firstPage.actionButtonTitle = "Continuar"
+        firstPage.requiresCloseButton = false
+        firstPage.isDismissable = false
+        firstPage.appearance.shouldUseCompactDescriptionText = true
+        firstPage.next = createLocationServicesBLTNPage()
+        firstPage.actionHandler = { item in
+            item.manager?.displayNextItem()
+            self.notification.notificationOccurred(.success)
+        }
+        firstPage.alternativeHandler = { item in
+            item.manager?.displayNextItem()
+            self.notification.notificationOccurred(.success)
+        }
+        return firstPage
     }
     
     /**
@@ -83,66 +130,21 @@ class MainMenuCards {
         firstPage.requiresCloseButton = false
         firstPage.isDismissable = false
         firstPage.appearance.shouldUseCompactDescriptionText = true
-        firstPage.next = createNotificationServicesBLTNPage()
-        firstPage.actionHandler = { item in
-            self.selection.selectionChanged()
-            item.manager?.displayNextItem()
-        }
-        firstPage.alternativeHandler = { item in
-            self.selection.selectionChanged()
-            item.manager?.displayNextItem()
-        }
-        return firstPage
-    }
-    
-    /** This launches the Notification services BLTN Page
-     - Returns : OnboardingBLTNPageItem
-     - Remark : This should call our support file for Notification services
-     - Requires : It requires to be called by another BLTNPage and is not our first page
-     */
-    
-    func createNotificationServicesBLTNPage() -> BLTNPageItem {
-        let firstPage = BLTNPageItem(title: "Notificaciones Push")
-        firstPage.image = UIImage(named: "buletin-3")
-        firstPage.descriptionText = "Recibe notificaciones push cuando cambios en la aplicacion sucedan."
-        firstPage.actionButtonTitle = "Activar notificaciones"
-        firstPage.alternativeButtonTitle = "Ahora no"
-        firstPage.requiresCloseButton = false
-        firstPage.isDismissable = false
-        firstPage.appearance.shouldUseCompactDescriptionText = true
-        firstPage.next = createJSONDownloadBLTNPage()
-        firstPage.actionHandler = { item in
-                item.manager?.displayNextItem()
-                self.notification.notificationOccurred(.success)
-        }
-        firstPage.alternativeHandler = { item in
-            item.manager?.displayNextItem()
-            self.notification.notificationOccurred(.success)
-        }
-        return firstPage
-    }
-    
-    
-    /* Shows that the JSON's were succesfully downloaded
-     - Returns : OnboardingBLTNPageItem
-     - Remartk: This should subsequently call the next file
-     */
-    func createJSONDownloadBLTNPage() -> BLTNPageItem {
-        let firstPage = BLTNPageItem(title: "Datos descargados")
-        firstPage.image = UIImage(named: "buletin-5")
-        firstPage.descriptionText = "Se han descargado los datos necesarios para usar la aplicacion"
-        firstPage.actionButtonTitle = "Continuar"
-        firstPage.requiresCloseButton = false
-        firstPage.isDismissable = false
-        firstPage.appearance.shouldUseCompactDescriptionText = false
-        firstPage.appearance.actionButtonColor = UIColor(red:0.31, green:0.89, blue:0.76, alpha:1.0)
         firstPage.next = createSuccessBLTNPage()
         firstPage.actionHandler = { item in
+            /* Request Location */
+            self.locationManager.requestAlwaysAuthorization()
+            self.locationManager.requestWhenInUseAuthorization()
+            self.selection.selectionChanged()
             item.manager?.displayNextItem()
-            self.notification.notificationOccurred(.success)
+        }
+        firstPage.alternativeHandler = { item in
+            self.selection.selectionChanged()
+            item.manager?.displayNextItem()
         }
         return firstPage
     }
+
     
     /** This launches the Success BLTN Page
      - Returns : OnboardingBLTNPageItem
