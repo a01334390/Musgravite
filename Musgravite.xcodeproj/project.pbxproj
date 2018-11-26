@@ -953,7 +953,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -974,7 +974,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -1036,7 +1036,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.MusgraviteUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1056,7 +1056,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.MusgraviteUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.MusgraviteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1073,7 +1073,7 @@
 				DEVELOPMENT_TEAM = R3KUK9JKD6;
 				IBSC_MODULE = WMusgravite_Extension;
 				INFOPLIST_FILE = WMusgravite/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1092,7 +1092,7 @@
 				DEVELOPMENT_TEAM = R3KUK9JKD6;
 				IBSC_MODULE = WMusgravite_Extension;
 				INFOPLIST_FILE = WMusgravite/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1115,7 +1115,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1138,7 +1138,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeelara.Musgravite.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabotech.Musgravite.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
