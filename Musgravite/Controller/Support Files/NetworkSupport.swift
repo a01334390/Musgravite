@@ -12,8 +12,8 @@ import CoreData
 
 class NetworkSupport {
     /* Data download links */
-    let masterLabURL = "https://s3.amazonaws.com/purple-cdtc/laboratorios-rech.json"
-    let masterFloorURL = "https://s3.amazonaws.com/purple-cdtc/pisos.json"
+    let masterLabURL = "http://martinmolina.com.mx/201813/novus2018/Musgravite/laboratorios-rech.json"
+    let masterFloorURL = "http://martinmolina.com.mx/201813/novus2018/Musgravite/pisos.json"
     
     func getLabURL() -> URL {
         return URL(string: masterLabURL)!
