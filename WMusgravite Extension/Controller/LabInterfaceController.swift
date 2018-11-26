@@ -39,6 +39,7 @@ class LabInterfaceController: WKInterfaceController {
                 let labs = labData.array
                 if let labs = labs {
                     for l in labs {
+                        print(l["coordinates"].arrayValue[0])
                         if Int(l["piso"].stringValue) == receivedFloor {
                             let model = LabData(
                                 nombre: l["nombre"].stringValue,

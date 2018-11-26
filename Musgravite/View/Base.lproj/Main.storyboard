@@ -909,6 +909,7 @@
                         <outlet property="mapOutlet" destination="WR3-fo-K6O" id="YBa-1K-gTP"/>
                         <outlet property="modelCollectionView" destination="q00-yE-fR5" id="rSd-Sx-udA"/>
                         <outlet property="videoCollectionView" destination="Ijw-yQ-9WS" id="YAD-K9-24U"/>
+                        <outlet property="watchSend" destination="TVa-AP-i7W" id="fG3-Cf-zXW"/>
                         <segue destination="SON-WU-SIL" kind="show" identifier="VideoViewController" id="hYp-ZW-713"/>
                         <segue destination="LvW-hC-men" kind="show" identifier="ModelViewController" id="uV5-Eq-h3m"/>
                         <segue destination="s8X-83-4W3" kind="show" identifier="ARDomeViewController" id="gbv-DA-A8p"/>
@@ -1126,7 +1127,7 @@
         <scene sceneID="PsT-nS-S81">
             <objects>
                 <viewController storyboardIdentifier="CharacterCreatorViewController" id="S8d-Th-MfX" customClass="CharacterCreatorViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" ambiguous="YES" id="NQ2-oG-PU9">
+                    <view key="view" contentMode="scaleAspectFit" id="NQ2-oG-PU9">
                         <rect key="frame" x="0.0" y="0.0" width="1850" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1173,7 +1174,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5xA-Ou-6R2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xA-Ou-6R2">
                                 <rect key="frame" x="0.0" y="524" width="1850" height="288"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTZ-PQ-1q9">

@@ -20,6 +20,8 @@
 		BD2564AE2197CF4200A1779A /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */; };
 		BD2564B02197EAC200A1779A /* LabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */; };
 		BD2564B22197F07F00A1779A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2564B12197F07F00A1779A /* DetailViewController.swift */; };
+		BD2A22EB21ABB33400C6ADA1 /* floor.json in Resources */ = {isa = PBXBuildFile; fileRef = BD2A22E921ABB33400C6ADA1 /* floor.json */; };
+		BD2A22EC21ABB33400C6ADA1 /* lab.json in Resources */ = {isa = PBXBuildFile; fileRef = BD2A22EA21ABB33400C6ADA1 /* lab.json */; };
 		BD3AE4B6219E5B850005FB16 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */; };
 		BD3AE4B9219E5C4B0005FB16 /* ARDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */; };
 		BD58704121A1DED8004FCB1C /* LabInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704021A1DED8004FCB1C /* LabInterfaceController.swift */; };
@@ -28,8 +30,6 @@
 		BD58704721A1E4E8004FCB1C /* FloorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704621A1E4E8004FCB1C /* FloorRow.swift */; };
 		BD58704921A1E591004FCB1C /* LabRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704821A1E591004FCB1C /* LabRow.swift */; };
 		BD58704B21A1EA5B004FCB1C /* FloorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58704A21A1EA5B004FCB1C /* FloorData.swift */; };
-		BD58704F21A1EB59004FCB1C /* lab.json in Resources */ = {isa = PBXBuildFile; fileRef = BD58704E21A1EB59004FCB1C /* lab.json */; };
-		BD58705121A1EB6A004FCB1C /* floor.json in Resources */ = {isa = PBXBuildFile; fileRef = BD58705021A1EB6A004FCB1C /* floor.json */; };
 		BD58705321A1EC9D004FCB1C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58705221A1EC9D004FCB1C /* SwiftyJSON.swift */; };
 		BD58705521A1F00B004FCB1C /* LabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58705421A1F00B004FCB1C /* LabData.swift */; };
 		BD65307B21A21417007CFCE7 /* WaitInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65307A21A21417007CFCE7 /* WaitInterfaceController.swift */; };
@@ -135,6 +135,8 @@
 		BD2564AD2197CF4200A1779A /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD2564AF2197EAC200A1779A /* LabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTableViewCell.swift; sourceTree = "<group>"; };
 		BD2564B12197F07F00A1779A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BD2A22E921ABB33400C6ADA1 /* floor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = floor.json; sourceTree = "<group>"; };
+		BD2A22EA21ABB33400C6ADA1 /* lab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lab.json; sourceTree = "<group>"; };
 		BD3AE4B5219E5B850005FB16 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		BD3AE4B8219E5C4B0005FB16 /* ARDomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDomeViewController.swift; sourceTree = "<group>"; };
 		BD58703F21A1D1F1004FCB1C /* WMusgravite Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WMusgravite Extension.entitlements"; sourceTree = "<group>"; };
@@ -144,8 +146,6 @@
 		BD58704621A1E4E8004FCB1C /* FloorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorRow.swift; sourceTree = "<group>"; };
 		BD58704821A1E591004FCB1C /* LabRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabRow.swift; sourceTree = "<group>"; };
 		BD58704A21A1EA5B004FCB1C /* FloorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorData.swift; sourceTree = "<group>"; };
-		BD58704E21A1EB59004FCB1C /* lab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lab.json; sourceTree = "<group>"; };
-		BD58705021A1EB6A004FCB1C /* floor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = floor.json; sourceTree = "<group>"; };
 		BD58705221A1EC9D004FCB1C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		BD58705421A1F00B004FCB1C /* LabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabData.swift; sourceTree = "<group>"; };
 		BD65307A21A21417007CFCE7 /* WaitInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitInterfaceController.swift; sourceTree = "<group>"; };
@@ -293,9 +293,9 @@
 		BD65307E21A21494007CFCE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD2A22E921ABB33400C6ADA1 /* floor.json */,
+				BD2A22EA21ABB33400C6ADA1 /* lab.json */,
 				BDF94E76219FE415004A7666 /* PushNotificationPayload.apns */,
-				BD58704E21A1EB59004FCB1C /* lab.json */,
-				BD58705021A1EB6A004FCB1C /* floor.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -631,9 +631,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD58705121A1EB6A004FCB1C /* floor.json in Resources */,
+				BD2A22EB21ABB33400C6ADA1 /* floor.json in Resources */,
 				BDF94E74219FE415004A7666 /* Assets.xcassets in Resources */,
-				BD58704F21A1EB59004FCB1C /* lab.json in Resources */,
+				BD2A22EC21ABB33400C6ADA1 /* lab.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

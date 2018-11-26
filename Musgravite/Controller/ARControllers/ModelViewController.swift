@@ -144,7 +144,7 @@ class ModelViewController: UIViewController, ARSCNViewDelegate {
             let planeAnchor = anchor as! ARPlaneAnchor
             let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
             let gridMaterial = SCNMaterial()
-            gridMaterial.diffuse.contents = UIImage(named: "Assets.xcassets/grid.png")
+            gridMaterial.diffuse.contents = UIImage(named: "grid")
             plane.materials = [gridMaterial]
             let planeNode = SCNNode()
             planeNode.geometry = plane

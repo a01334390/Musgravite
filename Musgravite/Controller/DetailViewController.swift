@@ -43,6 +43,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var bigTitleOutlet: UITextView!
     @IBOutlet weak var bigImageOutlet: UIImageView!
     @IBOutlet weak var gradientCategory: UIImageView!
+    @IBOutlet weak var watchSend: UIButton!
+    
     
     //CollectionViews
     @IBOutlet weak var imagesCollectionView: UICollectionView!
@@ -70,9 +72,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
         /* WatchKit connectivity */
-        wcSession = WCSession.default
-        wcSession.delegate = self
-        wcSession.activate()
+        if WCSession.isSupported() {
+            wcSession = WCSession.default
+            wcSession.delegate = self
+            wcSession.activate()
+            if wcSession.isPaired {
+                watchSend.isHidden = true
+            }
+        }
+        print("scoop")
         button3D.isHidden = true
         /* MapKit Delegate */
         mapOutlet.delegate = self

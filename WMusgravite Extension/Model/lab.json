@@ -1,978 +1,1467 @@
-[{
+[
+  {
     "nombre": "Cabina de control",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-101",
     "piso": "1",
     "trayectoria": "4",
-    "posterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-    "panono" :"http://martinmolina.com.mx/201813/images/CEDETEC/101Panono%20-%20Cabina%20de%20control.jpg",
-    "imagen":["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/101Panono%20-%20Cabina%20de%20control.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Estudio de TV",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-101",
     "piso": "1",
     "trayectoria": "5",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/101Panono%20-%20Estudio%20de%20tv.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "InvestigaciÃ³n e innovaciÃ³n de productos",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/101Panono%20-%20Estudio%20de%20tv.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/TVEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/TV4.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/TV1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/TV2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Investigación e innovación de productos",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-102",
     "piso": "1",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/102Panono%20-%20Investigacion%20e%20innovacion%20de%20productos.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Control numÃ©rico",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/102Panono%20-%20Investigacion%20e%20innovacion%20de%20productos.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Control numérico",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-103",
     "piso": "1",
     "trayectoria": "5",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/103Panono%20-%20Control%20numerico.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "SalÃ³n de dibujo y escultura",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/103Panono%20-%20Control%20numerico.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Salón de dibujo y escultura",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-103a",
     "piso": "1",
     "trayectoria": "2",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/103APanono%20-%20Salon%20de%20dibujo%20y%20escultura.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "MecÃ¡nica automotriz escuderÃ­as CCM, mecÃ¡Â¡nica y metalisterÃ­a",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/103APanono%20-%20Salon%20de%20dibujo%20y%20escultura.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Mecánica automotriz escuderías CCM, mecá¡nica y metalistería",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-104",
     "piso": "1",
     "trayectoria": "3",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/104Panono%20-%20Taller%20de%20mecanica.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/104Panono%20-%20Taller%20de%20mecanica.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/MetalisteriaEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Metalisteria1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Metalisteria2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/MetalisteriaFull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Router CNC",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-104b",
     "piso": "1",
     "trayectoria": "3",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/104BPanono%20-%20Router%20CNC.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/104BPanono%20-%20Router%20CNC.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Celda de manufactura",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-105",
     "piso": "1",
     "trayectoria": "3",
-    "panono" : "http://martinmolina.com.mx/201813/images/CEDETEC/105Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 1",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/105Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 1",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-105a",
     "piso": "1",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/105APanono%20-%20Sala%20de%20computo%201.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Materiales y fundiciÃ³n",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/105APanono%20-%20Sala%20de%20computo%201.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Materiales y fundición",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-106",
     "piso": "1",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/106Panono%20-%20Materiales%20y%20fundicion.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "EnergÃ­as renovables y fundiciÃ³n",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/106Panono%20-%20Materiales%20y%20fundicion.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Energías renovables y fundición",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-106a",
     "piso": "1",
     "trayectoria": "4",
     "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/106APanono%20-%20Energias%20renovables%20y%20fundicion%20B.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "MetrologÃ­a y Ã³ptica",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Metrología y óptica",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-106b",
     "piso": "1",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/106bGear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/106bGear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Termofluidos y desarrollo sustentable",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-107",
     "piso": "1",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/107Panono%20-%20Termofluidos%20y%20desarrollo%20sustentable.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/107Panono%20-%20Termofluidos%20y%20desarrollo%20sustentable.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Maker space iis",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-108",
     "piso": "1",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/108Panono%20-%20Maker%20space%20iid.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "RobÃ³tica",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/108Panono%20-%20Maker%20space%20iid.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Robótica",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-109",
     "piso": "1",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/109Panono%20-%20Robotica.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 2",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/109Panono%20-%20Robotica.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 2",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-111",
     "piso": "1",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/111Panono%20-%20Sala%20de%20computo%202.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de CÃ³mputo 3",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/111Panono%20-%20Sala%20de%20computo%202.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de Cómputo 3",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-112",
     "piso": "1",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/112Panono%20-%20Sala%20de%20computo%203.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/112Panono%20-%20Sala%20de%20computo%203.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Laboratorio de impresoras 3D",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-114",
     "piso": "1",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/114Gear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de proyecciÃ³n",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/114Gear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de proyección",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-201",
     "piso": "2",
     "trayectoria": "4",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/202-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/202-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Servicios academicos",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-202",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/202-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/202-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Produccion de audio concepto radial",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-203",
     "piso": "2",
     "trayectoria": "5",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/203-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/203-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Periodismo digital",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-204",
     "piso": "2",
     "trayectoria": "5",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/204Panono%20-%20Periodismo%20digital.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Escuela de arquitectura, arte y diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/204Panono%20-%20Periodismo%20digital.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Escuela de arquitectura, arte y diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-205",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/205Panono%20-%20Escuela%20de%20arq%20y%20dise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Soporte de impresiÃ³n y fotografÃ­a",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/205Panono%20-%20Escuela%20de%20arq%20y%20dise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Soporte de impresión y fotografía",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-205",
     "piso": "2",
     "trayectoria": "5",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Soporte%20de%20impresion%20y%20fotografia.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Post-producciÃ³n digital",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Soporte%20de%20impresion%20y%20fotografia.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Post-producción digital",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-205a",
     "piso": "2",
     "trayectoria": "5",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/205aGear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/205aGear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "3D & VFX",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-205b",
     "piso": "2",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/205C-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "InformÃ¡tica musical",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/205C-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Informática musical",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-205c",
     "piso": "2",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/205B-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "AnimaciÃ³n 2D",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/205B-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Animación 2D",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-206",
     "piso": "2",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/206-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Captura de movimiento y estudio fotogrÃ¡fico",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/206-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/AnimacionEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Animacion1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Animacion2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/AnimacionFull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Captura de movimiento y estudio fotográfico",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-207",
     "piso": "2",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/207Panono%20-%20Estudio%20fotografico.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 4",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/207Panono%20-%20Estudio%20fotografico.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 4",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-208",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/208-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 5",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/208-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 5",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-209",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/209Panono%20-%20Sala%20de%20computo%209.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 6",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/209Panono%20-%20Sala%20de%20computo%209.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 6",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-210",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/210-1_Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/210-1_Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Conducta humana",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-211",
     "piso": "2",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/211Panono%20-%20Conducta%20humana.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sistemas mecatrÃ³nicos e innovaciÃ³n de productos",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/211Panono%20-%20Conducta%20humana.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sistemas mecatrónicos e innovación de productos",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "NA",
     "piso": "2",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Sistemas%20mecatronicos.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Sistemas%20mecatronicos.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Vicepresidencia de relaciones y desarrollo",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "NA",
     "piso": "2",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Vicepresidencia%20de%20relaciones.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/Panono%20-%20Vicepresidencia%20de%20relaciones.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Camara de Gessel",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-301",
     "piso": "3",
     "trayectoria": "4",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/301Panono%20-%20Sala%20de%20observacion%20Gessel.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Escuela de ingenierÃ­a y ciencias",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/301Panono%20-%20Sala%20de%20observacion%20Gessel.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Escuela de ingeniería y ciencias",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-302",
     "piso": "3",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/302Panono%20-%20Escuela%20de%20ingenieria%20y%20ciencias.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/302Panono%20-%20Escuela%20de%20ingenieria%20y%20ciencias.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Humanidades digitales",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-303",
     "piso": "3",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/303Panono%20-%20Humanidades%20digitales.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Centro de investigaciÃ³n en microsistemas y biodiseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/303Panono%20-%20Humanidades%20digitales.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Centro de investigación en microsistemas y biodiseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-304",
     "piso": "3",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/304Panono%20-%20Centro%20de%20investigacion%20en%20microsisteas%20y%20biodise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Control y robÃ³tica",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/304Panono%20-%20Centro%20de%20investigacion%20en%20microsisteas%20y%20biodise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Control y robótica",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305a",
     "piso": "3",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305APanono%20-%20Control%20y%20Robotica.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "AutomatizaciÃ³n y redes industriales",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305APanono%20-%20Control%20y%20Robotica.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Automatización y redes industriales",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305b",
     "piso": "3",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305BPanono%20-%20Automatizacion%20y%20redes%20industriales.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305BPanono%20-%20Automatizacion%20y%20redes%20industriales.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Proyectos",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305c",
     "piso": "3",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305CPanono%20-%20Proyectos.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "ElectrÃ³nica digital",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305CPanono%20-%20Proyectos.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Electrónica digital",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305d",
     "piso": "3",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305DPanono%20-%20Electronica%20digital.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "InstrumentaciÃ³n",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305DPanono%20-%20Electronica%20digital.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Instrumentación",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305e",
     "piso": "3",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305EPanono%20-%20Instrumentacion.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "ElectrÃ³nica y biomÃ©dica",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305EPanono%20-%20Instrumentacion.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Electrónica y biomédica",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305f",
     "piso": "3",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305FPanono%20-%20Electronica%20y%20biomedica.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "ConversiÃ³n de energÃ­a",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305FPanono%20-%20Electronica%20y%20biomedica.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Conversión de energía",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-305g",
     "piso": "3",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/305HPanono%20-%20Conversion%20de%20energia.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 7",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/305HPanono%20-%20Conversion%20de%20energia.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/ConversionDeEnergiaEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/ConversionDeEnergia1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/ConversionDeEnergia2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/ConversionDeEnergiaFull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 7",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-306",
     "piso": "3",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/306Gear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 8",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/306Gear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 8",
     "descripcion": "Laboratorio equipado con Mac's",
-    "encargado": "MartÃƒÆ’Ã‚Â­n Molina",
+    "encargado": "MartÃƒÂ­n Molina",
     "ubicacion": "CDT-307",
     "piso": "3",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/307Gear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/307Gear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Laboratorio de Redes I",
-    "descripcion": "Laboratorio equipado con material de ÃƒÆ’Ã‚Âºltima generaciÃƒÆ’Ã‚Â³n para el desarrollo de redes LAN y WAN",
+    "descripcion": "Laboratorio equipado con material de ÃƒÂºltima generaciÃƒÂ³n para el desarrollo de redes LAN y WAN",
     "encargaoo": "Rolando Vallejo",
-    "ubicaciÃƒÆ’Ã‚Â³n": "CDT-308",
+    "ubicaciÃƒÂ³n": "CDT-308",
     "piso": "3",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/309Gear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/309Gear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Laboratorio de Redes II",
-    "descripcion": "Laboratorio con materiales y productos mÃƒÆ’Ã‚Â¡s innovadores",
-    "encargado": "David EscÃƒÆ’Ã‚Â¡rcega",
+    "descripcion": "Laboratorio con materiales y productos mÃƒÂ¡s innovadores",
+    "encargado": "David EscÃƒÂ¡rcega",
     "ubicacion": "CDT-309",
     "piso": "3",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/Redes1Panono.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Aula de diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/Redes1Panono.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/RedesEntradas.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Redes1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Redes2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/RedesFull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Aula de diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-401a",
     "piso": "4",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/401APanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Aula de diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/401APanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/DisenoEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Diseno1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Diseno2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/DisenoFull.jpg",
+    "coordinates" : [19.2833333,-99.1355556]
+  },
+  {
+    "nombre": "Aula de diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-401b",
     "piso": "4",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/401BPanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Aula de diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/401BPanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1355556]
+  },
+  {
+    "nombre": "Aula de diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-401d",
     "piso": "4",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/401DPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "QuÃ­mica",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/401DPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1355556]
+  },
+  {
+    "nombre": "Química",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-404",
     "piso": "4",
     "trayectoria": "1",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/404Panono%20-%20Quimica.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/404Panono%20-%20Quimica.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Maderas",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-407",
     "piso": "4",
     "trayectoria": "3",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/MaderasGear.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala de cÃ³mputo 9",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/MaderasGear.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/MaderasEntrada.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Maderas1.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/Maderas2.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/MaderasFull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala de cómputo 9",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-408",
     "piso": "4",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/408Panono%20-%20sala%20de%20computo%209.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala cÃ³mputo 10",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/408Panono%20-%20sala%20de%20computo%209.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala cómputo 10",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-409",
     "piso": "4",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/409Panono%20-%20sala%20de%20computo%2010.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Sala cÃ³mputo 11",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/409Panono%20-%20sala%20de%20computo%2010.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Sala cómputo 11",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-410",
     "piso": "4",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/410Panono%20-%20Sala%20de%20computo%2011.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/410Panono%20-%20Sala%20de%20computo%2011.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
     "nombre": "Servicios administrativos",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-411",
     "piso": "4",
     "trayectoria": "0",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/411Panono%20-%20Servicios%20administrativos.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Aula de diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/411Panono%20-%20Servicios%20administrativos.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Aula de diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-412b",
     "piso": "4",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/412CPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-},
-{
-    "nombre": "Aula de diseÃ±o",
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/412CPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  },
+  {
+    "nombre": "Aula de diseño",
     "descripcion": "",
     "encargado": "",
     "ubicacion": "CDT-412c",
     "piso": "4",
     "trayectoria": "2",
-    "panono":"http://martinmolina.com.mx/201813/images/CEDETEC/412cGear.JPG",
-    "imagen": ["https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
-        "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
-    "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"],
-    "material": ["https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
-    "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"],
-    "video": ["https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
-    "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"]
-}
+    "panono": "http://martinmolina.com.mx/201813/images/CEDETEC/412cGear.JPG",
+    "imagen": [
+      "https://s3.amazonaws.com/purple-cdtc/pictures/dani.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/brime.jpg",
+      "https://s3.amazonaws.com/purple-cdtc/pictures/fran.jpg"
+    ],
+    "material": [
+      "https://s3.amazonaws.com/purple-cdtc/scenes/pug.scn",
+      "https://s3.amazonaws.com/purple-cdtc/scenes/eevee.scn"
+    ],
+    "video": [
+      "https://s3.amazonaws.com/purple-cdtc/movies/world.mp4",
+      "https://s3.amazonaws.com/purple-cdtc/movies/numbers.mp4"
+    ],
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TVfull.jpg",
+    "coordinates" : [19.2833333,-99.1352778]
+  }
 ]

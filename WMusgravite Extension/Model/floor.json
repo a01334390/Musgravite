@@ -1,22 +1,26 @@
 [
-    {
-        "name": "Primer piso",
-        "description": "Talleres, alimentos y mas",
-        "cod": 1
-    },
-    {
-        "name": "Segundo piso",
-        "description": "Salones de computo",
-        "cod": 2
-    },
-    {
-        "name": "Tercer piso",
-        "description": "Tramites escolares y laboratorios",
-        "cod": 3
-    },
-    {
-        "name": "Cuarto piso",
-        "description": "Talleres de diseÃ±o y arquitectura",
-        "cod": 4
-    }
+  {
+    "name": "Primer piso",
+    "description": "Talleres, alimentos y mas",
+    "cod": "1",
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/PrimerPiso.jpg"
+  },
+  {
+    "name": "Segundo piso",
+    "description": "Salones de computo",
+    "cod": "2",
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/SegundoPiso.jpg"
+  },
+  {
+    "name": "Tercer piso",
+    "description": "Tramites escolares y laboratorios",
+    "cod": "3",
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/TercerPiso.jpg"
+  },
+  {
+    "name": "Cuarto piso",
+    "description": "Talleres de diseño y arquitectura",
+    "cod": "4",
+    "PosterImage": "https://s3.amazonaws.com/purple-cdtc/pictures/CuartoPiso.jpg"
+  }
 ]
