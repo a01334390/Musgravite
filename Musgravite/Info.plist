@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationUsageDescription</key>
-	<string>$(PRODUCT_NAME) desea saber tu localización</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) desea saber tu localización</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>$(PRODUCT_NAME) desea saber tu localización</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -37,6 +31,12 @@
 	<string>$(PRODUCT_NAME) desea usar tu cámara para mostrar mundos virtuales.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME) desea saber tu localización incluso cuando la aplicacion no este en uso.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea saber tu localización</string>
+	<key>NSLocationUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea saber tu localización</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) desea saber tu localización</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>$(PRODUCT_NAME) desea acceder a tu carrete para escoger una imagen</string>
 	<key>UILaunchStoryboardName</key>

@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.aabotech.Musgravite</string>
+	<string>com.jorgeelara.Musgravite</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
