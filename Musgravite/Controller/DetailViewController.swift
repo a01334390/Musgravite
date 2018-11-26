@@ -69,6 +69,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         SVProgressHUD.setDefaultMaskType(.black)
         presentStaticContent()
         /* WatchKit connectivity */
@@ -76,11 +78,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             wcSession = WCSession.default
             wcSession.delegate = self
             wcSession.activate()
-            if wcSession.isPaired {
-                watchSend.isHidden = true
-            }
+//            if wcSession.isPaired {
+//                watchSend.isHidden = true
+//            }
         }
-        print("scoop")
         button3D.isHidden = true
         /* MapKit Delegate */
         mapOutlet.delegate = self
