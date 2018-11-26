@@ -422,7 +422,7 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PJx-0w-UaT">
-                                <rect key="frame" x="0.0" y="423" width="375" height="389"/>
+                                <rect key="frame" x="0.0" y="471" width="375" height="341"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labCells" rowHeight="70" id="qlL-1m-L7j" customClass="LabTableViewCell" customModule="Musgravite" customModuleProvider="target">
@@ -469,6 +469,10 @@
                                     <outlet property="delegate" destination="Azx-5G-eG2" id="Cmc-eY-Is1"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KSk-cI-61L">
+                                <rect key="frame" x="0.0" y="415" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.91395015734706431" green="0.91395015734706431" blue="0.91395015734706431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -478,7 +482,9 @@
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="42A-j7-pQf"/>
                             <constraint firstItem="PJx-0w-UaT" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="C28-Jo-Pcb"/>
                             <constraint firstItem="Ca7-ND-XYu" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" constant="16" id="CF1-hb-PHW"/>
+                            <constraint firstItem="KSk-cI-61L" firstAttribute="trailing" secondItem="p7k-Q2-By0" secondAttribute="trailing" id="EYU-Mr-RjH"/>
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="FPQ-RZ-5cl"/>
+                            <constraint firstItem="KSk-cI-61L" firstAttribute="leading" secondItem="p7k-Q2-By0" secondAttribute="leading" id="JqG-N9-YJt"/>
                             <constraint firstItem="Ca7-ND-XYu" firstAttribute="centerX" secondItem="CNG-Zo-ve4" secondAttribute="centerX" id="KIt-ig-ZyB"/>
                             <constraint firstItem="YgL-bH-T47" firstAttribute="top" secondItem="Ca7-ND-XYu" secondAttribute="bottom" constant="8" id="KUv-JC-8S9"/>
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="top" secondItem="tLZ-jw-RNc" secondAttribute="top" id="Kb3-Ee-YUd"/>
@@ -498,7 +504,8 @@
                             <constraint firstItem="CNG-Zo-ve4" firstAttribute="leading" secondItem="g5b-1u-ThL" secondAttribute="leading" id="jWL-4b-BDK"/>
                             <constraint firstItem="g5b-1u-ThL" firstAttribute="trailing" secondItem="Ca7-ND-XYu" secondAttribute="trailing" constant="16" id="jxb-Ir-fCP"/>
                             <constraint firstItem="Ca7-ND-XYu" firstAttribute="trailing" secondItem="YgL-bH-T47" secondAttribute="trailing" id="mLr-S3-va1"/>
-                            <constraint firstItem="PJx-0w-UaT" firstAttribute="top" secondItem="p7k-Q2-By0" secondAttribute="bottom" constant="8" id="oLb-5f-2RH"/>
+                            <constraint firstItem="PJx-0w-UaT" firstAttribute="top" secondItem="p7k-Q2-By0" secondAttribute="bottom" constant="56" id="oLb-5f-2RH"/>
+                            <constraint firstItem="KSk-cI-61L" firstAttribute="top" secondItem="p7k-Q2-By0" secondAttribute="bottom" id="oci-lh-4q1"/>
                             <constraint firstItem="p7k-Q2-By0" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="ppV-y0-QdA"/>
                             <constraint firstItem="YgL-bH-T47" firstAttribute="top" secondItem="Ca7-ND-XYu" secondAttribute="bottom" constant="8" symbolic="YES" id="uei-DQ-rxZ"/>
                             <constraint firstItem="PJx-0w-UaT" firstAttribute="trailing" secondItem="g5b-1u-ThL" secondAttribute="trailing" id="vNo-2q-qC0"/>
@@ -514,11 +521,12 @@
                         <outlet property="descriptionOutlet" destination="YgL-bH-T47" id="RXt-Zy-Rr6"/>
                         <outlet property="floorsCollectionView" destination="p7k-Q2-By0" id="DW8-wM-70c"/>
                         <outlet property="labsTableView" destination="PJx-0w-UaT" id="v1T-Kj-CS9"/>
+                        <outlet property="searchBar" destination="KSk-cI-61L" id="Lxd-zp-QtN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4z-1K-QQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2759" y="355"/>
+            <point key="canvasLocation" x="2757.5999999999999" y="354.67980295566502"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="LqA-tC-acw">
@@ -1118,7 +1126,7 @@
         <scene sceneID="PsT-nS-S81">
             <objects>
                 <viewController storyboardIdentifier="CharacterCreatorViewController" id="S8d-Th-MfX" customClass="CharacterCreatorViewController" customModule="Musgravite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="NQ2-oG-PU9">
+                    <view key="view" contentMode="scaleAspectFit" ambiguous="YES" id="NQ2-oG-PU9">
                         <rect key="frame" x="0.0" y="0.0" width="1850" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1165,7 +1173,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xA-Ou-6R2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5xA-Ou-6R2">
                                 <rect key="frame" x="0.0" y="524" width="1850" height="288"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTZ-PQ-1q9">

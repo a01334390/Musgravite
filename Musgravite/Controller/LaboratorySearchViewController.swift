@@ -66,33 +66,32 @@ extension UITableView {
             })
             
         })
-        
         self.backgroundView = emptyView
         self.separatorStyle = .none
     }
-    
     func restore() {
-        
         self.backgroundView = nil
         self.separatorStyle = .singleLine
-        
     }
-    
 }
 
-class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate {
+
+class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     /* Elements on the interface */
     @IBOutlet weak var bigImageOutlet: UIImageView!
     @IBOutlet weak var bigTitleOutlet: UILabel!
     @IBOutlet weak var descriptionOutlet: UITextView!
     @IBOutlet weak var floorsCollectionView: UICollectionView!
     @IBOutlet weak var labsTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     /* Information for the interface */
     var floorData:JSON?
     var labByFloorData:[JSON]?
     var labData:JSON?
     var superFiltered:[JSON]?
+    var searchFiltered:[JSON]?
+    var isSearching = false
     
     /* Selected floor variable - To show information in the table view */
     var selectedFloor = -1
@@ -103,6 +102,8 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
         retrieveData()
     }
     
@@ -111,6 +112,11 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
     */
     func retrieveData(){
         labByFloorData = filterLabArray()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
     
     /* Dont allow the ViewController to appear */
@@ -150,25 +156,61 @@ class LaboratorySearchViewController: UIViewController, UICollectionViewDelegate
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if (labByFloorData?.count)! == 0 {
-            tableView.setEmptyView(title: "Sin laboratorios", message: "Aún no has seleccionado un piso", messageImage: UIImage(named: "Nautilus")!)
-        }else{
-            tableView.restore()
+        
+        if isSearching {
+            if (searchFiltered?.count)! == 0 {
+                tableView.setEmptyView(title: "Sin laboratorios", message: "No hay laboratorios con ese nombre", messageImage: UIImage(named: "Nautilus")!)
+            }else{
+                tableView.restore()
+            }
+            return (searchFiltered?.count)!
+        } else {
+            if (labByFloorData?.count)! == 0 {
+                tableView.setEmptyView(title: "Sin laboratorios", message: "Aún no has seleccionado un piso", messageImage: UIImage(named: "Nautilus")!)
+            }else{
+                tableView.restore()
+            }
+            return (labByFloorData?.count)!
         }
-        return (labByFloorData?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath) as! LabTableViewCell
-        cell.title.text = labByFloorData![indexPath.item]["nombre"].stringValue
-        cell.location.text = labByFloorData![indexPath.item]["ubicacion"].stringValue
         
-        return cell
+        if isSearching {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath) as! LabTableViewCell
+            cell.title.text = searchFiltered![indexPath.item]["nombre"].stringValue
+            cell.location.text = searchFiltered![indexPath.item]["ubicacion"].stringValue
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "labCells", for: indexPath) as! LabTableViewCell
+            cell.title.text = labByFloorData![indexPath.item]["nombre"].stringValue
+            cell.location.text = labByFloorData![indexPath.item]["ubicacion"].stringValue
+            
+            return cell
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            labsTableView.reloadData()
+        } else {
+            isSearching = true
+            searchFiltered = labData?.arrayValue.filter({$0["nombre"].stringValue.contains(searchText)})
+            labsTableView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! DetailViewController
-        let selectedLab = labByFloorData![(labsTableView.indexPathForSelectedRow?.row)!]
+        var selectedLab:JSON?
+        if isSearching {
+            selectedLab = searchFiltered![(labsTableView.indexPathForSelectedRow?.row)!]
+        } else {
+            selectedLab = labByFloorData![(labsTableView.indexPathForSelectedRow?.row)!]
+        }
         vc.labInformation = selectedLab
     }
 }
