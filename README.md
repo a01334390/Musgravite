@@ -1,4 +1,4 @@
-# Musgravite
+# Musgravite
 
 <a href="https://paypal.me/a01334390"><img src="https://img.shields.io/badge/paypal-donate-blue.svg?longCache=true&style=flat-square" alt="current version" /></a>
 <a href="http://twitter.com/A01334390"><img src="https://img.shields.io/badge/twitter-@A01334390-blue.svg?longCache=true&style=flat-square" alt="twitter handle" /></a>
